@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include techmax_solucoes *.css
+recursive-include techmax_solucoes *.csv
+recursive-include techmax_solucoes *.html
+recursive-include techmax_solucoes *.ico
+recursive-include techmax_solucoes *.js
+recursive-include techmax_solucoes *.json
+recursive-include techmax_solucoes *.md
+recursive-include techmax_solucoes *.png
+recursive-include techmax_solucoes *.py
+recursive-include techmax_solucoes *.svg
+recursive-include techmax_solucoes *.txt
+recursive-exclude techmax_solucoes *.pyc
