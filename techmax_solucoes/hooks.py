@@ -187,6 +187,9 @@ app_license = "privado"
 # ]
 
 fixtures = [
+    {
+      "dt": "Website Settings"
+    },
     {"dt": "Web Template", "filters": {
         "module": "Techmax Solucoes"
     }},
