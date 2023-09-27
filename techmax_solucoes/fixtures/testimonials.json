@@ -1,0 +1,74 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Testimonials",
+  "image": null,
+  "modified": "2023-09-21 17:28:36.037836",
+  "name": "Lavínia Pedroso",
+  "nome": "Lavínia Pedroso",
+  "rating": null,
+  "role": "Rohit Industries",
+  "text_editor_yqgn": null,
+  "user": "lpedroso@techmaxsolucoes.com.br"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Testimonials",
+  "image": null,
+  "modified": "2023-09-21 17:28:53.811598",
+  "name": "Sr. João da Silva",
+  "nome": "Sr. João da Silva",
+  "rating": 1.0,
+  "role": "Attorney Infralex",
+  "text_editor_yqgn": null,
+  "user": "joaodasilva@gmail.com"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Testimonials",
+  "image": "/files/te2.jpg.svg",
+  "modified": "2023-09-26 14:04:01.207848",
+  "name": "Rohit Industries",
+  "nome": "Rohit Industries",
+  "rating": null,
+  "role": "Líder Global em Ferramentas de Corte",
+  "text_editor_yqgn": "<div class=\"ql-editor read-mode\"><p><strong>Desafio:</strong> Rohit Industries já usava o ERPNext, mas enfrentava desafios na otimização da produção de produtos metálicos. </p><p><strong>Solução: </strong>Criamos um algoritmo de otimização de corte de tarugos, reduzindo as perdas em 30% no processo produtivo.</p></div>",
+  "user": "rohitindustries@gmail.com"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Testimonials",
+  "image": "/files/te1.jpg.svg",
+  "modified": "2023-09-26 16:46:08.561759",
+  "name": "GOGOGO Shipping",
+  "nome": "GOGOGO Shipping",
+  "rating": null,
+  "role": "Simplificando o Envio Global",
+  "text_editor_yqgn": "<div class=\"ql-editor read-mode\"><p><strong>Desafio</strong>: A GoGoGo Shipping enfrentava burocracia devido a sistemas de parceiros.</p><p> <strong>Solução</strong>: Implementamos o ERPNext e criamos automações para orçamentos, reduzindo o tempo médio de orçamento de 7.5 para 2.3 minutos.</p></div>",
+  "user": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Testimonials",
+  "image": "/files/te1.jpg (1).svg",
+  "modified": "2023-09-26 16:47:45.065557",
+  "name": "Telecomunicaciones IBW",
+  "nome": "Telecomunicaciones IBW",
+  "rating": null,
+  "role": "Simplificando a Gestão de Telecomunicações",
+  "text_editor_yqgn": "<div class=\"ql-editor read-mode\"><p><strong>Desafio</strong>: O Grupo IBW tinha sistemas separados em várias unidades, levando a erros e a um longo processo de faturamento.</p><p><strong>Solução</strong>: Consolidamos tudo no ERPNext e desenvolvemos um motor de faturamento baseado em regras, reduzindo o tempo de faturamento de 10 horas para apenas 2 horas.</p></div>",
+  "user": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Testimonials",
+  "image": "/files/te1.jpg (2).svg",
+  "modified": "2023-09-26 16:48:20.615972",
+  "name": "Galileo Biotech",
+  "nome": "Galileo Biotech",
+  "rating": null,
+  "role": "Inovação em Testes Patológicos",
+  "text_editor_yqgn": "<div class=\"ql-editor read-mode\"><p><strong>Desafio</strong>: A Galileo Biotech enfrentava desafios ao equilibrar a automação com as regulamentações de rastreabilidade de produtos.</p><p><strong>Solução</strong>: Ajustamos o plano de produção do ERPNext para atender às normas brasileiras e implementamos um controle automatizado de estoque.</p></div>",
+  "user": null
+ }
+]

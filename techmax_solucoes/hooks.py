@@ -207,5 +207,6 @@ fixtures = [
     }},
     {"dt": "Client Script", "filters": {
         "module": "Techmax Solucoes"
-    }}
+    }},
+    {"dt": "Testimonials"}
 ]
