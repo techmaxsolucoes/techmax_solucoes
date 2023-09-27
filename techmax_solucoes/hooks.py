@@ -185,3 +185,24 @@ app_license = "privado"
 # auth_hooks = [
 #	"techmax_solucoes.auth.validate"
 # ]
+
+fixtures = [
+    {"dt": "Web Template", "filters": {
+        "module": "Techmax Solucoes"
+    }},
+    {"dt": "Custom Field", "filters": {
+        "module": "Techmax Solucoes"
+    }},
+    {"dt": "Web Page", "filters": {
+        "module": "Techmax Solucoes"
+    }},
+    {"dt": "Website Theme", "filters": {
+        "name": "TechMax Soluções"
+    }},
+    {"dt": "Server Script", "filters": {
+        "module": "Techmax Solucoes"
+    }},
+    {"dt": "Client Script", "filters": {
+        "module": "Techmax Solucoes"
+    }}
+]
