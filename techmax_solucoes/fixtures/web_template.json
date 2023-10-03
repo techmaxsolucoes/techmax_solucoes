@@ -301,6 +301,95 @@
  {
   "docstatus": 0,
   "doctype": "Web Template",
+  "fields": [
+   {
+    "default": null,
+    "fieldname": "img",
+    "fieldtype": "Attach Image",
+    "label": "Image",
+    "options": null,
+    "parent": "Testimonials 4 TechMax",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "title",
+    "fieldtype": "Small Text",
+    "label": "Title",
+    "options": null,
+    "parent": "Testimonials 4 TechMax",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "subtitle",
+    "fieldtype": "Small Text",
+    "label": "Subtitle",
+    "options": null,
+    "parent": "Testimonials 4 TechMax",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "testemunhos",
+    "fieldtype": "Section Break",
+    "label": "Testemunhos",
+    "options": null,
+    "parent": "Testimonials 4 TechMax",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "testimonial_1",
+    "fieldtype": "Link",
+    "label": "Testimonial",
+    "options": "Testimonials",
+    "parent": "Testimonials 4 TechMax",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "testimonial_2",
+    "fieldtype": "Link",
+    "label": "Testimonial",
+    "options": "Testimonials",
+    "parent": "Testimonials 4 TechMax",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "testimonial_3",
+    "fieldtype": "Link",
+    "label": "Testimonial",
+    "options": "Testimonials",
+    "parent": "Testimonials 4 TechMax",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   }
+  ],
+  "modified": "2023-10-03 09:35:13.399767",
+  "module": "Techmax Solucoes",
+  "name": "Testimonials 4 TechMax",
+  "standard": 0,
+  "template": "{% set testimonials = [testimonial_1, testimonial_2, testimonial_3] %}\n\n<section class=\"wrapper bg-light wrapper-testimonials-4tech\">\n  <div class=\"container py-14 py-md-16\">\n      \n      <div class=\"col-12\">\n        <h2 class=\"mb-3 title title-section text-center\">{{ _(title) }}</h2>\n        <h3 class=\"display-4 mb-10 px-xl-10 subtitle-section text-center\">{{ _(subtitle) }}</h3>\n      </div>\n      \n    <div class=\"row gx-lg-8 gx-xl-12 gy-6 align-items-center\">\n      <div class=\"col-lg-7 order-lg-2\">\n        <figure><img class=\"w-auto\" src=\"{{img}}\" srcset=\"./assets/img/illustrations/i4@2x.png 2x\" alt=\"\" /></figure>\n      </div>\n      <!--/column -->\n      <div class=\"col-lg-5 mt-12 contenttestimonials\">\n        <div class=\"swiper-container dots-closer mb-6\" data-loop=\"true\" data-drag=\"true\" data-margin=\"30\" data-dots=\"true\">\n            <div class=\"swiper-container dots-closer mb-6 swiper-content\" data-loop=\"true\" data-drag=\"true\" data-margin=\"30\" data-dots=\"true\"></div>\n          <div class=\"swiper\">\n            <div class=\"swiper-wrapper\">\n            {% for testimonial in testimonials %}\n                {% if testimonial %}\n                {% set doc = frappe.get_doc(\"Testimonials\", testimonial) %}\n              <div class=\"swiper-slide\">\n                <blockquote class=\"icon icon-top fs-lg text-center card1\">\n                    <img src=\"/assets/techmax_solucoes/images/%E2%98%85%E2%98%85%E2%98%85%E2%98%85%E2%98%85.svg\" class=\"iconstar\">\n                  <p class=\"text text-1\">“{{doc.testimonial}}”</p>\n                  <div class=\"blockquote-details justify-content-center text-center\">\n                    <div class=\"info ps-0\">\n                      <h5 class=\"mb-1 title-testimonials\">{{doc.nome}}</h5>\n                      <p class=\"mb-0 text-second d-flex\">{{doc.role}}</p>\n                    </div>\n                  </div>\n                </blockquote>\n              </div>\n                {% endif %}\n            {% endfor %}\n            </div>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>",
+  "type": "Component"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Web Template",
   "fields": [],
   "modified": "2023-09-27 16:17:43.523895",
   "module": "Techmax Solucoes",
@@ -308,6 +397,227 @@
   "standard": 0,
   "template": "<footer class=\"bg-light-footer text-inverse\" style=\"background-color: #FFF;\">\n  <div class=\"container py-13 py-md-15\">\n    <div class=\"row gy-6 gy-lg-0\">\n      <div class=\"col-lg-4 col-xl-3\">\n        <div class=\"widget\">\n          <img class=\"mb-4 img-logo-footer\" src=\"/assets/techmax_solucoes/images/Logo.svg\" srcset=\"/assets/techmax_solucoes/images/Logo.svg\" alt=\"\" />\n          <p class=\"mb-4 text-second\">© 2023 TechMax Soluções.<br class=\"d-none d-lg-block\" />Todos os direitos reservados.</p>\n          \n          <!-- /.social -->\n        </div>\n        <!-- /.widget -->\n      </div>\n      <!-- /column -->\n      <div class=\"col-lg-4 col-xl-3\">\n        <div class=\"widget\">\n          <h4 class=\"widget-title text-white mb-3 text-footer\">Contato</h4>\n          <a href=\"mailto:#\" class=\"text-second text-second-footer\">info@techmaxsolucoes.com.br</a><br>\n          <a href=\"tel:+551938090209\" class=\"text-second text-second-footer\">+55 19 3809-0209</a>\n        </div>\n        <!-- /.widget -->\n      </div>\n      <!-- /column -->\n      <div class=\"col-lg-4 col-xl-3\">\n        <div class=\"widget\">\n          <h4 class=\"widget-title text-white mb-3 text-footer\">Serviços</h4>\n          <ul class=\"list-unstyled  mb-0\">\n            <li><a href=\"#\" class=\"text-second text-second-footer hover\">Sistemas ERP</a></li>\n            <li><a href=\"#\" class=\"text-second text-second-footer hover\">Sistemas em Cloud</a></li>\n            <li><a href=\"#\" class=\"text-second text-second-footer hover\">Gestão da TIC</a></li>\n            <li><a href=\"#\" class=\"text-second text-second-footer hover\">Telefonia IP</a></li>\n          </ul>\n        </div>\n        <!-- /.widget -->\n      </div>\n      <!-- /column -->\n      <div class=\"col-lg-12 col-xl-3\">\n        <div class=\"widget\">\n          <h4 class=\"widget-title text-white mb-3 text-footer\">Novidades</h4>\n          <p class=\"mb-5 text-second\">Assine nossa newsletter para receber nossas novidades.</p>\n          <div class=\"newsletter-wrapper\">\n            <!-- Begin Mailchimp Signup Form -->\n            <div id=\"mc_embed_signup2\">\n              <form action=\"https://elemisfreebies.us20.list-manage.com/subscribe/post?u=aa4947f70a475ce162057838d&amp;id=b49ef47a9a\" method=\"post\" id=\"mc-embedded-subscribe-form2\" name=\"mc-embedded-subscribe-form\" class=\"validate dark-fields\" target=\"_blank\" novalidate>\n                <div id=\"mc_embed_signup_scroll2\">\n                  <div class=\"mc-field-group input-group form-floating\">\n                    <input type=\"email\" value=\"\" name=\"EMAIL\" class=\"required email form-control form-control-footer\" placeholder=\"Email Address\" id=\"mce-EMAIL2\">\n                    <label for=\"mce-EMAIL2\" class=\"text-second button-text-second\">Seu melhor email</label>\n                    <input type=\"submit\" value=\"Enviar\" name=\"subscribe\" id=\"mc-embedded-subscribe2\" class=\"btn btn-primary-footer\">\n                  </div>\n                  <div id=\"mce-responses2\" class=\"clear\">\n                    <div class=\"response\" id=\"mce-error-response2\" style=\"display:none\"></div>\n                    <div class=\"response\" id=\"mce-success-response2\" style=\"display:none\"></div>\n                  </div> <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->\n                  <div style=\"position: absolute; left: -5000px;\" aria-hidden=\"true\"><input type=\"text\" name=\"b_ddc180777a163e0f9f66ee014_4b1bcfa0bc\" tabindex=\"-1\" value=\"\"></div>\n                  <div class=\"clear\"></div>\n                </div>\n              </form>\n            </div>\n            <!--End mc_embed_signup-->\n          </div>\n          <!-- /.newsletter-wrapper -->\n        </div>\n        <!-- /.widget -->\n      </div>\n      <!-- /column -->\n    </div>\n    <div class=\"col-12 position-static col-animation\">\n        <div class=\"linha\"></div>\n        <div class=\"nav social social-white\">\n            <p class=\"text-second\">Feito com \n                <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\">\n                    <path d=\"M14.04 3.79467C13.551 3.15225 12.8603 2.69283 12.0788 2.49022C11.2973 2.2876 10.4704 2.35356 9.73094 2.67748C9.06906 2.96311 8.47875 3.44467 8 4.08373C7.52125 3.44311 6.93094 2.96154 6.26906 2.67748C5.52957 2.35356 4.70265 2.2876 3.92116 2.49022C3.13966 2.69283 2.44896 3.15225 1.96 3.79467C1.44438 4.47029 1.17188 5.31467 1.17188 6.23623C1.17188 7.56248 1.96281 9.01748 3.5225 10.5625C4.79344 11.8209 6.29531 12.8515 7.07719 13.3537C7.35268 13.5301 7.67292 13.6238 8 13.6238C8.32708 13.6238 8.64732 13.5301 8.92281 13.3537C9.70406 12.8515 11.2066 11.8209 12.4775 10.5625C14.0372 9.01811 14.8281 7.56248 14.8281 6.23623C14.8281 5.31467 14.5556 4.47029 14.04 3.79467Z\" fill=\"#38424E\"/>\n                </svg>\n                \n                    \n                <div class=\"animation-container\">\n                    <span id=\"textoAnimado1\" class=\"slide-up text-footer span-footer animate-text active\" style=\"position:relative;bottom:0px;left:5px;\">no Brasil</span>\n                    <span id=\"textoAnimado2\" class=\"slide-up text-footer span-footer animate-text\" style=\"position:relative;bottom:0px;left:5px;\">em São Paulo</span>\n                    <span id=\"textoAnimado3\" class=\"slide-up text-footer span-footer animate-text\" style=\"position:relative;bottom:0px;left:5px;\">em Hortolândia</span>\n                </div>\n                \n        <script src=\"script.js\"></script>\n            <!--<span class=\"text-second span-footer\" id=\"textoAnimado\">no Brasil</span>-->\n    </div>\n\n          </div>\n    <!--/.row -->\n  </div>\n  <!-- /.container -->\n</footer>\n\n\n<style>\n    .col-animation {\n        margin-top: 26px;\n    }\n    .col-animation .nav {\n        padding-top: 26px;\n    }\n    .linha{\n        border-top: 1px solid #E9F0F2;\n        width: 100vw;\n        position: absolute;\n        left: 0;\n        \n    }\n    \n    .animation-container {\n        display: flex;\n        flex-direction: column;\n        position: relative;\n    }\n\n    .animate-text {\n        opacity: 0;\n        animation: slide-up 0.5s ease-in-out forwards;\n        display: none;\n    }\n\n    .active {\n        opacity: 1;\n        display: block;\n    }\n\n    @keyframes slide-up {\n        from {\n            transform: translateY(30%);\n        }\n        to {\n            transform: translateY(0);\n        }\n    }\n    @media (max-width: 1200px) {\n        .img-logo-footer {\n            height: 83px !important;\n            width: 93px !important;\n        }\n    }\n    @media screen and (max-width: 1280px) and (min-width: 800px){\n        .linha{\n            width: 1206px;\n        }\n    }\n    \n    \n    \n</style>\n\n<script>\n        \n        document.addEventListener(\"DOMContentLoaded\", function() {\n            const elementos = document.querySelectorAll(\".animate-text\");\n            let indice = 0;\n\n            // Exibir apenas o primeiro elemento inicialmente\n            elementos[indice].classList.add(\"active\");\n\n            function alternarTexto() {\n                elementos[indice].classList.remove(\"active\");\n                indice = (indice + 1) % elementos.length;\n                elementos[indice].classList.add(\"active\");\n            }\n\n            setInterval(alternarTexto, 4000);\n        });\n</script>",
   "type": "Footer"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Web Template",
+  "fields": [
+   {
+    "default": null,
+    "fieldname": "heading",
+    "fieldtype": "Small Text",
+    "label": "Heading",
+    "options": null,
+    "parent": "Clients 1 TechMax",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "img1_src",
+    "fieldtype": "Attach Image",
+    "label": "Imagem",
+    "options": null,
+    "parent": "Clients 1 TechMax",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "img1_alt",
+    "fieldtype": "Data",
+    "label": "Alt",
+    "options": null,
+    "parent": "Clients 1 TechMax",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "img2_src",
+    "fieldtype": "Attach Image",
+    "label": "Imagem",
+    "options": null,
+    "parent": "Clients 1 TechMax",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "img2_alt",
+    "fieldtype": "Data",
+    "label": "Alt",
+    "options": null,
+    "parent": "Clients 1 TechMax",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "img3_src",
+    "fieldtype": "Attach Image",
+    "label": "Imagem",
+    "options": null,
+    "parent": "Clients 1 TechMax",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "img3_alt",
+    "fieldtype": "Data",
+    "label": "Alt",
+    "options": null,
+    "parent": "Clients 1 TechMax",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "img4_src",
+    "fieldtype": "Attach Image",
+    "label": "Imagem",
+    "options": null,
+    "parent": "Clients 1 TechMax",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "img4_alt",
+    "fieldtype": "Data",
+    "label": "Alt",
+    "options": null,
+    "parent": "Clients 1 TechMax",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "img5_src",
+    "fieldtype": "Attach Image",
+    "label": "Imagem",
+    "options": null,
+    "parent": "Clients 1 TechMax",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "img5_alt",
+    "fieldtype": "Data",
+    "label": "Alt",
+    "options": null,
+    "parent": "Clients 1 TechMax",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "img6_src",
+    "fieldtype": "Attach Image",
+    "label": "Imagem",
+    "options": null,
+    "parent": "Clients 1 TechMax",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "img6_alt",
+    "fieldtype": "Data",
+    "label": "Alt",
+    "options": null,
+    "parent": "Clients 1 TechMax",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "img7_src",
+    "fieldtype": "Attach Image",
+    "label": "Imagem",
+    "options": null,
+    "parent": "Clients 1 TechMax",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "img7_alt",
+    "fieldtype": "Data",
+    "label": "Alt",
+    "options": null,
+    "parent": "Clients 1 TechMax",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "img8_src",
+    "fieldtype": "Attach Image",
+    "label": "Imagem",
+    "options": null,
+    "parent": "Clients 1 TechMax",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "img8_alt",
+    "fieldtype": "Data",
+    "label": "Alt",
+    "options": null,
+    "parent": "Clients 1 TechMax",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "img9_src",
+    "fieldtype": "Attach Image",
+    "label": "Imagem",
+    "options": null,
+    "parent": "Clients 1 TechMax",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "img9_alt",
+    "fieldtype": "Data",
+    "label": "Alt",
+    "options": null,
+    "parent": "Clients 1 TechMax",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   }
+  ],
+  "modified": "2023-09-28 18:00:13.838508",
+  "module": "Techmax Solucoes",
+  "name": "Clients 1 TechMax",
+  "standard": 0,
+  "template": "<div id=\"inline-desk wrapper-clients-fixed bg-light\">\n    <p class=\"text-center\">{{ heading }}</p>\n    <div class=\"inline-images\">\n        <img id=\"img1\" class=\"imglogo\" src=\"{{ img1_src }}\" alt=\"{{ img1_alt }}\" />\n        <img id=\"img2\" class=\"imglogo\"  src=\"{{ img2_src }}\" alt=\"{{ img2_alt }}\" />\n        <img id=\"img3\" class=\"imglogo\"  src=\"{{ img3_src }}\" alt=\"{{ img3_alt }}\" />\n        <img id=\"img4\" class=\"imglogo\" src=\"{{ img4_src }}\" alt=\"{{ img4_alt }}\" />\n        <img id=\"img5\" class=\"imglogo\" src=\"{{ img5_src }}\" alt=\"{{ img5_alt }}\" />\n        <img id=\"img6\" class=\"imglogo\"  src=\"{{ img6_src }}\" alt=\"{{ img6_alt }}\" />\n        <img id=\"img7\" class=\"imglogo\" src=\"{{ img7_src }}\" alt=\"{{ img7_alt }}\" />\n        <img id=\"img8\" class=\"imglogo\" src=\"{{ img8_src }}\" alt=\"{{ img8_alt }}\" />\n        <img id=\"img9\" class=\"imglogo\" src=\"{{ img9_src }}\" alt=\"{{ img9_alt }}\" />\n\n    </div>\n</div>\n\n\n\n",
+  "type": "Section"
  },
  {
   "docstatus": 0,
@@ -480,11 +790,11 @@
     "reqd": 0
    }
   ],
-  "modified": "2023-09-27 15:44:51.383232",
+  "modified": "2023-09-28 16:42:28.267752",
   "module": "Techmax Solucoes",
   "name": "Hero 27 WebiNar",
   "standard": 0,
-  "template": "<section class=\"wrapper image-wrapper bg-cover bg-image bg-xs-none bg-gray\" data-image-src=\"\">\n    <div class=\"container pb-15 py-sm-17 py-xxl-20\">\n      <div class=\"row\">\n        <div class=\"col-sm-6 col-xxl-5 text-center text-sm-start\" data-cues=\"slideInDown\" data-group=\"page-title\" data-interval=\"-200\" data-delay=\"500\">\n        \n            <span class=\"details-img simple-details\"><a href=\"https://www.techmaxsolucoes.com.br/\"><img src=\"{{image_logo}}\" class=\"image-logo\" style=\"width:62px\"></a>{{title_details}}</span>\n          <h2 class=\"display-1 fs-56 mb-4 mt-0 mt-lg-5 ls-xs pe-xl-5 pe-xxl-0\">{{title}}<span class=\"underline-3 style-3 yellow\">{{title_un}}</span></h2>\n          <p class=\"lead fs-23 lh-sm mb-7 pe-lg-5 pe-xl-5 pe-xxl-0\">{{subtitle}}</p>\n          <div><a href=\"{{href}}\" class=\"btn btn-lg btn-primary rounded\">{{btn}}</a></div>\n        </div>\n\n      </div>\n    </div>\n  </section>",
+  "template": "<section class=\"wrapper image-wrapper bg-cover bg-image bg-xs-none bg-gray\" data-image-src=\"\">\n    <div class=\"container pb-15 py-sm-17 py-xxl-20\">\n      <div class=\"row\">\n        <div class=\"col-sm-6 col-xxl-5 text-center text-sm-start\" data-cues=\"slideInDown\" data-group=\"page-title\" data-interval=\"-200\" data-delay=\"500\">\n        \n            <span class=\"details-img simple-details\"><a href=\"https://www.techmaxsolucoes.com.br/\"><img src=\"{{image_logo}}\" class=\"image-logo\" style=\"width:62px\"></a>{{title_details}}</span>\n          <h2 class=\"display-1 fs-56 mb-4 mt-0 mt-lg-5 ls-xs pe-xl-5 pe-xxl-0 title.in\">{{title}}<span class=\"underline-3 style-3 yellow\">{{title_un}}</span></h2>\n          <p class=\"lead fs-23 lh-sm mb-7 pe-lg-5 pe-xl-5 pe-xxl-0\">{{subtitle}}</p>\n          <div><a href=\"{{href}}\" class=\"btn btn-lg btn-primary rounded\">{{btn}}</a></div>\n        </div>\n\n      </div>\n    </div>\n  </section>",
   "type": "Component"
  },
  {
@@ -767,11 +1077,11 @@
     "reqd": 0
    }
   ],
-  "modified": "2023-09-27 15:45:00.126546",
+  "modified": "2023-09-28 14:03:24.670016",
   "module": "Techmax Solucoes",
   "name": "About 8 Webinar",
   "standard": 0,
-  "template": "<section class=\"wrapper wrapper-about-webinar\">\n  <div class=\"container py-14 py-md-16\">\n    <div class=\"row gy-10 gy-sm-13 gx-md-8 gx-xl-12 align-items-center\">\n      <div class=\"col-lg-6\">\n          \n        <!--div class=\"row gx-md-5 gy-5\">\n          <div class=\"col-12\">\n            <figure class=\"rounded mx-5\"><img src=\"./assets/img/photos/g8.jpg\" srcset=\"./assets/img/photos/g8@2x.jpg 2x\" alt=\"\"></figure>\n          </div>\n          <div class=\"col-md-6\">\n            <figure class=\"rounded\"><img src=\"./assets/img/photos/g9.jpg\" srcset=\"./assets/img/photos/g9@2x.jpg 2x\" alt=\"\"></figure>\n          </div>\n          <div class=\"col-md-6\">\n            <figure class=\"rounded\"><img src=\"./assets/img/photos/g10.jpg\" srcset=\"./assets/img/photos/g10@2x.jpg 2x\" alt=\"\"></figure>\n          </div>\n        </div-->\n        \n        <!--Formulario Personalizado-->\n        <div class=\"box\" id=\"inscreva\">\n          <form class=\"lp-pom-form-126\">\n            <div class=\"lp-pom-header\">\n              <div class=\"heading-3\">\n                <div class=\"schedule-an\">{{title_form}}</div>\n              </div>\n              <div class=\"span\">\n                <div class=\"here-let-visitors-know-what-will-happen-when-they-complete-your-form\">\n                  {{subtitle_form}}\n                </div>\n              </div>\n            </div>\n            <div class=\"lp-pom-form\">\n              <input type=\"text\" id=\"first-name\" class=\"input\" placeholder=\"Nome*\" name=\"nome\" required>\n              <input type=\"text\" id=\"last-name\" class=\"input\" placeholder=\"Segundo Nome*\" name=\"sobrenome\" required>\n              <input type=\"email\" id=\"email\" class=\"input\" placeholder=\"Email*\" name=\"email\" required>\n              <input type=\"tel\" id=\"phone-number\" class=\"input\" placeholder=\"Telefone*\" name=\"telefone\" required>\n              <select class=\"options\" name=\"selecao\">\n    \n                <option>Segmentos</option>\n                <option>Tecnologia da Informação</option>\n                <option>Saúde</option>\n                <option>Educação</option>\n                <option>Indústria</option>\n                <option>Varejo</option>\n                <option>Financeiro</option>\n                <option>Agricultura</option>\n                <option>Outros</option>\n                </select>\n            </div>\n            <div class=\"lp-pom-button\">\n              <button type=\"submit\" class=\"schedule-now\">INSCREVER-SE</button>\n            </div>\n          </form>\n        </div>\n\n        <!--/Aqui acaba o formulario -->\n      </div>\n      <!--/column -->\n      <div class=\"col-lg-6\">\n        <h2 class=\"fs-16 text-uppercase mb-3\">{{title_header}}</h2>\n        <h3 class=\"display-3 mb-10\">{{text1}}</h3>\n        <div class=\"row gy-8 row-box\">\n          <div class=\"col-md-6\">\n            <div class=\"d-flex flex-row\">\n              <div>\n                <img src=\"{{image1}}\" class=\"svg-inject icon-svg icon-svg-xs solid-mono text-fuchsia me-4\" alt=\"\" />\n              </div>\n              <div>\n                <h4 class=\"mb-1\">{{title_box1}}</h4>\n                <p class=\"mb-0\">{{subtitle_box1}}</p>\n              </div>\n            </div>\n          </div>\n          <!--/column -->\n          <div class=\"col-md-6\">\n            <div class=\"d-flex flex-row\">\n              <div>\n                <img src=\"{{image2}}\" class=\"svg-inject icon-svg icon-svg-xs solid-mono text-violet me-4\" alt=\"\" />\n              </div>\n              <div>\n                <h4 class=\"mb-1\">{{title_box2}}</h4>\n                <p class=\"mb-0\">{{subtitle_box2}}</p>\n              </div>\n            </div>\n          </div>\n         \n          \n          \n          \n          \n          \n          \n          \n          \n        </div>\n      </div>\n      \n    </div>\n  </div>\n\n</section>\n",
+  "template": "<section class=\"wrapper wrapper-about-webinar parte-1\">\n  <div class=\"container py-14 py-md-16\">\n    <div class=\"row gy-10 gy-sm-13 gx-md-8 gx-xl-12 align-items-center\">\n      <div class=\"col-lg-6\">\n          \n        <!--div class=\"row gx-md-5 gy-5\">\n          <div class=\"col-12\">\n            <figure class=\"rounded mx-5\"><img src=\"./assets/img/photos/g8.jpg\" srcset=\"./assets/img/photos/g8@2x.jpg 2x\" alt=\"\"></figure>\n          </div>\n          <div class=\"col-md-6\">\n            <figure class=\"rounded\"><img src=\"./assets/img/photos/g9.jpg\" srcset=\"./assets/img/photos/g9@2x.jpg 2x\" alt=\"\"></figure>\n          </div>\n          <div class=\"col-md-6\">\n            <figure class=\"rounded\"><img src=\"./assets/img/photos/g10.jpg\" srcset=\"./assets/img/photos/g10@2x.jpg 2x\" alt=\"\"></figure>\n          </div>\n        </div-->\n        \n        <!--Formulario Personalizado-->\n        <div class=\"box\" id=\"inscreva\">\n          <form class=\"lp-pom-form-126\">\n            <div class=\"lp-pom-header\">\n              <div class=\"heading-3\">\n                <div class=\"schedule-an\">{{title_form}}</div>\n              </div>\n              <div class=\"span\">\n                <div class=\"here-let-visitors-know-what-will-happen-when-they-complete-your-form\">\n                  {{subtitle_form}}\n                </div>\n              </div>\n            </div>\n            <div class=\"lp-pom-form\">\n              <input type=\"text\" id=\"first-name\" class=\"input\" placeholder=\"Nome*\" name=\"nome\" required>\n              <input type=\"text\" id=\"last-name\" class=\"input\" placeholder=\"Segundo Nome*\" name=\"sobrenome\" required>\n              <input type=\"email\" id=\"email\" class=\"input\" placeholder=\"Email*\" name=\"email\" required>\n              <input type=\"tel\" id=\"phone-number\" class=\"input\" placeholder=\"Telefone*\" name=\"telefone\" required>\n              <select class=\"options\" name=\"selecao\">\n    \n                <option>Segmentos</option>\n                <option>Tecnologia da Informação</option>\n                <option>Saúde</option>\n                <option>Educação</option>\n                <option>Indústria</option>\n                <option>Varejo</option>\n                <option>Financeiro</option>\n                <option>Agricultura</option>\n                <option>Outros</option>\n                </select>\n            </div>\n            <div class=\"lp-pom-button\">\n              <button type=\"submit\" class=\"schedule-now\">INSCREVER-SE</button>\n            </div>\n          </form>\n        </div>\n\n        <!--/Aqui acaba o formulario -->\n      </div>\n      <!--/column -->\n      <div class=\"col-lg-6\">\n        <h2 class=\"fs-16 text-uppercase mb-3\">{{title_header}}</h2>\n        <h3 class=\"display-3 mb-10\">{{text1}}</h3>\n        <div class=\"row gy-8 row-box\">\n          <div class=\"col-md-6\">\n            <div class=\"d-flex flex-row\">\n              <div>\n                <img src=\"{{image1}}\" class=\"svg-inject icon-svg icon-svg-xs solid-mono text-fuchsia me-4\" alt=\"\" />\n              </div>\n              <div>\n                <h4 class=\"mb-1\">{{title_box1}}</h4>\n                <p class=\"mb-0\">{{subtitle_box1}}</p>\n              </div>\n            </div>\n          </div>\n          <!--/column -->\n          <div class=\"col-md-6\">\n            <div class=\"d-flex flex-row\">\n              <div>\n                <img src=\"{{image2}}\" class=\"svg-inject icon-svg icon-svg-xs solid-mono text-violet me-4\" alt=\"\" />\n              </div>\n              <div>\n                <h4 class=\"mb-1\">{{title_box2}}</h4>\n                <p class=\"mb-0\">{{subtitle_box2}}</p>\n              </div>\n            </div>\n          </div>\n         \n          \n          \n          \n          \n          \n          \n          \n          \n        </div>\n      </div>\n      \n    </div>\n  </div>\n\n</section>\n",
   "type": "Component"
  },
  {
@@ -1032,11 +1342,11 @@
     "reqd": 0
    }
   ],
-  "modified": "2023-09-27 15:45:14.066370",
+  "modified": "2023-09-28 14:03:50.796166",
   "module": "Techmax Solucoes",
   "name": "Features 2 Webinar",
   "standard": 0,
-  "template": "<section class=\"wrapper bg-light wrapper-features-2-webinar\">\n  <div class=\"container py-14 py-md-16\">\n    <div class=\"row\">\n      <div class=\"col-lg-8 col-xl-7 col-xxl-6\">\n        <h2 class=\"fs-15 text-muted \">{{ _(title) }}</h2>\n      </div>\n    </div>\n    <div class=\"gx-md-8 gy-8\">\n      <div class=\"col-md-6 col-lg-3\">\n        <div class=\"btn btn-block btn-lg btn-soft-yellow pe-none mb-5\"> <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"29\" height=\"29\" viewBox=\"0 0 29 29\" fill=\"none\">\n  <path d=\"M22.7387 15.7603C22.482 15.7603 22.2137 15.6787 21.957 15.6203C21.4377 15.5042 20.927 15.3522 20.4287 15.1653C19.8875 14.9684 19.2925 14.9787 18.7584 15.194C18.2243 15.4094 17.7886 15.8147 17.5354 16.332L17.2787 16.8687C16.1457 16.2261 15.0989 15.442 14.1637 14.5353C13.257 13.6001 12.473 12.5534 11.8304 11.4203L12.367 11.1753C12.8843 10.9221 13.2896 10.4865 13.505 9.95231C13.7204 9.41816 13.7306 8.82323 13.5337 8.282C13.3484 7.7792 13.1964 7.26476 13.0787 6.742C13.0204 6.48534 12.9737 6.217 12.9387 5.96034C12.797 5.13856 12.3666 4.39437 11.7249 3.86178C11.0833 3.32919 10.2725 3.04321 9.43871 3.05534H5.92704C5.43383 3.05469 4.94605 3.15829 4.49568 3.35935C4.04531 3.56041 3.64251 3.85438 3.31371 4.222C2.97808 4.5996 2.72817 5.04538 2.58116 5.52871C2.43415 6.01204 2.39351 6.52147 2.46204 7.022C3.09623 11.8778 5.31479 16.3888 8.77371 19.8553C12.2403 23.3143 16.7512 25.5328 21.607 26.167C21.7585 26.1786 21.9106 26.1786 22.062 26.167C22.9224 26.1683 23.753 25.8526 24.3954 25.2803C24.763 24.9515 25.057 24.5487 25.258 24.0984C25.4591 23.648 25.5627 23.1602 25.562 22.667V19.167C25.5557 18.3609 25.2714 17.5816 24.757 16.9609C24.2426 16.3403 23.5297 15.9162 22.7387 15.7603ZM23.3104 22.7603C23.31 22.9231 23.2755 23.0841 23.2092 23.2327C23.1429 23.3814 23.0462 23.5146 22.9254 23.6237C22.7975 23.7402 22.6453 23.8268 22.4799 23.8772C22.3144 23.9277 22.1398 23.9407 21.9687 23.9153C17.615 23.3467 13.569 21.3627 10.4537 18.2687C7.33576 15.1507 5.33441 11.0906 4.76037 6.71867C4.73503 6.54756 4.74805 6.37295 4.79849 6.2075C4.84894 6.04204 4.93554 5.88987 5.05204 5.762C5.16243 5.63968 5.29748 5.54213 5.4483 5.47577C5.59911 5.40941 5.76227 5.37575 5.92704 5.377H9.42704C9.69673 5.37041 9.96037 5.45748 10.1731 5.6234C10.3858 5.78932 10.5344 6.02382 10.5937 6.287C10.5937 6.602 10.6987 6.92867 10.7687 7.24367C10.9035 7.85484 11.0829 8.45533 11.3054 9.04033L9.67204 9.81034C9.3913 9.93921 9.17313 10.1742 9.06537 10.4637C8.94869 10.7477 8.94869 11.0663 9.06537 11.3503C10.7444 14.9469 13.6355 17.8379 17.232 19.517C17.5161 19.6337 17.8347 19.6337 18.1187 19.517C18.4082 19.4092 18.6432 19.1911 18.772 18.9103L19.507 17.277C20.1089 17.4965 20.7247 17.6758 21.3504 17.8137C21.6537 17.8837 21.9804 17.942 22.2954 17.9887C22.5586 18.0479 22.7931 18.1966 22.959 18.4093C23.1249 18.622 23.212 18.8856 23.2054 19.1553L23.3104 22.7603ZM16.427 2.927H15.6104C15.301 2.9533 15.0147 3.10144 14.8145 3.33883C14.6143 3.57622 14.5166 3.88342 14.5429 4.19284C14.5692 4.50225 14.7173 4.78855 14.9547 4.98875C15.1921 5.18894 15.4993 5.28664 15.8087 5.26034H16.427C18.2836 5.26034 20.064 5.99783 21.3768 7.31059C22.6895 8.62334 23.427 10.4038 23.427 12.2603V12.8787C23.4012 13.1864 23.4984 13.4919 23.6974 13.7281C23.8964 13.9643 24.181 14.112 24.4887 14.1387H24.582C24.8741 14.1399 25.156 14.0315 25.372 13.8349C25.588 13.6383 25.7224 13.3679 25.7487 13.077V12.2603C25.7487 9.787 24.767 7.4148 23.0192 5.66479C21.2713 3.91479 18.9004 2.93009 16.427 2.927ZM18.7604 12.2603C18.7604 12.5698 18.8833 12.8665 19.1021 13.0853C19.3209 13.3041 19.6176 13.427 19.927 13.427C20.2365 13.427 20.5332 13.3041 20.752 13.0853C20.9708 12.8665 21.0937 12.5698 21.0937 12.2603C21.0937 11.0227 20.602 9.83567 19.7269 8.9605C18.8517 8.08533 17.6647 7.59367 16.427 7.59367C16.1176 7.59367 15.8209 7.71659 15.6021 7.93538C15.3833 8.15417 15.2604 8.45092 15.2604 8.76033C15.2604 9.06975 15.3833 9.3665 15.6021 9.58529C15.8209 9.80409 16.1176 9.927 16.427 9.927C17.0459 9.927 17.6394 10.1728 18.077 10.6104C18.5145 11.048 18.7604 11.6415 18.7604 12.2603Z\" fill=\"#FAB758\"/>\n</svg> </div>\n        <p class=\"mb-3\">{{ _(textcard1) }}</p>\n      </div>\n      <div class=\"col-md-6 col-lg-3\">\n        <div class=\"btn btn-block btn-lg btn-soft-red pe-none mb-5\"> <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"29\" height=\"29\" viewBox=\"0 0 29 29\" fill=\"none\">\n  <path d=\"M15.167 18.0937C15.1438 18.022 15.1082 17.9549 15.062 17.8954L14.922 17.7204C14.8136 17.611 14.6846 17.5242 14.5424 17.465C14.4002 17.4058 14.2477 17.3753 14.0937 17.3753C13.9397 17.3753 13.7872 17.4058 13.645 17.465C13.5029 17.5242 13.3738 17.611 13.2654 17.7204C13.2098 17.7709 13.1625 17.83 13.1254 17.8954C13.0792 17.9549 13.0437 18.022 13.0204 18.0937C12.9866 18.1639 12.963 18.2385 12.9504 18.3154C12.9447 18.3891 12.9447 18.4633 12.9504 18.537C12.9463 18.6938 12.9783 18.8495 13.0437 18.992C13.1624 19.2758 13.3884 19.5011 13.6724 19.6191C13.9565 19.7371 14.2756 19.7381 14.5604 19.622C14.7022 19.5586 14.8323 19.4719 14.9454 19.3654C15.0503 19.2579 15.1335 19.1311 15.1904 18.992C15.2517 18.8482 15.2834 18.6934 15.2837 18.537C15.2894 18.4633 15.2894 18.3891 15.2837 18.3154C15.2565 18.2359 15.2171 18.1612 15.167 18.0937ZM14.0937 9.18037C13.7843 9.18037 13.4876 9.30329 13.2688 9.52208C13.05 9.74087 12.927 10.0376 12.927 10.347V13.847C12.927 14.1565 13.05 14.4532 13.2688 14.672C13.4876 14.8908 13.7843 15.0137 14.0937 15.0137C14.4031 15.0137 14.6999 14.8908 14.9187 14.672C15.1375 14.4532 15.2604 14.1565 15.2604 13.847V10.347C15.2604 10.0376 15.1375 9.74087 14.9187 9.52208C14.6999 9.30329 14.4031 9.18037 14.0937 9.18037ZM22.9954 4.85204C22.8598 4.74239 22.7015 4.66452 22.5319 4.62414C22.3623 4.58376 22.1858 4.58191 22.0154 4.6187C20.7687 4.87997 19.4818 4.8833 18.2338 4.62848C16.9858 4.37367 15.8032 3.8661 14.7587 3.13704C14.5634 3.00155 14.3314 2.92896 14.0937 2.92896C13.856 2.92896 13.624 3.00155 13.4287 3.13704C12.3843 3.8661 11.2016 4.37367 9.95364 4.62848C8.70565 4.8833 7.41871 4.87997 6.17205 4.6187C6.00164 4.58191 5.82516 4.58376 5.65557 4.62414C5.48597 4.66452 5.32759 4.74239 5.19205 4.85204C5.05669 4.96184 4.94766 5.10058 4.87296 5.25805C4.79826 5.41553 4.75979 5.58774 4.76038 5.76204V14.4537C4.75935 16.1264 5.15795 17.7752 5.92301 19.2627C6.68806 20.7502 7.79743 22.0333 9.15872 23.0054L13.417 26.0387C13.6146 26.1794 13.8512 26.255 14.0937 26.255C14.3363 26.255 14.5728 26.1794 14.7704 26.0387L19.0287 23.0054C20.39 22.0333 21.4994 20.7502 22.2644 19.2627C23.0295 17.7752 23.4281 16.1264 23.427 14.4537V5.76204C23.4276 5.58774 23.3892 5.41553 23.3145 5.25805C23.2398 5.10058 23.1307 4.96184 22.9954 4.85204ZM21.0937 14.4537C21.0946 15.7543 20.7849 17.0362 20.1903 18.1929C19.5957 19.3496 18.7335 20.3475 17.6754 21.1037L14.0937 23.6587L10.512 21.1037C9.45393 20.3475 8.5917 19.3496 7.99712 18.1929C7.40255 17.0362 7.09282 15.7543 7.09372 14.4537V7.1037C9.53955 7.31304 11.9891 6.74556 14.0937 5.48204C16.1983 6.74556 18.6479 7.31304 21.0937 7.1037V14.4537Z\" fill=\"#E2626B\"/>\n</svg> </div>\n        <p class=\"mb-3 mb-3-3\">{{ _(textcard2) }}</p>\n      </div>\n      <div class=\"col-md-6 col-lg-3\">\n        <div class=\"btn btn-block btn-lg btn-soft-leaf pe-none mb-5\">  <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"29\" height=\"29\" viewBox=\"0 0 29 29\" fill=\"none\">\n  <path d=\"M5.34379 12.2604H11.7605C12.5772 12.2585 13.3675 11.971 13.9946 11.4478C14.6217 10.9246 15.046 10.1985 15.1942 9.39539C15.3424 8.59224 15.205 7.76256 14.8059 7.05002C14.4068 6.33748 13.7711 5.78694 13.0088 5.49374C12.5701 4.63278 11.8751 3.92921 11.0195 3.48015C10.1639 3.03108 9.19005 2.85867 8.23231 2.98671C7.27457 3.11475 6.38019 3.53693 5.67262 4.19497C4.96506 4.85301 4.4792 5.71446 4.28212 6.66041C3.6694 6.92075 3.16418 7.38287 2.85038 7.97002C2.53657 8.55716 2.43308 9.23399 2.55709 9.88808C2.68109 10.5422 3.02513 11.1342 3.53206 11.5657C4.03899 11.9973 4.67829 12.2424 5.34379 12.2604ZM5.34379 8.76041C5.65321 8.76041 5.94996 8.63749 6.16875 8.4187C6.38754 8.1999 6.51046 7.90316 6.51046 7.59374C6.51431 7.04339 6.71258 6.51211 7.07022 6.09379C7.42787 5.67547 7.92187 5.39704 8.46494 5.30769C9.008 5.21834 9.56517 5.32383 10.038 5.60552C10.5108 5.88721 10.8688 6.32696 11.0488 6.84707C11.1172 7.04538 11.2379 7.22156 11.398 7.35707C11.5582 7.49258 11.7519 7.5824 11.9588 7.61707C12.2287 7.66364 12.4737 7.80371 12.6507 8.01275C12.8278 8.22179 12.9256 8.48647 12.9271 8.76041C12.9271 9.06983 12.8042 9.36657 12.5854 9.58536C12.3666 9.80416 12.0699 9.92707 11.7605 9.92707H5.34379C5.18908 9.92707 5.04071 9.86561 4.93131 9.75622C4.82192 9.64682 4.76046 9.49845 4.76046 9.34374C4.76046 9.18903 4.82192 9.04066 4.93131 8.93126C5.04071 8.82186 5.18908 8.76041 5.34379 8.76041ZM24.5938 19.2604H23.4271V11.0937C23.4271 10.1655 23.0584 9.27524 22.402 8.61887C21.7456 7.96249 20.8554 7.59374 19.9271 7.59374H18.7605C18.451 7.59374 18.1543 7.71666 17.9355 7.93545C17.7167 8.15424 17.5938 8.45099 17.5938 8.76041C17.5938 9.06983 17.7167 9.36657 17.9355 9.58536C18.1543 9.80416 18.451 9.92707 18.7605 9.92707H19.9271C20.2365 9.92707 20.5333 10.05 20.7521 10.2688C20.9709 10.4876 21.0938 10.7843 21.0938 11.0937V19.2604H7.09379V15.7604C7.09379 15.451 6.97087 15.1542 6.75208 14.9354C6.53329 14.7167 6.23654 14.5937 5.92712 14.5937C5.61771 14.5937 5.32096 14.7167 5.10217 14.9354C4.88337 15.1542 4.76046 15.451 4.76046 15.7604V19.2604H3.59379C3.28437 19.2604 2.98763 19.3833 2.76883 19.6021C2.55004 19.8209 2.42712 20.1177 2.42712 20.4271V22.7604C2.42712 23.6887 2.79587 24.5789 3.45225 25.2353C4.10863 25.8917 4.99887 26.2604 5.92712 26.2604H22.2605C23.1887 26.2604 24.079 25.8917 24.7353 25.2353C25.3917 24.5789 25.7605 23.6887 25.7605 22.7604V20.4271C25.7605 20.1177 25.6375 19.8209 25.4188 19.6021C25.2 19.3833 24.9032 19.2604 24.5938 19.2604ZM23.4271 22.7604C23.4271 23.0698 23.3042 23.3666 23.0854 23.5854C22.8666 23.8042 22.5699 23.9271 22.2605 23.9271H5.92712C5.61771 23.9271 5.32096 23.8042 5.10217 23.5854C4.88337 23.3666 4.76046 23.0698 4.76046 22.7604V21.5937H23.4271V22.7604Z\" fill=\"#7CB798\"/>\n</svg>  </div>\n        <p class=\"mb-3\">{{ _(textcard3) }}</p>\n      </div>\n      <div class=\"col-md-6 col-lg-3\">\n        <div class=\"btn btn-block btn-lg btn-soft-blue pe-none mb-5\"> <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"29\" height=\"29\" viewBox=\"0 0 29 29\" fill=\"none\">\n  <path d=\"M8.26042 19.2603C8.72455 19.2603 9.16967 19.076 9.49785 18.7478C9.82604 18.4196 10.0104 17.9745 10.0104 17.5103C10.0161 17.4521 10.0161 17.3935 10.0104 17.3353L13.2654 14.0803H13.8021L15.6804 15.9587V16.052C15.6804 16.5161 15.8648 16.9613 16.193 17.2894C16.5212 17.6176 16.9663 17.802 17.4304 17.802C17.8945 17.802 18.3397 17.6176 18.6679 17.2894C18.996 16.9613 19.1804 16.5161 19.1804 16.052V15.9587L23.4271 11.677C23.7732 11.677 24.1115 11.5744 24.3993 11.3821C24.6871 11.1898 24.9114 10.9165 25.0439 10.5967C25.1763 10.2769 25.211 9.92506 25.1435 9.58559C25.0759 9.24613 24.9093 8.93431 24.6645 8.68957C24.4198 8.44482 24.108 8.27815 23.7685 8.21063C23.429 8.1431 23.0772 8.17776 22.7574 8.31021C22.4376 8.44267 22.1643 8.66697 21.972 8.95475C21.7797 9.24254 21.6771 9.58088 21.6771 9.927C21.6714 9.9852 21.6714 10.0438 21.6771 10.102L17.4654 14.3137H17.2788L15.2604 12.2603C15.2604 11.7962 15.076 11.3511 14.7479 11.0229C14.4197 10.6947 13.9745 10.5103 13.5104 10.5103C13.0463 10.5103 12.6012 10.6947 12.273 11.0229C11.9448 11.3511 11.7604 11.7962 11.7604 12.2603L8.26042 15.7603C7.79629 15.7603 7.35117 15.9447 7.02298 16.2729C6.69479 16.6011 6.51042 17.0462 6.51042 17.5103C6.51042 17.9745 6.69479 18.4196 7.02298 18.7478C7.35117 19.076 7.79629 19.2603 8.26042 19.2603ZM24.0104 23.927H4.17708V4.09367C4.17708 3.78425 4.05417 3.4875 3.83537 3.26871C3.61658 3.04992 3.31984 2.927 3.01042 2.927C2.701 2.927 2.40425 3.04992 2.18546 3.26871C1.96667 3.4875 1.84375 3.78425 1.84375 4.09367V25.0937C1.84375 25.4031 1.96667 25.6998 2.18546 25.9186C2.40425 26.1374 2.701 26.2603 3.01042 26.2603H24.0104C24.3198 26.2603 24.6166 26.1374 24.8354 25.9186C25.0542 25.6998 25.1771 25.4031 25.1771 25.0937C25.1771 24.7843 25.0542 24.4875 24.8354 24.2687C24.6166 24.0499 24.3198 23.927 24.0104 23.927Z\" fill=\"#3F78E0\"/>\n</svg>  </div>\n        <p class=\"mb-3\">{{ _(textcard4) }}</p>\n      </div>\n      <div class=\"col-md-6 col-lg-3\">\n        <div class=\"btn btn-block btn-lg btn-soft-green pe-none mb-5\"> <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"29\" height=\"29\" viewBox=\"0 0 29 29\" fill=\"none\">\n  <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M13.9918 5.85112C14.1266 5.98592 14.3094 6.06164 14.5 6.06164C14.6906 6.06164 14.8734 5.98592 15.0082 5.85112C15.143 5.71633 15.2188 5.53352 15.2188 5.34289V3.46875C15.2188 3.27813 15.143 3.09531 15.0082 2.96052C14.8734 2.82573 14.6906 2.75 14.5 2.75C14.3094 2.75 14.1266 2.82573 13.9918 2.96052C13.857 3.09531 13.7812 3.27813 13.7812 3.46875V5.34289C13.7812 5.53352 13.857 5.71633 13.9918 5.85112ZM20.3993 8.54973C20.5174 8.62855 20.6561 8.67064 20.798 8.6707C20.988 8.67062 21.1702 8.59536 21.3048 8.46137L22.6318 7.13438C22.7013 7.0683 22.7569 6.98896 22.7953 6.90105C22.8337 6.81314 22.8542 6.71843 22.8554 6.6225C22.8566 6.52657 22.8386 6.43137 22.8025 6.3425C22.7663 6.25363 22.7128 6.1729 22.6449 6.10506C22.5771 6.03723 22.4964 5.98366 22.4075 5.94751C22.3186 5.91137 22.2234 5.89338 22.1275 5.89461C22.0316 5.89583 21.9369 5.91625 21.8489 5.95466C21.761 5.99307 21.6817 6.04869 21.6156 6.11824L20.2886 7.44523C20.1886 7.5459 20.1205 7.67395 20.0931 7.81323C20.0657 7.9525 20.0802 8.09677 20.1347 8.22784C20.1892 8.35891 20.2812 8.47092 20.3993 8.54973ZM23.4071 14.9688H25.2812C25.4719 14.9688 25.6547 14.893 25.7895 14.7582C25.9243 14.6234 26 14.4406 26 14.25C26 14.0594 25.9243 13.8766 25.7895 13.7418C25.6547 13.607 25.4719 13.5313 25.2812 13.5313H23.4071C23.2165 13.5313 23.0337 13.607 22.8989 13.7418C22.7641 13.8766 22.6884 14.0594 22.6884 14.25C22.6884 14.4406 22.7641 14.6234 22.8989 14.7582C23.0337 14.893 23.2165 14.9688 23.4071 14.9688ZM21.6138 22.3818C21.7493 22.5162 21.9324 22.5918 22.1232 22.592C22.2176 22.5923 22.311 22.5739 22.3982 22.5378C22.4853 22.5018 22.5644 22.4487 22.6309 22.3818C22.7655 22.247 22.8412 22.0642 22.8412 21.8737C22.8412 21.6831 22.7655 21.5004 22.6309 21.3656L21.3039 20.0386C21.168 19.9095 20.987 19.8386 20.7996 19.841C20.6122 19.8434 20.4331 19.9189 20.3006 20.0515C20.168 20.184 20.0925 20.3631 20.0901 20.5505C20.0877 20.7379 20.1586 20.9189 20.2877 21.0548L21.6138 22.3818ZM6.47775 22.4708C6.59586 22.5498 6.7347 22.5919 6.87676 22.592C6.97107 22.5923 7.06451 22.5739 7.15165 22.5378C7.23879 22.5017 7.31789 22.4487 7.38438 22.3818L8.71137 21.0548C8.84047 20.9189 8.91138 20.7379 8.90898 20.5505C8.90658 20.3631 8.83106 20.184 8.69852 20.0515C8.56598 19.9189 8.38691 19.8434 8.19949 19.841C8.01207 19.8386 7.83112 19.9095 7.69523 20.0386L6.36824 21.3656C6.26792 21.4662 6.19964 21.5942 6.17204 21.7336C6.14444 21.8729 6.15874 22.0173 6.21315 22.1485C6.26757 22.2798 6.35964 22.3919 6.47775 22.4708ZM3.71875 14.9688H5.59289C5.78351 14.9688 5.96633 14.893 6.10112 14.7582C6.23592 14.6234 6.31164 14.4406 6.31164 14.25C6.31164 14.0594 6.23592 13.8766 6.10112 13.7418C5.96633 13.607 5.78351 13.5313 5.59289 13.5313H3.71875C3.52813 13.5313 3.34531 13.607 3.21052 13.7418C3.07573 13.8766 3 14.0594 3 14.25C3 14.4406 3.07573 14.6234 3.21052 14.7582C3.34531 14.893 3.52813 14.9688 3.71875 14.9688ZM7.69344 8.46137C7.82849 8.5958 8.0114 8.67109 8.20195 8.6707C8.34375 8.67029 8.48225 8.62794 8.60003 8.54899C8.71781 8.47004 8.8096 8.35801 8.86387 8.22702C8.91813 8.09602 8.93243 7.95189 8.90498 7.81279C8.87752 7.67368 8.80954 7.54579 8.70957 7.44523L7.38258 6.11824C7.3165 6.04869 7.23717 5.99307 7.14925 5.95466C7.06134 5.91625 6.96663 5.89583 6.8707 5.89461C6.77477 5.89338 6.67957 5.91137 6.5907 5.94751C6.50184 5.98366 6.4211 6.03723 6.35327 6.10506C6.28543 6.1729 6.23186 6.25363 6.19571 6.3425C6.15957 6.43137 6.14158 6.52657 6.14281 6.6225C6.14404 6.71843 6.16446 6.81314 6.20287 6.90105C6.24127 6.98896 6.29689 7.0683 6.36645 7.13438L7.69344 8.46137ZM17.375 24.0726V22.875H11.625V23.795C11.625 25.1363 12.4929 25.75 13.3014 25.75H15.6976C16.1418 25.7478 16.5672 25.5704 16.8813 25.2563C17.1954 24.9422 17.3728 24.5168 17.375 24.0726ZM16.0457 7.72213C17.0252 7.95536 17.94 8.40538 18.7226 9.03903C19.504 9.67348 20.1327 10.4755 20.5623 11.3858C20.9918 12.2961 21.2111 13.2913 21.2041 14.2978C21.197 15.3043 20.9637 16.2963 20.5214 17.2004C20.0791 18.1046 19.4392 18.8977 18.6489 19.5211C17.9877 20.0386 17.5564 20.7088 17.4226 21.4375V21.4474C17.408 21.4394 17.3915 21.436 17.375 21.4375H11.625C11.602 21.4367 11.5791 21.4404 11.5576 21.4483V21.4375C11.4399 20.7103 11.0492 20.0554 10.4651 19.6065C9.44084 18.8363 8.65837 17.7891 8.21006 16.5886C7.76176 15.3881 7.66634 14.0843 7.93508 12.8313C8.46246 10.2968 10.5226 8.22235 13.0625 7.69138C14.0466 7.47839 15.0661 7.4889 16.0457 7.72213ZM17.587 14.5195C17.7215 14.6539 17.9035 14.7301 18.0937 14.7315V14.7288C18.2839 14.7274 18.4659 14.6512 18.6004 14.5168C18.7349 14.3823 18.8111 14.2003 18.8125 14.0101C18.8101 12.9307 18.3803 11.8962 17.617 11.1329C16.8538 10.3697 15.8192 9.93984 14.7398 9.93747C14.5492 9.93747 14.3664 10.0132 14.2316 10.148C14.0968 10.2828 14.0211 10.4656 14.0211 10.6562C14.0211 10.8468 14.0968 11.0297 14.2316 11.1645C14.3664 11.2992 14.5492 11.375 14.7398 11.375C15.0862 11.3749 15.4291 11.443 15.749 11.5756C16.069 11.7081 16.3596 11.9025 16.6044 12.1475C16.8491 12.3925 17.0432 12.6833 17.1754 13.0034C17.3076 13.3235 17.3754 13.6665 17.375 14.0128C17.3764 14.203 17.4526 14.385 17.587 14.5195Z\" fill=\"#216333\"/>\n</svg>  </div>\n        <p class=\"mb-3\">{{ _(textcard5) }}</p>\n      </div>\n    </div>\n  </div>\n</section>",
+  "template": "<section class=\"wrapper bg-light wrapper-features-2-webinar parte-1\">\n  <div class=\"container py-14 py-md-16\">\n    <div class=\"row\">\n      <div class=\"col-lg-8 col-xl-7 col-xxl-6\">\n        <h2 class=\"fs-15 text-muted \">{{ _(title) }}</h2>\n      </div>\n    </div>\n    <div class=\"gx-md-8 gy-8\">\n      <div class=\"col-md-6 col-lg-3\">\n        <div class=\"btn btn-block btn-lg btn-soft-yellow pe-none mb-5\"> <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"29\" height=\"29\" viewBox=\"0 0 29 29\" fill=\"none\">\n  <path d=\"M22.7387 15.7603C22.482 15.7603 22.2137 15.6787 21.957 15.6203C21.4377 15.5042 20.927 15.3522 20.4287 15.1653C19.8875 14.9684 19.2925 14.9787 18.7584 15.194C18.2243 15.4094 17.7886 15.8147 17.5354 16.332L17.2787 16.8687C16.1457 16.2261 15.0989 15.442 14.1637 14.5353C13.257 13.6001 12.473 12.5534 11.8304 11.4203L12.367 11.1753C12.8843 10.9221 13.2896 10.4865 13.505 9.95231C13.7204 9.41816 13.7306 8.82323 13.5337 8.282C13.3484 7.7792 13.1964 7.26476 13.0787 6.742C13.0204 6.48534 12.9737 6.217 12.9387 5.96034C12.797 5.13856 12.3666 4.39437 11.7249 3.86178C11.0833 3.32919 10.2725 3.04321 9.43871 3.05534H5.92704C5.43383 3.05469 4.94605 3.15829 4.49568 3.35935C4.04531 3.56041 3.64251 3.85438 3.31371 4.222C2.97808 4.5996 2.72817 5.04538 2.58116 5.52871C2.43415 6.01204 2.39351 6.52147 2.46204 7.022C3.09623 11.8778 5.31479 16.3888 8.77371 19.8553C12.2403 23.3143 16.7512 25.5328 21.607 26.167C21.7585 26.1786 21.9106 26.1786 22.062 26.167C22.9224 26.1683 23.753 25.8526 24.3954 25.2803C24.763 24.9515 25.057 24.5487 25.258 24.0984C25.4591 23.648 25.5627 23.1602 25.562 22.667V19.167C25.5557 18.3609 25.2714 17.5816 24.757 16.9609C24.2426 16.3403 23.5297 15.9162 22.7387 15.7603ZM23.3104 22.7603C23.31 22.9231 23.2755 23.0841 23.2092 23.2327C23.1429 23.3814 23.0462 23.5146 22.9254 23.6237C22.7975 23.7402 22.6453 23.8268 22.4799 23.8772C22.3144 23.9277 22.1398 23.9407 21.9687 23.9153C17.615 23.3467 13.569 21.3627 10.4537 18.2687C7.33576 15.1507 5.33441 11.0906 4.76037 6.71867C4.73503 6.54756 4.74805 6.37295 4.79849 6.2075C4.84894 6.04204 4.93554 5.88987 5.05204 5.762C5.16243 5.63968 5.29748 5.54213 5.4483 5.47577C5.59911 5.40941 5.76227 5.37575 5.92704 5.377H9.42704C9.69673 5.37041 9.96037 5.45748 10.1731 5.6234C10.3858 5.78932 10.5344 6.02382 10.5937 6.287C10.5937 6.602 10.6987 6.92867 10.7687 7.24367C10.9035 7.85484 11.0829 8.45533 11.3054 9.04033L9.67204 9.81034C9.3913 9.93921 9.17313 10.1742 9.06537 10.4637C8.94869 10.7477 8.94869 11.0663 9.06537 11.3503C10.7444 14.9469 13.6355 17.8379 17.232 19.517C17.5161 19.6337 17.8347 19.6337 18.1187 19.517C18.4082 19.4092 18.6432 19.1911 18.772 18.9103L19.507 17.277C20.1089 17.4965 20.7247 17.6758 21.3504 17.8137C21.6537 17.8837 21.9804 17.942 22.2954 17.9887C22.5586 18.0479 22.7931 18.1966 22.959 18.4093C23.1249 18.622 23.212 18.8856 23.2054 19.1553L23.3104 22.7603ZM16.427 2.927H15.6104C15.301 2.9533 15.0147 3.10144 14.8145 3.33883C14.6143 3.57622 14.5166 3.88342 14.5429 4.19284C14.5692 4.50225 14.7173 4.78855 14.9547 4.98875C15.1921 5.18894 15.4993 5.28664 15.8087 5.26034H16.427C18.2836 5.26034 20.064 5.99783 21.3768 7.31059C22.6895 8.62334 23.427 10.4038 23.427 12.2603V12.8787C23.4012 13.1864 23.4984 13.4919 23.6974 13.7281C23.8964 13.9643 24.181 14.112 24.4887 14.1387H24.582C24.8741 14.1399 25.156 14.0315 25.372 13.8349C25.588 13.6383 25.7224 13.3679 25.7487 13.077V12.2603C25.7487 9.787 24.767 7.4148 23.0192 5.66479C21.2713 3.91479 18.9004 2.93009 16.427 2.927ZM18.7604 12.2603C18.7604 12.5698 18.8833 12.8665 19.1021 13.0853C19.3209 13.3041 19.6176 13.427 19.927 13.427C20.2365 13.427 20.5332 13.3041 20.752 13.0853C20.9708 12.8665 21.0937 12.5698 21.0937 12.2603C21.0937 11.0227 20.602 9.83567 19.7269 8.9605C18.8517 8.08533 17.6647 7.59367 16.427 7.59367C16.1176 7.59367 15.8209 7.71659 15.6021 7.93538C15.3833 8.15417 15.2604 8.45092 15.2604 8.76033C15.2604 9.06975 15.3833 9.3665 15.6021 9.58529C15.8209 9.80409 16.1176 9.927 16.427 9.927C17.0459 9.927 17.6394 10.1728 18.077 10.6104C18.5145 11.048 18.7604 11.6415 18.7604 12.2603Z\" fill=\"#FAB758\"/>\n</svg> </div>\n        <p class=\"mb-3\">{{ _(textcard1) }}</p>\n      </div>\n      <div class=\"col-md-6 col-lg-3\">\n        <div class=\"btn btn-block btn-lg btn-soft-red pe-none mb-5\"> <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"29\" height=\"29\" viewBox=\"0 0 29 29\" fill=\"none\">\n  <path d=\"M15.167 18.0937C15.1438 18.022 15.1082 17.9549 15.062 17.8954L14.922 17.7204C14.8136 17.611 14.6846 17.5242 14.5424 17.465C14.4002 17.4058 14.2477 17.3753 14.0937 17.3753C13.9397 17.3753 13.7872 17.4058 13.645 17.465C13.5029 17.5242 13.3738 17.611 13.2654 17.7204C13.2098 17.7709 13.1625 17.83 13.1254 17.8954C13.0792 17.9549 13.0437 18.022 13.0204 18.0937C12.9866 18.1639 12.963 18.2385 12.9504 18.3154C12.9447 18.3891 12.9447 18.4633 12.9504 18.537C12.9463 18.6938 12.9783 18.8495 13.0437 18.992C13.1624 19.2758 13.3884 19.5011 13.6724 19.6191C13.9565 19.7371 14.2756 19.7381 14.5604 19.622C14.7022 19.5586 14.8323 19.4719 14.9454 19.3654C15.0503 19.2579 15.1335 19.1311 15.1904 18.992C15.2517 18.8482 15.2834 18.6934 15.2837 18.537C15.2894 18.4633 15.2894 18.3891 15.2837 18.3154C15.2565 18.2359 15.2171 18.1612 15.167 18.0937ZM14.0937 9.18037C13.7843 9.18037 13.4876 9.30329 13.2688 9.52208C13.05 9.74087 12.927 10.0376 12.927 10.347V13.847C12.927 14.1565 13.05 14.4532 13.2688 14.672C13.4876 14.8908 13.7843 15.0137 14.0937 15.0137C14.4031 15.0137 14.6999 14.8908 14.9187 14.672C15.1375 14.4532 15.2604 14.1565 15.2604 13.847V10.347C15.2604 10.0376 15.1375 9.74087 14.9187 9.52208C14.6999 9.30329 14.4031 9.18037 14.0937 9.18037ZM22.9954 4.85204C22.8598 4.74239 22.7015 4.66452 22.5319 4.62414C22.3623 4.58376 22.1858 4.58191 22.0154 4.6187C20.7687 4.87997 19.4818 4.8833 18.2338 4.62848C16.9858 4.37367 15.8032 3.8661 14.7587 3.13704C14.5634 3.00155 14.3314 2.92896 14.0937 2.92896C13.856 2.92896 13.624 3.00155 13.4287 3.13704C12.3843 3.8661 11.2016 4.37367 9.95364 4.62848C8.70565 4.8833 7.41871 4.87997 6.17205 4.6187C6.00164 4.58191 5.82516 4.58376 5.65557 4.62414C5.48597 4.66452 5.32759 4.74239 5.19205 4.85204C5.05669 4.96184 4.94766 5.10058 4.87296 5.25805C4.79826 5.41553 4.75979 5.58774 4.76038 5.76204V14.4537C4.75935 16.1264 5.15795 17.7752 5.92301 19.2627C6.68806 20.7502 7.79743 22.0333 9.15872 23.0054L13.417 26.0387C13.6146 26.1794 13.8512 26.255 14.0937 26.255C14.3363 26.255 14.5728 26.1794 14.7704 26.0387L19.0287 23.0054C20.39 22.0333 21.4994 20.7502 22.2644 19.2627C23.0295 17.7752 23.4281 16.1264 23.427 14.4537V5.76204C23.4276 5.58774 23.3892 5.41553 23.3145 5.25805C23.2398 5.10058 23.1307 4.96184 22.9954 4.85204ZM21.0937 14.4537C21.0946 15.7543 20.7849 17.0362 20.1903 18.1929C19.5957 19.3496 18.7335 20.3475 17.6754 21.1037L14.0937 23.6587L10.512 21.1037C9.45393 20.3475 8.5917 19.3496 7.99712 18.1929C7.40255 17.0362 7.09282 15.7543 7.09372 14.4537V7.1037C9.53955 7.31304 11.9891 6.74556 14.0937 5.48204C16.1983 6.74556 18.6479 7.31304 21.0937 7.1037V14.4537Z\" fill=\"#E2626B\"/>\n</svg> </div>\n        <p class=\"mb-3 mb-3-3\">{{ _(textcard2) }}</p>\n      </div>\n      <div class=\"col-md-6 col-lg-3\">\n        <div class=\"btn btn-block btn-lg btn-soft-leaf pe-none mb-5\">  <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"29\" height=\"29\" viewBox=\"0 0 29 29\" fill=\"none\">\n  <path d=\"M5.34379 12.2604H11.7605C12.5772 12.2585 13.3675 11.971 13.9946 11.4478C14.6217 10.9246 15.046 10.1985 15.1942 9.39539C15.3424 8.59224 15.205 7.76256 14.8059 7.05002C14.4068 6.33748 13.7711 5.78694 13.0088 5.49374C12.5701 4.63278 11.8751 3.92921 11.0195 3.48015C10.1639 3.03108 9.19005 2.85867 8.23231 2.98671C7.27457 3.11475 6.38019 3.53693 5.67262 4.19497C4.96506 4.85301 4.4792 5.71446 4.28212 6.66041C3.6694 6.92075 3.16418 7.38287 2.85038 7.97002C2.53657 8.55716 2.43308 9.23399 2.55709 9.88808C2.68109 10.5422 3.02513 11.1342 3.53206 11.5657C4.03899 11.9973 4.67829 12.2424 5.34379 12.2604ZM5.34379 8.76041C5.65321 8.76041 5.94996 8.63749 6.16875 8.4187C6.38754 8.1999 6.51046 7.90316 6.51046 7.59374C6.51431 7.04339 6.71258 6.51211 7.07022 6.09379C7.42787 5.67547 7.92187 5.39704 8.46494 5.30769C9.008 5.21834 9.56517 5.32383 10.038 5.60552C10.5108 5.88721 10.8688 6.32696 11.0488 6.84707C11.1172 7.04538 11.2379 7.22156 11.398 7.35707C11.5582 7.49258 11.7519 7.5824 11.9588 7.61707C12.2287 7.66364 12.4737 7.80371 12.6507 8.01275C12.8278 8.22179 12.9256 8.48647 12.9271 8.76041C12.9271 9.06983 12.8042 9.36657 12.5854 9.58536C12.3666 9.80416 12.0699 9.92707 11.7605 9.92707H5.34379C5.18908 9.92707 5.04071 9.86561 4.93131 9.75622C4.82192 9.64682 4.76046 9.49845 4.76046 9.34374C4.76046 9.18903 4.82192 9.04066 4.93131 8.93126C5.04071 8.82186 5.18908 8.76041 5.34379 8.76041ZM24.5938 19.2604H23.4271V11.0937C23.4271 10.1655 23.0584 9.27524 22.402 8.61887C21.7456 7.96249 20.8554 7.59374 19.9271 7.59374H18.7605C18.451 7.59374 18.1543 7.71666 17.9355 7.93545C17.7167 8.15424 17.5938 8.45099 17.5938 8.76041C17.5938 9.06983 17.7167 9.36657 17.9355 9.58536C18.1543 9.80416 18.451 9.92707 18.7605 9.92707H19.9271C20.2365 9.92707 20.5333 10.05 20.7521 10.2688C20.9709 10.4876 21.0938 10.7843 21.0938 11.0937V19.2604H7.09379V15.7604C7.09379 15.451 6.97087 15.1542 6.75208 14.9354C6.53329 14.7167 6.23654 14.5937 5.92712 14.5937C5.61771 14.5937 5.32096 14.7167 5.10217 14.9354C4.88337 15.1542 4.76046 15.451 4.76046 15.7604V19.2604H3.59379C3.28437 19.2604 2.98763 19.3833 2.76883 19.6021C2.55004 19.8209 2.42712 20.1177 2.42712 20.4271V22.7604C2.42712 23.6887 2.79587 24.5789 3.45225 25.2353C4.10863 25.8917 4.99887 26.2604 5.92712 26.2604H22.2605C23.1887 26.2604 24.079 25.8917 24.7353 25.2353C25.3917 24.5789 25.7605 23.6887 25.7605 22.7604V20.4271C25.7605 20.1177 25.6375 19.8209 25.4188 19.6021C25.2 19.3833 24.9032 19.2604 24.5938 19.2604ZM23.4271 22.7604C23.4271 23.0698 23.3042 23.3666 23.0854 23.5854C22.8666 23.8042 22.5699 23.9271 22.2605 23.9271H5.92712C5.61771 23.9271 5.32096 23.8042 5.10217 23.5854C4.88337 23.3666 4.76046 23.0698 4.76046 22.7604V21.5937H23.4271V22.7604Z\" fill=\"#7CB798\"/>\n</svg>  </div>\n        <p class=\"mb-3\">{{ _(textcard3) }}</p>\n      </div>\n      <div class=\"col-md-6 col-lg-3\">\n        <div class=\"btn btn-block btn-lg btn-soft-blue pe-none mb-5\"> <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"29\" height=\"29\" viewBox=\"0 0 29 29\" fill=\"none\">\n  <path d=\"M8.26042 19.2603C8.72455 19.2603 9.16967 19.076 9.49785 18.7478C9.82604 18.4196 10.0104 17.9745 10.0104 17.5103C10.0161 17.4521 10.0161 17.3935 10.0104 17.3353L13.2654 14.0803H13.8021L15.6804 15.9587V16.052C15.6804 16.5161 15.8648 16.9613 16.193 17.2894C16.5212 17.6176 16.9663 17.802 17.4304 17.802C17.8945 17.802 18.3397 17.6176 18.6679 17.2894C18.996 16.9613 19.1804 16.5161 19.1804 16.052V15.9587L23.4271 11.677C23.7732 11.677 24.1115 11.5744 24.3993 11.3821C24.6871 11.1898 24.9114 10.9165 25.0439 10.5967C25.1763 10.2769 25.211 9.92506 25.1435 9.58559C25.0759 9.24613 24.9093 8.93431 24.6645 8.68957C24.4198 8.44482 24.108 8.27815 23.7685 8.21063C23.429 8.1431 23.0772 8.17776 22.7574 8.31021C22.4376 8.44267 22.1643 8.66697 21.972 8.95475C21.7797 9.24254 21.6771 9.58088 21.6771 9.927C21.6714 9.9852 21.6714 10.0438 21.6771 10.102L17.4654 14.3137H17.2788L15.2604 12.2603C15.2604 11.7962 15.076 11.3511 14.7479 11.0229C14.4197 10.6947 13.9745 10.5103 13.5104 10.5103C13.0463 10.5103 12.6012 10.6947 12.273 11.0229C11.9448 11.3511 11.7604 11.7962 11.7604 12.2603L8.26042 15.7603C7.79629 15.7603 7.35117 15.9447 7.02298 16.2729C6.69479 16.6011 6.51042 17.0462 6.51042 17.5103C6.51042 17.9745 6.69479 18.4196 7.02298 18.7478C7.35117 19.076 7.79629 19.2603 8.26042 19.2603ZM24.0104 23.927H4.17708V4.09367C4.17708 3.78425 4.05417 3.4875 3.83537 3.26871C3.61658 3.04992 3.31984 2.927 3.01042 2.927C2.701 2.927 2.40425 3.04992 2.18546 3.26871C1.96667 3.4875 1.84375 3.78425 1.84375 4.09367V25.0937C1.84375 25.4031 1.96667 25.6998 2.18546 25.9186C2.40425 26.1374 2.701 26.2603 3.01042 26.2603H24.0104C24.3198 26.2603 24.6166 26.1374 24.8354 25.9186C25.0542 25.6998 25.1771 25.4031 25.1771 25.0937C25.1771 24.7843 25.0542 24.4875 24.8354 24.2687C24.6166 24.0499 24.3198 23.927 24.0104 23.927Z\" fill=\"#3F78E0\"/>\n</svg>  </div>\n        <p class=\"mb-3\">{{ _(textcard4) }}</p>\n      </div>\n      <div class=\"col-md-6 col-lg-3\">\n        <div class=\"btn btn-block btn-lg btn-soft-green pe-none mb-5\"> <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"29\" height=\"29\" viewBox=\"0 0 29 29\" fill=\"none\">\n  <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M13.9918 5.85112C14.1266 5.98592 14.3094 6.06164 14.5 6.06164C14.6906 6.06164 14.8734 5.98592 15.0082 5.85112C15.143 5.71633 15.2188 5.53352 15.2188 5.34289V3.46875C15.2188 3.27813 15.143 3.09531 15.0082 2.96052C14.8734 2.82573 14.6906 2.75 14.5 2.75C14.3094 2.75 14.1266 2.82573 13.9918 2.96052C13.857 3.09531 13.7812 3.27813 13.7812 3.46875V5.34289C13.7812 5.53352 13.857 5.71633 13.9918 5.85112ZM20.3993 8.54973C20.5174 8.62855 20.6561 8.67064 20.798 8.6707C20.988 8.67062 21.1702 8.59536 21.3048 8.46137L22.6318 7.13438C22.7013 7.0683 22.7569 6.98896 22.7953 6.90105C22.8337 6.81314 22.8542 6.71843 22.8554 6.6225C22.8566 6.52657 22.8386 6.43137 22.8025 6.3425C22.7663 6.25363 22.7128 6.1729 22.6449 6.10506C22.5771 6.03723 22.4964 5.98366 22.4075 5.94751C22.3186 5.91137 22.2234 5.89338 22.1275 5.89461C22.0316 5.89583 21.9369 5.91625 21.8489 5.95466C21.761 5.99307 21.6817 6.04869 21.6156 6.11824L20.2886 7.44523C20.1886 7.5459 20.1205 7.67395 20.0931 7.81323C20.0657 7.9525 20.0802 8.09677 20.1347 8.22784C20.1892 8.35891 20.2812 8.47092 20.3993 8.54973ZM23.4071 14.9688H25.2812C25.4719 14.9688 25.6547 14.893 25.7895 14.7582C25.9243 14.6234 26 14.4406 26 14.25C26 14.0594 25.9243 13.8766 25.7895 13.7418C25.6547 13.607 25.4719 13.5313 25.2812 13.5313H23.4071C23.2165 13.5313 23.0337 13.607 22.8989 13.7418C22.7641 13.8766 22.6884 14.0594 22.6884 14.25C22.6884 14.4406 22.7641 14.6234 22.8989 14.7582C23.0337 14.893 23.2165 14.9688 23.4071 14.9688ZM21.6138 22.3818C21.7493 22.5162 21.9324 22.5918 22.1232 22.592C22.2176 22.5923 22.311 22.5739 22.3982 22.5378C22.4853 22.5018 22.5644 22.4487 22.6309 22.3818C22.7655 22.247 22.8412 22.0642 22.8412 21.8737C22.8412 21.6831 22.7655 21.5004 22.6309 21.3656L21.3039 20.0386C21.168 19.9095 20.987 19.8386 20.7996 19.841C20.6122 19.8434 20.4331 19.9189 20.3006 20.0515C20.168 20.184 20.0925 20.3631 20.0901 20.5505C20.0877 20.7379 20.1586 20.9189 20.2877 21.0548L21.6138 22.3818ZM6.47775 22.4708C6.59586 22.5498 6.7347 22.5919 6.87676 22.592C6.97107 22.5923 7.06451 22.5739 7.15165 22.5378C7.23879 22.5017 7.31789 22.4487 7.38438 22.3818L8.71137 21.0548C8.84047 20.9189 8.91138 20.7379 8.90898 20.5505C8.90658 20.3631 8.83106 20.184 8.69852 20.0515C8.56598 19.9189 8.38691 19.8434 8.19949 19.841C8.01207 19.8386 7.83112 19.9095 7.69523 20.0386L6.36824 21.3656C6.26792 21.4662 6.19964 21.5942 6.17204 21.7336C6.14444 21.8729 6.15874 22.0173 6.21315 22.1485C6.26757 22.2798 6.35964 22.3919 6.47775 22.4708ZM3.71875 14.9688H5.59289C5.78351 14.9688 5.96633 14.893 6.10112 14.7582C6.23592 14.6234 6.31164 14.4406 6.31164 14.25C6.31164 14.0594 6.23592 13.8766 6.10112 13.7418C5.96633 13.607 5.78351 13.5313 5.59289 13.5313H3.71875C3.52813 13.5313 3.34531 13.607 3.21052 13.7418C3.07573 13.8766 3 14.0594 3 14.25C3 14.4406 3.07573 14.6234 3.21052 14.7582C3.34531 14.893 3.52813 14.9688 3.71875 14.9688ZM7.69344 8.46137C7.82849 8.5958 8.0114 8.67109 8.20195 8.6707C8.34375 8.67029 8.48225 8.62794 8.60003 8.54899C8.71781 8.47004 8.8096 8.35801 8.86387 8.22702C8.91813 8.09602 8.93243 7.95189 8.90498 7.81279C8.87752 7.67368 8.80954 7.54579 8.70957 7.44523L7.38258 6.11824C7.3165 6.04869 7.23717 5.99307 7.14925 5.95466C7.06134 5.91625 6.96663 5.89583 6.8707 5.89461C6.77477 5.89338 6.67957 5.91137 6.5907 5.94751C6.50184 5.98366 6.4211 6.03723 6.35327 6.10506C6.28543 6.1729 6.23186 6.25363 6.19571 6.3425C6.15957 6.43137 6.14158 6.52657 6.14281 6.6225C6.14404 6.71843 6.16446 6.81314 6.20287 6.90105C6.24127 6.98896 6.29689 7.0683 6.36645 7.13438L7.69344 8.46137ZM17.375 24.0726V22.875H11.625V23.795C11.625 25.1363 12.4929 25.75 13.3014 25.75H15.6976C16.1418 25.7478 16.5672 25.5704 16.8813 25.2563C17.1954 24.9422 17.3728 24.5168 17.375 24.0726ZM16.0457 7.72213C17.0252 7.95536 17.94 8.40538 18.7226 9.03903C19.504 9.67348 20.1327 10.4755 20.5623 11.3858C20.9918 12.2961 21.2111 13.2913 21.2041 14.2978C21.197 15.3043 20.9637 16.2963 20.5214 17.2004C20.0791 18.1046 19.4392 18.8977 18.6489 19.5211C17.9877 20.0386 17.5564 20.7088 17.4226 21.4375V21.4474C17.408 21.4394 17.3915 21.436 17.375 21.4375H11.625C11.602 21.4367 11.5791 21.4404 11.5576 21.4483V21.4375C11.4399 20.7103 11.0492 20.0554 10.4651 19.6065C9.44084 18.8363 8.65837 17.7891 8.21006 16.5886C7.76176 15.3881 7.66634 14.0843 7.93508 12.8313C8.46246 10.2968 10.5226 8.22235 13.0625 7.69138C14.0466 7.47839 15.0661 7.4889 16.0457 7.72213ZM17.587 14.5195C17.7215 14.6539 17.9035 14.7301 18.0937 14.7315V14.7288C18.2839 14.7274 18.4659 14.6512 18.6004 14.5168C18.7349 14.3823 18.8111 14.2003 18.8125 14.0101C18.8101 12.9307 18.3803 11.8962 17.617 11.1329C16.8538 10.3697 15.8192 9.93984 14.7398 9.93747C14.5492 9.93747 14.3664 10.0132 14.2316 10.148C14.0968 10.2828 14.0211 10.4656 14.0211 10.6562C14.0211 10.8468 14.0968 11.0297 14.2316 11.1645C14.3664 11.2992 14.5492 11.375 14.7398 11.375C15.0862 11.3749 15.4291 11.443 15.749 11.5756C16.069 11.7081 16.3596 11.9025 16.6044 12.1475C16.8491 12.3925 17.0432 12.6833 17.1754 13.0034C17.3076 13.3235 17.3754 13.6665 17.375 14.0128C17.3764 14.203 17.4526 14.385 17.587 14.5195Z\" fill=\"#216333\"/>\n</svg>  </div>\n        <p class=\"mb-3\">{{ _(textcard5) }}</p>\n      </div>\n    </div>\n  </div>\n</section>",
   "type": "Component"
  },
  {
@@ -1176,11 +1486,11 @@
     "reqd": 0
    }
   ],
-  "modified": "2023-09-26 16:10:47.690439",
+  "modified": "2023-09-28 14:04:12.282567",
   "module": "Techmax Solucoes",
   "name": "About 1 Webinar",
   "standard": 0,
-  "template": "<section class=\"wrapper bg-light wrapper-about-webinar\">\n  <div class=\"container py-14 py-md-16\">\n    <div class=\"row gx-lg-8 gx-xl-12 gy-10 align-items-center\">\n      <div class=\"col-md-8 col-lg-6 col-xl-5 order-lg-2 position-relative\">\n        <div class=\"shape bg-soft-primary rounded-circle rellax w-20 h-20\" data-rellax-speed=\"1\" style=\"top: -2rem; right: -1.9rem;\"></div>\n        <figure class=\"rounded\"><img src=\"{{ image }}\" alt=\"\"></figure>\n      </div>\n      <!--/column -->\n      <div class=\"col-lg-6\">\n        <h2 class=\"display-4 mb-3\">{{ _(title) }}</h2>\n        <p class=\"lead fs-lg\">{{ _(subtitle) }}</p>\n        <p class=\"mb-6\">{{ _(boxtext) }}</p>\n\n      </div>\n    </div>\n    <!--/.row -->\n  </div>\n  <!-- /.container -->\n</section>\n<!-- /section -->",
+  "template": "<section class=\"wrapper bg-light wrapper-about-webinar parte-1\">\n  <div class=\"container py-14 py-md-16\">\n    <div class=\"row gx-lg-8 gx-xl-12 gy-10 align-items-center\">\n      <div class=\"col-md-8 col-lg-6 col-xl-5 order-lg-2 position-relative\">\n        <div class=\"shape bg-soft-primary rounded-circle rellax w-20 h-20\" data-rellax-speed=\"1\" style=\"top: -2rem; right: -1.9rem;\"></div>\n        <figure class=\"rounded\"><img src=\"{{ image }}\" alt=\"\"></figure>\n      </div>\n      <!--/column -->\n      <div class=\"col-lg-6\">\n        <h2 class=\"display-4 mb-3\">{{ _(title) }}</h2>\n        <p class=\"lead fs-lg\">{{ _(subtitle) }}</p>\n        <p class=\"mb-6\">{{ _(boxtext) }}</p>\n\n      </div>\n    </div>\n    <!--/.row -->\n  </div>\n  <!-- /.container -->\n</section>\n<!-- /section -->",
   "type": "Component"
  },
  {
@@ -1287,11 +1597,11 @@
     "reqd": 0
    }
   ],
-  "modified": "2023-09-27 08:40:30.473138",
+  "modified": "2023-09-28 14:04:05.206328",
   "module": "Techmax Solucoes",
   "name": "Testimonials 12 Techmax",
   "standard": 0,
-  "template": "\n{% set testimonials = [testimonial_1, testimonial_2, testimonial_3, testimonial_4] %}\n\n<section class=\"wrapper wrapper-testimonial\">\n  <div class=\"container py-14 py-md-16\">\n    <div class=\"row\">\n      <div class=\"col-md-10 col-lg-12\">\n          <span class=\"desktop-body mb-2\">{{subtitle}}</span>\n          <h1 class=\"desktop-h2 text-center\">{{title}}</h1>\n        <div class=\"swiper-container dots-closer text-center mb-6\" data-loop=\"true\" data-autoplay=\"true\" data-autoplaytime=\"10000\" data-margin=\"30\" data-dots=\"true\">\n          <div class=\"swiper\">\n            <div class=\"swiper-wrapper\">\n            {% for testimonial in testimonials %}\n                {% if testimonial %}\n                {% set doc = frappe.get_doc(\"Testimonials\", testimonial) %}\n              <div class=\"swiper-slide\">\n                <blockquote class=\"border-0 fs-lg\">\n                  <p>{{doc.text_editor_yqgn}}</p>\n                  <div class=\"blockquote-details justify-content-center\">\n                    <img class=\"rounded-circle w-12\" src=\"{{ doc.image or '/assets/techmax_solucoes/images/Select=default.png'}}\" srcset=\"\" alt=\"\" />\n                    <div class=\"info\">\n                      <h5 class=\"mb-1\">{{ doc.nome }}</h5>\n                      <p class=\"mb-0\">{{ doc.role or 'Cliente' }}</p>\n                    </div>\n                  </div>\n                </blockquote>\n              </div>\n                {% endif %}\n            {% endfor %}\n            </div>\n          </div>\n        </div>\n      </div>\n    </div>\n    <a class=\"btn-top\" href=\"#\"></a>\n  </div>\n</section>\n\n\n<style>\n\n</style>",
+  "template": "\n{% set testimonials = [testimonial_1, testimonial_2, testimonial_3, testimonial_4] %}\n\n<section class=\"wrapper wrapper-testimonial parte-1\">\n  <div class=\"container py-14 py-md-16\">\n    <div class=\"row\">\n      <div class=\"col-md-10 col-lg-12\">\n          <span class=\"desktop-body mb-2\">{{subtitle}}</span>\n          <h1 class=\"desktop-h2 text-center\">{{title}}</h1>\n        <div class=\"swiper-container dots-closer text-center mb-6\" data-loop=\"true\" data-autoplay=\"true\" data-autoplaytime=\"10000\" data-margin=\"30\" data-dots=\"true\">\n          <div class=\"swiper\">\n            <div class=\"swiper-wrapper\">\n            {% for testimonial in testimonials %}\n                {% if testimonial %}\n                {% set doc = frappe.get_doc(\"Testimonials\", testimonial) %}\n              <div class=\"swiper-slide\">\n                <blockquote class=\"border-0 fs-lg\">\n                  <p>{{doc.text_editor_yqgn}}</p>\n                  <div class=\"blockquote-details justify-content-center\">\n                    <img class=\"rounded-circle w-12\" src=\"{{ doc.image or '/assets/techmax_solucoes/images/Select=default.png'}}\" srcset=\"\" alt=\"\" />\n                    <div class=\"info\">\n                      <h5 class=\"mb-1\">{{ doc.nome }}</h5>\n                      <p class=\"mb-0\">{{ doc.role or 'Cliente' }}</p>\n                    </div>\n                  </div>\n                </blockquote>\n              </div>\n                {% endif %}\n            {% endfor %}\n            </div>\n          </div>\n        </div>\n      </div>\n    </div>\n    <a class=\"btn-top\" href=\"#\"></a>\n  </div>\n</section>\n\n\n<style>\n\n</style>",
   "type": "Component"
  },
  {
@@ -1354,11 +1664,11 @@
     "reqd": 0
    }
   ],
-  "modified": "2023-09-26 14:35:54.080543",
+  "modified": "2023-09-28 14:04:21.347498",
   "module": "Techmax Solucoes",
   "name": "Call to action 4 techmax",
   "standard": 0,
-  "template": "<section class=\"wrapper wrapper-call-4\">\n  <div class=\"container-fluid pb-13 pb-md-15\">\n    <div class=\"card image-wrapper bg-full  bg-overlay bg-overlay-300 mb-14\" data-image-src=\"\" style=\"background-image:url({{imagebck}})\">\n      <div class=\"card-body p-10 p-xl-12\">\n        <div class=\"row text-center\">\n          <div class=\"col-xl-11 col-xxl-9 mx-auto\">\n            <h2 class=\"fs-16 text-uppercase mb-3 text-white\">{{title}}</h2>\n            <h3 class=\"display-3 mb-8 px-lg-8 text-white\">{{subtitle}}</h3>\n          </div>\n        </div>\n        <div class=\"d-flex justify-content-center\">\n          <span><a href=\"{{href}}\" class=\"btn btn-white rounded\">{{button}}</a></span>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>",
+  "template": "<section class=\"wrapper wrapper-call-4 parte-1\">\n  <div class=\"container-fluid pb-13 pb-md-15\">\n    <div class=\"card image-wrapper bg-full  bg-overlay bg-overlay-300 mb-14\" data-image-src=\"\" style=\"background-image:url({{imagebck}})\">\n      <div class=\"card-body p-10 p-xl-12\">\n        <div class=\"row text-center\">\n          <div class=\"col-xl-11 col-xxl-9 mx-auto\">\n            <h2 class=\"fs-16 text-uppercase mb-3 text-white\">{{title}}</h2>\n            <h3 class=\"display-3 mb-8 px-lg-8 text-white\">{{subtitle}}</h3>\n          </div>\n        </div>\n        <div class=\"d-flex justify-content-center\">\n          <span><a href=\"{{href}}\" class=\"btn btn-white rounded\">{{button}}</a></span>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>",
   "type": "Component"
  },
  {
@@ -1697,11 +2007,11 @@
     "reqd": 0
    }
   ],
-  "modified": "2023-09-27 09:42:24.832926",
+  "modified": "2023-09-28 14:03:40.859337",
   "module": "Techmax Solucoes",
   "name": "Video and features 3",
   "standard": 0,
-  "template": "<section class=\"wrapper bg-light wrapper-features-webinar\">\n    <div class=\"d-flex flex-column align-items-center py-md-14\">\n        <h1 class=\"fs-16 text-uppercas mb-3\">{{title_video}}</h1>\n        <p class=\"card-text\">{{sub_video}}</p>\n    </div>\n\n  <div class=\"container py-14 py-md-16\">\n      \n    <div class=\"row text-center\">\n      <div class=\"col-md-10 offset-md-1 col-lg-8 offset-lg-2\">\n        <h2 class=\"fs-16 text-uppercase text-primary mb-3\">{{ _(title) }}</h2>\n        <h3 class=\"display-3 mb-10 px-xxl-10\">{{ _(subtitle) }}</h3>\n      </div>\n    </div>\n    \n      <div class=\" py-md-\">\n\n\n        <div class=\"embed-responsive-21by9\">\n        {{video}}\n    </div>\n    \n  </div>\n  \n    <div class=\"row gx-lg-8 gx-xl-12 gy-11 px-xxl-5 text-center d-flex align-items-end ms-2\">\n      <div class=\"col-lg-4\">\n        <div class=\"px-md-15 px-lg-3\">\n          <figure class=\"mb-6\"><img class=\"img-fluid\" src=\"{{img1}}\"  alt=\"\" /></figure>\n          <div class=\"ms-5\">\n              <h3>{{ _(title1) }}</h3>\n              <p class=\"mb-2\">{{ _(subtitle1) }}</p>\n              <a href=\"{{href1}}\" class=\"more hover\">{{ _(btn1) }}</a>\n          </div>\n\n        </div>\n      </div>\n      <div class=\"col-lg-4\">\n        <div class=\"px-md-15 px-lg-3\">\n          <figure class=\"mb-6\"><img class=\"img-fluid img-2\" src=\"{{img2}}\"  alt=\"\" /></figure>\n          <div class=\"ms-5\">\n              <h3>{{ _(title2) }}</h3>\n              <p class=\"mb-2\">{{ _(subtitle2) }}</p>\n              <a href=\"{{href2}}\" class=\"more btn-2\">{{ _(btn2) }}</a>\n          </div>\n          \n        </div>\n      </div>\n      <div class=\"col-lg-4 col-4\">\n        <div class=\"px-md-15 px-lg-3\">\n          <figure class=\"mb-6\"><img class=\"img-fluid\" src=\"{{img3}}\" srcset=\"./assets/img/illustrations/i18@2x.png 2x\" alt=\"\" /></figure>\n          <h3>{{ _(title3) }}</h3>\n          <p class=\"mb-2\">{{ _(subtitle3) }}</p>\n          <a href=\"{{href3}}\" class=\"more hover\">{{ _(btn3) }}</a>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>",
+  "template": "<section class=\"wrapper bg-light wrapper-features-webinar parte-1\">\n    <div class=\"d-flex flex-column align-items-center py-md-14\">\n        <h1 class=\"fs-16 text-uppercas mb-3\">{{title_video}}</h1>\n        <p class=\"card-text\">{{sub_video}}</p>\n    </div>\n\n  <div class=\"container py-14 py-md-16\">\n      \n    <div class=\"row text-center\">\n      <div class=\"col-md-10 offset-md-1 col-lg-8 offset-lg-2\">\n        <h2 class=\"fs-16 text-uppercase text-primary mb-3\">{{ _(title) }}</h2>\n        <h3 class=\"display-3 mb-10 px-xxl-10\">{{ _(subtitle) }}</h3>\n      </div>\n    </div>\n    \n      <div class=\" py-md-\">\n\n\n        <div class=\"embed-responsive-21by9\">\n        {{video}}\n    </div>\n    \n  </div>\n  \n    <div class=\"row gx-lg-8 gx-xl-12 gy-11 px-xxl-5 text-center d-flex align-items-end ms-2\">\n      <div class=\"col-lg-4\">\n        <div class=\"px-md-15 px-lg-3\">\n          <figure class=\"mb-6\"><img class=\"img-fluid\" src=\"{{img1}}\"  alt=\"\" /></figure>\n          <div class=\"ms-5\">\n              <h3>{{ _(title1) }}</h3>\n              <p class=\"mb-2\">{{ _(subtitle1) }}</p>\n              <a href=\"{{href1}}\" class=\"more hover\">{{ _(btn1) }}</a>\n          </div>\n\n        </div>\n      </div>\n      <div class=\"col-lg-4\">\n        <div class=\"px-md-15 px-lg-3\">\n          <figure class=\"mb-6\"><img class=\"img-fluid img-2\" src=\"{{img2}}\"  alt=\"\" /></figure>\n          <div class=\"ms-5\">\n              <h3>{{ _(title2) }}</h3>\n              <p class=\"mb-2\">{{ _(subtitle2) }}</p>\n              <a href=\"{{href2}}\" class=\"more btn-2\">{{ _(btn2) }}</a>\n          </div>\n          \n        </div>\n      </div>\n      <div class=\"col-lg-4 col-4\">\n        <div class=\"px-md-15 px-lg-3\">\n          <figure class=\"mb-6\"><img class=\"img-fluid\" src=\"{{img3}}\" srcset=\"./assets/img/illustrations/i18@2x.png 2x\" alt=\"\" /></figure>\n          <h3>{{ _(title3) }}</h3>\n          <p class=\"mb-2\">{{ _(subtitle3) }}</p>\n          <a href=\"{{href3}}\" class=\"more hover\">{{ _(btn3) }}</a>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>",
   "type": "Component"
  },
  {
@@ -1869,6 +2179,1136 @@
   "name": "Testimonials Home TechMax",
   "standard": 0,
   "template": "{% set testimonials = [testimonial_1, testimonial_2, testimonial_3] %}\n\n<section class=\"testimonials-tmx\">\n    <div class=\"container py-14 py-md-16 position-relative\">\n        <div class=\"row position-relative\">\n            <div class=\"col-8 left-section\">\n                <div class=\"swiper-container\" data-loop=\"true\" data-drag=\"true\" data-margin=\"30\" data-dots=\"true\">\n                    <div class=\"swiper left-content\">\n                        <div class=\"swiper-wrapper\">\n                            {% for testimonial in testimonials %}\n                                {% if testimonial %}\n                                    {% set doc = frappe.get_doc(\"Testimonials\", testimonial) %}\n                                    <div class=\"swiper-slide\" >\n                                        “{{doc.testimonial}}”\n                                    </div>\n                                {% endif %}\n                            {% endfor %}\n                        </div>\n                    </div>\n                </div>\n\n            </div>\n            <div class=\"right-img position-absolute\">\n                <img src=\"{{img}}\">\n            </div>\n        </div>\n        \n    </div>\n</section>\n\n<style>\n    .testimonials-tmx .left-section {\n        padding: 120px 50px;\n        background-color: rgba(33, 103, 120, 0.08);\n    }\n    .testimonials-tmx .right-img {\n        max-width: 564px;\n        right: 0;\n    }\n</style>",
+  "type": "Component"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Web Template",
+  "fields": [
+   {
+    "default": null,
+    "fieldname": "text",
+    "fieldtype": "Small Text",
+    "label": "Texto",
+    "options": null,
+    "parent": "Agradecimento",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "informações",
+    "fieldtype": "Section Break",
+    "label": "Informações",
+    "options": null,
+    "parent": "Agradecimento",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "data",
+    "fieldtype": "Data",
+    "label": "Date",
+    "options": null,
+    "parent": "Agradecimento",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "horario",
+    "fieldtype": "Data",
+    "label": "Horario",
+    "options": null,
+    "parent": "Agradecimento",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "local",
+    "fieldtype": "Data",
+    "label": "Local",
+    "options": null,
+    "parent": "Agradecimento",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "link",
+    "fieldtype": "Data",
+    "label": "Link",
+    "options": null,
+    "parent": "Agradecimento",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "href1",
+    "fieldtype": "Data",
+    "label": "href",
+    "options": null,
+    "parent": "Agradecimento",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "text_data",
+    "fieldtype": "Small Text",
+    "label": "Paragrafo",
+    "options": null,
+    "parent": "Agradecimento",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   }
+  ],
+  "modified": "2023-09-28 16:39:28.940991",
+  "module": "Techmax Solucoes",
+  "name": "Agradecimento",
+  "standard": 0,
+  "template": "<div class=\"landing-page parte-2 container pb-15 py-xxl-20\">\n  <div class=\"section2\">\n    <div class=\"div5\">\n      <div class=\"text\">Prezado(a),</div>\n    </div>\n    <div class=\"div6\"></div>\n    <div class=\"div7\">\n      <div class=\"text2\">\n            {{text}}\n      </div>\n    </div>\n    \n    <!--<a class=\"button hover\">\n      <div class=\"indicar-amigos\">Indicar amigos</div>\n    </a>-->\n    \n    <div class=\"\">\n    <a href=\"javascript:void(0)\" onclick=\"share()\"><button class=\"btn-compartilhar  desktop-body-1 indicar-amigos button hover\" type=\"button\">Indicar amigos</button></a>\n    </div>\n    \n  </div>\n  <div class=\"section3\">\n    <div class=\"div8\">\n      <div class=\"text3\">A data marcada para este evento imperdível é:</div>\n      <div class=\"frame-4561\">\n        <div class=\"div9\">\n            <div>\n                <p>📅 <b>Data:</b> {{data}}</p>\n                <p><b>⏰ Horário:  </b>{{horario}}</p>\n                <p>📍 <b>Local:</b> {{local}}</p>\n                <p>🔗 <b>Link de Acesso: </b> <a href=\"https://meet.google.com/dzg-jfrd-mrd\">Clique Aqui</a></p>\n            </div>\n        </div>\n      </div>\n    </div>\n    <div class=\"div6\">{{text_data}}</div>\n  </div>\n</div>\n",
+  "type": "Section"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Web Template",
+  "fields": [
+   {
+    "default": null,
+    "fieldname": "data1",
+    "fieldtype": "Data",
+    "label": "Date",
+    "options": null,
+    "parent": "Date Section",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   }
+  ],
+  "modified": "2023-09-28 15:06:52.716763",
+  "module": "Techmax Solucoes",
+  "name": "Date Section",
+  "standard": 0,
+  "template": "  <div class=\"wrapper parte2\">\n    <div class=\"container \">\n      <div class=\"_06-10-2023\">{{data1}}</div>\n      <div class=\"online-e-gratuito\">ONLINE E GRATUITO</div>\n    </div>\n  </div>",
+  "type": "Section"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Web Template",
+  "fields": [],
+  "modified": "2023-09-28 18:59:46.435601",
+  "module": "Techmax Solucoes",
+  "name": "Contato Forms",
+  "standard": 0,
+  "template": "{% set contact_us = frappe.get_doc('Contact Us Settings', 'Contact Us Settings') %}\n\n<section class=\"wrapper bg-light wrapper-contatc-1\">\n  <div class=\"container py-14 py-md-16\">\n      <div class=\"titles\">\n      <h5 class=\"text-center desktop-body title\">Entre em contato com a TechMax.</h5>\n      <h2 class=\"text-center desktop-h2 text-second\">Temos o compromisso de oferecer um serviço de qualidade e todo o suporte que você precisa. Não hesite em nos informar sobre seus projetos, comentários ou dúvidas. Teremos o maior prazer em respondê-lo o mais breve possível.</h2>\n      </div>\n    <div class=\"row\">\n      <div class=\"col-xl-10 mx-auto\">\n        <div class=\"row gy-10 gx-lg-8 gx-xl-12\">\n          <div class=\"col-lg-8\">\n            <form class=\"contact-form needs-validation\" method=\"post\" action=\"\" novalidate>\n              <div class=\"messages\"></div>\n              <div class=\"row gx-4\">\n                <div class=\"row-2\">\n                <div class=\"col-md-6\">\n                  <div class=\"form-floating mb-4\">\n                    <input id=\"form_name\" type=\"text\" name=\"nome\" class=\"form-control\" placeholder=\"Primeiro nome\" required>\n                    <label class=\"form_name text-second\" for=\"form_name\">{{ _(\"Primeiro nome\")}}*</label>\n                    <div class=\"valid-feedback\">\n                      {{ _(\"Looks good\") }} !\n                    </div>\n                    <div class=\"invalid-feedback\">\n                      Please enter your first name.\n                    </div>\n                  </div>\n                </div>\n                <div class=\"col-md-6\">\n                  <div class=\"form-floating mb-4 tel\">\n                    <input id=\"form_tel\" type=\"text\" name=\"tel\" class=\"form-control\" placeholder=\"Sobrenome\" required>\n                    <label class=\"form_tel text-second\" for=\"form_tel\">{{ _(\"Sobrenome\")}}*</label>\n                    <div class=\"valid-feedback\">\n                     {{ _(\"Looks good\") }} !\n                    </div>\n                    <div class=\"invalid-feedback\">\n                      Please provide a valid email address.\n                    </div>\n                  </div>\n                </div>\n                </div>\n                <div class=\"row-3\">\n                <div class=\"col-md-6 email-f\">\n                  <div class=\"form-floating mb-4 email\">\n                    <input id=\"form_email\" type=\"text\" name=\"email\" class=\"form-control\" placeholder=\"E-mail\" required>\n                    <label class=\"form_email text-second\" for=\"form_email\">{{ _(\"E-mail\")}}*</label>\n                    <div class=\"valid-feedback\">\n                     {{ _(\"Looks good\") }} !\n                    </div>\n                    <div class=\"invalid-feedback\">\n                      Please provide a valid email address.\n                    </div>\n                  </div>\n                </div>\n                <div>\n                  <div class=\"form-select-wrapper mb-4\">\n                    <select class=\"form-select\" id=\"form-select\" name=\"contato\" required>\n                      <option selected disabled value=\"\">{{ _(option) }}*</option>\n                      <option value=\"1\">{{ _(option2) }}</option>\n                      <option value=\"2\">{{ _(option3) }}</option>\n                      <option value=\"3\">{{ _(option4) }}</option>\n                      <option value=\"4\">{{ _(option5) }}</option>\n                      <option value=\"5\">{{ _(option6) }}</option>\n                      <option value=\"6\">{{ _(option7) }}</option>\n                      <option value=\"7\">{{ _(option8) }}</option>\n                    </select>\n                    <div class=\"valid-feedback\">\n                    {{ _(\"Looks good\") }} !\n                    </div>\n                    <div class=\"invalid-feedback\">\n                      {{ _(\"Please select a department\") }}.\n                    </div>\n                  </div>\n                </div>\n                </div>\n                <div class=\"col-12\">\n                  <div class=\"form-floating mb-4 form-message\">\n                    <textarea id=\"form_message\" name=\"msg\" class=\"form-control\" placeholder=\"Comentário na mensagem\" style=\"height: 150px\" required></textarea>\n                    <label class=\"form_message text-second\" for=\"form_message\"> {{ _(\"Comentário na mensagem\") }}*</label>\n                    <div class=\"valid-feedback\">\n                     {{ _(\"Looks good\") }} !\n                    </div>\n                    <div class=\"invalid-feedback\">\n                       {{ _(\"Please enter your messsage\") }}.\n                    </div>\n                  </div>\n                </div>\n                <!--<div class=\"col-12\">\n                  <div class=\"form-check mb-4\">\n                    <input class=\"form-check-input\" type=\"checkbox\" value=\"\" id=\"invalidCheck\" img src=\"{{img}}\" required>\n                    <label class=\"form-check-label\" for=\"invalidCheck\">\n                       {{ _(\"Ao clicar você concorda com os nossos &nbsp; <b>Termos</b>\")}}.\n                    </label>\n                    <div class=\"invalid-feedback\">\n                      {{ _(\"You must agree before submitting\") }}.\n                    </div>\n                  </div>\n                </div>-->\n                <div class=\"col-12\">\n                  <input type=\"submit\" class=\"btn btn-primary rounded-pill btn-send mb-3 text-center\" value=\"Enviar Mensagem ➜\">\n                  <p class=\"text-muted\"><strong>*</strong> {{ _(\"Esses campos são obrigatórios\") }}.</p>\n                </div>\n              </div>\n            </form>\n          </div>\n        </div>\n        <a onclick=\"goTop()\" class=\"btn-top\" href=\"#\"></a>\n      </div>\n    </div>\n  </div>\n</section>",
+  "type": "Section"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Web Template",
+  "fields": [
+   {
+    "default": null,
+    "fieldname": "img1",
+    "fieldtype": "Attach Image",
+    "label": "Imagem",
+    "options": null,
+    "parent": "Contato 3 TechMax",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "img2",
+    "fieldtype": "Attach Image",
+    "label": "Imagem",
+    "options": null,
+    "parent": "Contato 3 TechMax",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "title",
+    "fieldtype": "Data",
+    "label": "Title",
+    "options": null,
+    "parent": "Contato 3 TechMax",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 1
+   },
+   {
+    "default": null,
+    "fieldname": "subtitle",
+    "fieldtype": "Small Text",
+    "label": "Subtitle",
+    "options": null,
+    "parent": "Contato 3 TechMax",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "text",
+    "fieldtype": "Small Text",
+    "label": "Text",
+    "options": null,
+    "parent": "Contato 3 TechMax",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "text1",
+    "fieldtype": "Data",
+    "label": "Text",
+    "options": null,
+    "parent": "Contato 3 TechMax",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "btn",
+    "fieldtype": "Data",
+    "label": "Button",
+    "options": null,
+    "parent": "Contato 3 TechMax",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "small_card",
+    "fieldtype": "Section Break",
+    "label": "Small Card",
+    "options": null,
+    "parent": "Contato 3 TechMax",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "number",
+    "fieldtype": "Data",
+    "label": "Number",
+    "options": null,
+    "parent": "Contato 3 TechMax",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "title_number",
+    "fieldtype": "Data",
+    "label": "Title Number",
+    "options": null,
+    "parent": "Contato 3 TechMax",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "img3",
+    "fieldtype": "Attach Image",
+    "label": "Image",
+    "options": null,
+    "parent": "Contato 3 TechMax",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "img4",
+    "fieldtype": "Attach Image",
+    "label": "Image",
+    "options": null,
+    "parent": "Contato 3 TechMax",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "img5",
+    "fieldtype": "Attach Image",
+    "label": "Image",
+    "options": null,
+    "parent": "Contato 3 TechMax",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   }
+  ],
+  "modified": "2023-09-28 18:08:08.270288",
+  "module": "Techmax Solucoes",
+  "name": "Contato 3 TechMax",
+  "standard": 0,
+  "template": "\n<section class=\"wrapper bg-light\">\n  <div class=\"container py-14 py-md-16\">\n    <div class=\"row gy-10 gx-lg-8 gx-xl-12 align-items-center\">\n      <div class=\"col-lg-7 position-relative\">\n        <div class=\"shape bg-dot primary rellax w-18 h-18\" data-rellax-speed=\"1\" style=\"top: 0; left: -1.4rem; z-index: 0;\"></div>\n        <div class=\"row gx-md-5 gy-5\">\n          <div class=\"col-md-6\">\n            <figure class=\"rounded mt-md-10 position-relative\"><img src=\"{{img1}}\" srcset=\"{{img1}}\" alt=\"\"></figure>\n          </div>\n          <!--/column -->\n          <div class=\"col-md-6\">\n            <div class=\"row gx-md-5 gy-5\">\n              <div class=\"col-md-12 order-md-2\">\n                <figure class=\"rounded\"><img src=\"{{img2}}\" srcset=\"{{img2}}\" alt=\"\"></figure>\n              </div>\n              <!--/column -->\n              <div class=\"col-md-10\">\n                <div class=\"card bg-pale-primary text-center counter-wrapper\">\n                  <div class=\"card-body py-11\">\n                    <h3 class=\"counter text-nowrap title\">{{number}}</h3>\n                    <p class=\"mb-0 text-second\">{{ _(title_number) }}</p>\n                  </div>\n                </div>\n              </div>\n               <div class=\"retangle\"></div>\n            </div>\n          </div>\n        </div>\n      </div>\n      <div class=\"col-lg-5\">\n        <h2 class=\"display-4 title\">{{ _(title) }}</h2><br>\n        <div class=\"end\"><img src=\"{{img3}}\"><h4 class=\"title-card\">Endereço</h4></div>\n        <p class=\" text-second\">{{ _(subtitle) }}</p>\n        <div class=\"end\"><img src=\"{{img4}}\"><h4 class=\"title-card\">Telefone</h4></div>\n        <a href=\"tel:+5538090209\" class=\"text-second\">{{ _(text) }}</a><br><br>\n        <div class=\"end\"><img src=\"{{img5}}\"><h4 class=\"title-card\">E-mail</h4></div>\n        <a href=\"mailto:#\" class=\"text-second\">{{ _(text1) }}</a>\n      </div>\n    </div>\n  </div>\n</section>\n",
+  "type": "Component"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Web Template",
+  "fields": [
+   {
+    "default": null,
+    "fieldname": "mini_title",
+    "fieldtype": "Data",
+    "label": "Mini Title",
+    "options": null,
+    "parent": "Clients 3 TechMax",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 1
+   },
+   {
+    "default": null,
+    "fieldname": "title",
+    "fieldtype": "Data",
+    "label": "Title",
+    "options": null,
+    "parent": "Clients 3 TechMax",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 1
+   },
+   {
+    "default": null,
+    "fieldname": "subtitle",
+    "fieldtype": "Small Text",
+    "label": "subtitle",
+    "options": null,
+    "parent": "Clients 3 TechMax",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "slideshow",
+    "fieldtype": "Link",
+    "label": "Slideshow",
+    "options": "Website Slideshow",
+    "parent": "Clients 3 TechMax",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 1
+   }
+  ],
+  "modified": "2023-10-03 09:19:58.102858",
+  "module": "Techmax Solucoes",
+  "name": "Clients 3 TechMax",
+  "standard": 0,
+  "template": "<section class=\"clients-3 wrapper bg-light\">\n  <div class=\"container py-14 py-md-16\">\n    <h2 class=\"fs-15 text-muted mb-3 desc\">{{mini_title}}</h2>\n    <div class=\"row gx-lg-8 mb-10 gy-5\">\n      <div class=\"col-lg-6\">\n        <h3 class=\"display-5 mb-0 title\">{{title}}</h3>\n      </div>\n      <!-- /column -->\n      <div class=\"col-lg-6\">\n        <p class=\"lead mb-0 subtitle\">{{subtitle}}</p>\n      </div>\n      <!-- /column -->\n    </div>\n    <!-- /.row -->\n    <div class=\"row row-cols-2 row-cols-md-3 row-cols-xl-5 gx-lg-6 gy-6 justify-content-center\">\n        {% for row in frappe.get_all(\"Website Slideshow Item\", fields=\"*\", filters={\"parent\": slideshow}, order_by=\"idx\") %}\n      <div class=\"col\">\n        <div class=\"card h-100 align-items-center\">\n          <div class=\"card-body align-items-center d-flex px-3 py-6 p-md-8\">\n            <figure class=\"px-md-3 px-xl-0 px-xxl-3 mb-0\"><img src=\"{{row.image}}\" alt=\"\" /></figure>\n          </div>\n          <!--/.card-body -->\n        </div>\n        <!--/.card -->\n      </div>\n      {% endfor %}\n    </div>\n    <!--/.row -->\n  </div>\n  <!-- /.container -->\n</section>\n<!-- /section -->",
+  "type": "Component"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Web Template",
+  "fields": [
+   {
+    "default": null,
+    "fieldname": "titletd",
+    "fieldtype": "Data",
+    "label": "Title",
+    "options": null,
+    "parent": "Features 11 Techmax",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 1
+   },
+   {
+    "default": null,
+    "fieldname": "subtitletd",
+    "fieldtype": "Small Text",
+    "label": "Subtitle",
+    "options": null,
+    "parent": "Features 11 Techmax",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "text",
+    "fieldtype": "Small Text",
+    "label": "Text",
+    "options": null,
+    "parent": "Features 11 Techmax",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "card_1",
+    "fieldtype": "Section Break",
+    "label": "Card 1",
+    "options": null,
+    "parent": "Features 11 Techmax",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "img1",
+    "fieldtype": "Attach Image",
+    "label": "Imagem",
+    "options": null,
+    "parent": "Features 11 Techmax",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "title_card1",
+    "fieldtype": "Data",
+    "label": "Title",
+    "options": null,
+    "parent": "Features 11 Techmax",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 1
+   },
+   {
+    "default": null,
+    "fieldname": "sub_card1",
+    "fieldtype": "Small Text",
+    "label": "Subtitle",
+    "options": null,
+    "parent": "Features 11 Techmax",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "card_2",
+    "fieldtype": "Section Break",
+    "label": "Card 2",
+    "options": null,
+    "parent": "Features 11 Techmax",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "img2",
+    "fieldtype": "Attach Image",
+    "label": "Imagem",
+    "options": null,
+    "parent": "Features 11 Techmax",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "title_card2",
+    "fieldtype": "Data",
+    "label": "Title",
+    "options": null,
+    "parent": "Features 11 Techmax",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 1
+   },
+   {
+    "default": null,
+    "fieldname": "sub_card2",
+    "fieldtype": "Small Text",
+    "label": "Subtitle",
+    "options": null,
+    "parent": "Features 11 Techmax",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "card_3",
+    "fieldtype": "Section Break",
+    "label": "Card 3",
+    "options": null,
+    "parent": "Features 11 Techmax",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "img3",
+    "fieldtype": "Attach Image",
+    "label": "Imagem",
+    "options": null,
+    "parent": "Features 11 Techmax",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "title_card3",
+    "fieldtype": "Data",
+    "label": "Title",
+    "options": null,
+    "parent": "Features 11 Techmax",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 1
+   },
+   {
+    "default": null,
+    "fieldname": "sub_card3",
+    "fieldtype": "Small Text",
+    "label": "Subtitle",
+    "options": null,
+    "parent": "Features 11 Techmax",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "parte_2",
+    "fieldtype": "Section Break",
+    "label": "Parte 2",
+    "options": null,
+    "parent": "Features 11 Techmax",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "button_1",
+    "fieldtype": "Section Break",
+    "label": "Button 1",
+    "options": null,
+    "parent": "Features 11 Techmax",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "title1",
+    "fieldtype": "Data",
+    "label": "Title",
+    "options": null,
+    "parent": "Features 11 Techmax",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 1
+   },
+   {
+    "default": null,
+    "fieldname": "subtitle1",
+    "fieldtype": "Small Text",
+    "label": "Subtitle",
+    "options": null,
+    "parent": "Features 11 Techmax",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "line1",
+    "fieldtype": "Data",
+    "label": "Line",
+    "options": null,
+    "parent": "Features 11 Techmax",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "line2",
+    "fieldtype": "Data",
+    "label": "Line",
+    "options": null,
+    "parent": "Features 11 Techmax",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "line3",
+    "fieldtype": "Data",
+    "label": "Line",
+    "options": null,
+    "parent": "Features 11 Techmax",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "btn1",
+    "fieldtype": "Data",
+    "label": "Button",
+    "options": null,
+    "parent": "Features 11 Techmax",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "href1",
+    "fieldtype": "Data",
+    "label": "href",
+    "options": null,
+    "parent": "Features 11 Techmax",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "img5",
+    "fieldtype": "Attach Image",
+    "label": "Imagem 2",
+    "options": null,
+    "parent": "Features 11 Techmax",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "img6",
+    "fieldtype": "Attach Image",
+    "label": "Imagem 3",
+    "options": null,
+    "parent": "Features 11 Techmax",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "img7",
+    "fieldtype": "Attach Image",
+    "label": "Imagem 4",
+    "options": null,
+    "parent": "Features 11 Techmax",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   }
+  ],
+  "modified": "2023-10-03 09:34:58.053596",
+  "module": "Techmax Solucoes",
+  "name": "Features 11 Techmax",
+  "standard": 0,
+  "template": "<section class=\"wrapper bg-light features-11\">\n  <div class=\"container py-14 py-md-16\">\n    <div class=\"row\">\n        <div class=\"col-12 col-lg-6\">\n            <h2 class=\"fs-15 mb-3 title\">{{ _(titletd) }}</h2>\n            <h3 class=\"display-4 mb-10 px-xl-10 px-xxl-15 subtitle\">{{ _(subtitletd) }}</h3>\n            <p class=\"first-p\">{{text}}</p>\n            <ul class=\"nav-tabs nav-tabs-bg d-flex justify-content-between nav-justified flex-row\">\n              <li class=\"nav-item\"> <a class=\"nav-link active\" data-bs-toggle=\"tab\" href=\"#tab2-1\">\n                  <div><img src=\"{{img1}}\" class=\"svg-inject icon-svg icon-svg-md text-yellow me-4\" alt=\"\" /></div>\n                  <div>\n                    <h4 class=\"btn-h4\">{{ _(title_card1) }}</h4>\n                    <p class=\"btn-p\">{{ _(sub_card1) }}</p>\n                  </div>\n                </a> </li>\n              <li class=\"nav-item\"> <a class=\"nav-link  flex-row\" data-bs-toggle=\"tab\" href=\"#tab2-2\">\n                  <div><img src=\"{{img2}}\" class=\"svg-inject icon-svg icon-svg-md text-green me-4\" alt=\"\" /></div>\n                  <div>\n                    <h4 class=\"btn-h4\">{{ _(title_card2) }}</h4>\n                    <p class=\"btn-p\">{{ _(sub_card2) }}</p>\n                  </div>\n                </a> </li>\n              <li class=\"nav-item\"> <a class=\"nav-link flex-row\" data-bs-toggle=\"tab\" href=\"#tab2-3\">\n                  <div><img src=\"{{img3}}\" class=\"svg-inject icon-svg icon-svg-md text-red me-4\" alt=\"\" /></div>\n                  <div>\n                    <h4 class=\"btn-h4\">{{ _(title_card3) }}</h4>\n                    <p class=\"btn-p\">{{ _(sub_card3) }}</p>\n                  </div>\n                </a> </li>\n            </ul>\n        </div>\n       \n        <div class=\"tab-content mt-6 mt-lg-8 col-12 col-lg-6\">\n          <div class=\"tab-pane fade show active\" id=\"tab2-1\">\n                <h2 class=\"mb-3\">{{ _(title1) }}</h2>\n                <p>{{ _(subtitle1) }}</p>\n                <ul class=\"icon-list bullet-bg bullet-soft-yellow\">\n                  <li><i class=\"uil uil-check\"></i>{{ _(line1) }}</li>\n                  <li><i class=\"uil uil-check\"></i>{{ _(line2) }}</li>\n                  <li><i class=\"uil uil-check\"></i>{{ _(line3) }}</li>\n                </ul>\n                <a href=\"{{href1}}\" class=\"btn btn-yellow mt-2\">{{ _(btn1) }}</a>\n              </div>\n          <!--/.tab-pane -->\n        </div>\n        <!-- /.tab-content -->\n    </div>\n  </div>\n  <!-- /.container -->\n</section>\n<!-- /section -->",
+  "type": "Component"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Web Template",
+  "fields": [
+   {
+    "default": null,
+    "fieldname": "desc",
+    "fieldtype": "Data",
+    "label": "Parte de cima do título",
+    "options": null,
+    "parent": "Hero títulos",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "title",
+    "fieldtype": "Data",
+    "label": "Título principal",
+    "options": null,
+    "parent": "Hero títulos",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "subtitle",
+    "fieldtype": "Small Text",
+    "label": "Subtítulo",
+    "options": null,
+    "parent": "Hero títulos",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   }
+  ],
+  "modified": "2023-09-29 10:35:02.971614",
+  "module": "Techmax Solucoes",
+  "name": "Hero títulos",
+  "standard": 0,
+  "template": "<section class=\"wrapper-titulos\">\n    <div class=\"container\">\n        <div class=\"row\">\n            <div class=\"col-12\">\n                <h2 class=\"desc text-center\">{{desc}}</h2>\n                <h1 class=\"title text-center\">{{title}}</h1>\n                <p class=\"subtitle text-center\">{{subtitle}}</p>\n            </div>\n        </div>\n    </div>\n</section>",
+  "type": "Component"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Web Template",
+  "fields": [
+   {
+    "default": null,
+    "fieldname": "container",
+    "fieldtype": "Select",
+    "label": "Tipo de container",
+    "options": "Normal\nFluido",
+    "parent": "Features 3 Techmax",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": "True",
+    "fieldname": "has_icon",
+    "fieldtype": "Select",
+    "label": "Tem ícones? (detalhes de fundo)",
+    "options": "True\nFalse",
+    "parent": "Features 3 Techmax",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 1
+   },
+   {
+    "default": null,
+    "fieldname": "title",
+    "fieldtype": "Data",
+    "label": "Title",
+    "options": null,
+    "parent": "Features 3 Techmax",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 1
+   },
+   {
+    "default": null,
+    "fieldname": "subtitle",
+    "fieldtype": "Small Text",
+    "label": "Subtitle",
+    "options": null,
+    "parent": "Features 3 Techmax",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "card_1",
+    "fieldtype": "Section Break",
+    "label": "Card 1",
+    "options": null,
+    "parent": "Features 3 Techmax",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "icone1",
+    "fieldtype": "Attach Image",
+    "label": "Icone",
+    "options": null,
+    "parent": "Features 3 Techmax",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "titlecard1",
+    "fieldtype": "Data",
+    "label": "Title Card",
+    "options": null,
+    "parent": "Features 3 Techmax",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 1
+   },
+   {
+    "default": null,
+    "fieldname": "textcard1",
+    "fieldtype": "Small Text",
+    "label": "Text",
+    "options": null,
+    "parent": "Features 3 Techmax",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "button1",
+    "fieldtype": "Data",
+    "label": "Button",
+    "options": null,
+    "parent": "Features 3 Techmax",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "href1",
+    "fieldtype": "Data",
+    "label": "href",
+    "options": null,
+    "parent": "Features 3 Techmax",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "card_2",
+    "fieldtype": "Section Break",
+    "label": "Card 2",
+    "options": null,
+    "parent": "Features 3 Techmax",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "icone2",
+    "fieldtype": "Attach Image",
+    "label": "Icone",
+    "options": null,
+    "parent": "Features 3 Techmax",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "titlecard2",
+    "fieldtype": "Data",
+    "label": "Title Card",
+    "options": null,
+    "parent": "Features 3 Techmax",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 1
+   },
+   {
+    "default": null,
+    "fieldname": "textcard2",
+    "fieldtype": "Small Text",
+    "label": "Text",
+    "options": null,
+    "parent": "Features 3 Techmax",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "button2",
+    "fieldtype": "Data",
+    "label": "Button",
+    "options": null,
+    "parent": "Features 3 Techmax",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "href2",
+    "fieldtype": "Data",
+    "label": "href",
+    "options": null,
+    "parent": "Features 3 Techmax",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "card_3",
+    "fieldtype": "Section Break",
+    "label": "Card 3",
+    "options": null,
+    "parent": "Features 3 Techmax",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "icone3",
+    "fieldtype": "Attach Image",
+    "label": "Icone",
+    "options": null,
+    "parent": "Features 3 Techmax",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "titlecard3",
+    "fieldtype": "Data",
+    "label": "Title Card",
+    "options": null,
+    "parent": "Features 3 Techmax",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 1
+   },
+   {
+    "default": null,
+    "fieldname": "textcard3",
+    "fieldtype": "Small Text",
+    "label": "Text",
+    "options": null,
+    "parent": "Features 3 Techmax",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "button3",
+    "fieldtype": "Data",
+    "label": "Button",
+    "options": null,
+    "parent": "Features 3 Techmax",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "href3",
+    "fieldtype": "Data",
+    "label": "href",
+    "options": null,
+    "parent": "Features 3 Techmax",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "card_4",
+    "fieldtype": "Section Break",
+    "label": "Card 4",
+    "options": null,
+    "parent": "Features 3 Techmax",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "icone4",
+    "fieldtype": "Attach Image",
+    "label": "Icone",
+    "options": null,
+    "parent": "Features 3 Techmax",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "titlecard4",
+    "fieldtype": "Data",
+    "label": "Title Card",
+    "options": null,
+    "parent": "Features 3 Techmax",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 1
+   },
+   {
+    "default": null,
+    "fieldname": "textcard4",
+    "fieldtype": "Small Text",
+    "label": "Text",
+    "options": null,
+    "parent": "Features 3 Techmax",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "button4",
+    "fieldtype": "Data",
+    "label": "Button",
+    "options": null,
+    "parent": "Features 3 Techmax",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "href4",
+    "fieldtype": "Data",
+    "label": "href",
+    "options": null,
+    "parent": "Features 3 Techmax",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "card_5",
+    "fieldtype": "Section Break",
+    "label": "Card 5",
+    "options": null,
+    "parent": "Features 3 Techmax",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "icone5",
+    "fieldtype": "Attach Image",
+    "label": "Icone",
+    "options": null,
+    "parent": "Features 3 Techmax",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "titlecard5",
+    "fieldtype": "Data",
+    "label": "Title Card",
+    "options": null,
+    "parent": "Features 3 Techmax",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "textcard5",
+    "fieldtype": "Small Text",
+    "label": "Text",
+    "options": null,
+    "parent": "Features 3 Techmax",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "button5",
+    "fieldtype": "Data",
+    "label": "Button",
+    "options": null,
+    "parent": "Features 3 Techmax",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "href5",
+    "fieldtype": "Data",
+    "label": "href",
+    "options": null,
+    "parent": "Features 3 Techmax",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   }
+  ],
+  "modified": "2023-09-29 14:49:03.648451",
+  "module": "Techmax Solucoes",
+  "name": "Features 3 Techmax",
+  "standard": 0,
+  "template": "<section class=\"wrapper bg-light features-3\">\n  <div class=\"{% if container == 'Fluido' %} container-fluid {% else %} container {% endif %} py-14 py-md-16 text-center\">\n    <div class=\"row\">\n      <div class=\"col-12\">\n        <h2 class=\"mb-3 title title-section\">{{ _(title) }}</h2>\n        <h3 class=\"display-4 mb-10 px-xl-10 subtitle-section\">{{ _(subtitle) }}</h3>\n      </div>\n    </div>\n    <div class=\"position-relative\">\n    {% if has_icon == \"True\" %}\n      <div class=\"shape rounded-circle bg-soft-blue rellax w-16 h-16\" data-rellax-speed=\"1\" style=\"bottom: -0.5rem; right: -2.2rem; z-index: 0;\"></div>\n      <div class=\"shape bg-dot yellow rellax w-16 h-17\" data-rellax-speed=\"1\" style=\"top: -0.5rem; left: -2.5rem; z-index: 0;\"></div>\n    {% endif %}\n      <div class=\"features-row row gx-md-5 gy-5 text-center\">\n        <div class=\"col-md-6\">\n          <div class=\"card\">\n            <div class=\"card-body\">\n              <img src=\"{{icone1}}\" class=\"svg-inject icon-svg icon-svg-md text-yellow mb-3\" alt=\"\" />\n              <h4 class=\"card-title\">{{ _(titlecard1) }}</h4>\n              <p class=\"card-txt mb-2\">{{ _(textcard1) }}</p>\n              <a href=\"{{href1}}\" class=\"more hover link-yellow link1\">{{ _(button1) }}  ➞</a>\n            </div>\n            <!--/.card-body -->\n          </div>\n          <!--/.card -->\n        </div>\n        <!--/column -->\n        <div class=\"col-md-6\">\n          <div class=\"card\">\n            <div class=\"card-body\">\n              <img src=\"{{icone2}}\" class=\"svg-inject icon-svg icon-svg-md text-red mb-3\" alt=\"\" />\n              <h4 class=\"card-title w-40\">{{ _(titlecard2) }}</h4>\n              <p class=\"card-txt mb-2 text-card-2\">{{ _(textcard2) }}</p>\n              <a href=\"{{href2}}\" class=\"more hover link-red link2\">{{ _(button2) }}  ➞</a>\n            </div>\n            <!--/.card-body -->\n          </div>\n          <!--/.card -->\n        </div>\n        <!--/column -->\n        <div class=\"col-md-6\">\n          <div class=\"card\">\n            <div class=\"card-body\">\n              <img src=\"{{icone3}}\" class=\"svg-inject icon-svg icon-svg-md text-green mb-3\" alt=\"\" />\n              <h4 class=\"card-title\">{{ _(titlecard3) }}</h4>\n              <p class=\"card-txt mb-2 text-card-3\">{{ _(textcard3) }}</p>\n              <a href=\"{{href3}}\" class=\"more hover link-green link3\">{{ _(button3) }}  ➞</a>\n            </div>\n          </div>\n        </div>\n        <div class=\"col-md-6\">\n          <div class=\"card\">\n            <div class=\"card-body\">\n              <img src=\"{{icone4}}\" class=\"svg-inject icon-svg icon-svg-md text-blue mb-3\" alt=\"\" />\n              <h4 class=\"card-title\">{{ _(titlecard4) }}</h4>\n              <p class=\"card-txt mb-2\">{{ _(textcard4) }}</p>\n              <a href=\"{{href4}}\" class=\"more hover link-blue link4\">{{ _(button4) }}  ➞</a>\n            </div>\n          </div>\n        </div>\n        <div class=\"col-md-6\">\n          <div class=\"card\">\n            <div class=\"card-body\">\n              <img src=\"{{icone5}}\" class=\"svg-inject icon-svg icon-svg-md text-blue mb-3\" alt=\"\" />\n              <h4 class=\"card-title\">{{ _(titlecard5) }}</h4>\n              <p class=\"card-txt mb-2\">{{ _(textcard5) }}</p>\n              <a href=\"{{href5}}\" class=\"more hover link-blue link5\">{{ _(button5) }}  ➞</a>\n            </div>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>\n\n<style>\n    .features-row > div {\n        width: 20% !important;\n    }\n    @media screen and (max-width: 1200px) {\n        .features-row > div {\n            width: 50% !important;\n        }\n    }\n    @media screen and (max-width: 768px) {\n        .features-row > div {\n            width: 100% !important;\n        }\n    }\n</style>",
+  "type": "Component"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Web Template",
+  "fields": [
+   {
+    "default": null,
+    "fieldname": "img",
+    "fieldtype": "Attach Image",
+    "label": "Image",
+    "options": null,
+    "parent": "Testimonials 2 Techmax",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "testimonial_1",
+    "fieldtype": "Link",
+    "label": "Testimonial",
+    "options": "Testimonials",
+    "parent": "Testimonials 2 Techmax",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "testimonial_2",
+    "fieldtype": "Link",
+    "label": "Testimonial",
+    "options": "Testimonials",
+    "parent": "Testimonials 2 Techmax",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   }
+  ],
+  "modified": "2023-10-03 10:25:01.900921",
+  "module": "Techmax Solucoes",
+  "name": "Testimonials 2 Techmax",
+  "standard": 0,
+  "template": "{% set testimonials = [testimonial_1, testimonial_2, testimonial_3] %}\n<section class=\"wrapper bg-light\">\n  <div class=\"container py-14 py-md-16\">\n    <div class=\"row position-relative\">\n      <figure class=\"rounded position-absolute d-none d-lg-block\" style=\"top: 50%; right:0; width: 45%; height: auto; transform: translateY(-50%); z-index:2\"><img src=\"{{img}}\" srcset=\"./assets/img/photos/tei1@2x.jpg 2x\" alt=\"\"></figure>\n      <div class=\"col-lg-9 text-center\">\n        <div class=\"card bg-gray\">\n          <div class=\"card-body p-md-10 py-xxl-16\">\n              <div class=\"row gx-0\">\n                  \n              </div>\n               <div class=\"swiper-container dots-closer mb-6\" data-margin=\"30\" data-dots=\"true\">\n                <div class=\"swiper\">\n                  <div class=\"swiper-wrapper\">\n                    {% for testimonial in testimonials %}\n                        {% if testimonial %}\n                        {% set doc = frappe.get_doc(\"Testimonials\", testimonial) %}\n                    <div class=\"swiper-slide card-body\">\n                    <span class=\"ratings five fs-20 mb-3\"></span>\n                      <blockquote class=\"border-0 fs-lg mb-0\">\n                        <p>“{{doc.testimonial}}”</p>\n                        <div class=\"blockquote-details justify-content-center text-center\">\n                          <div class=\"info ps-0\">\n                            <h5 class=\"mb-1\">{{ doc.nome }}</h5>\n                            <p class=\"mb-0\">{{ doc.role }}</p>\n                          </div>\n                        </div>\n                      </blockquote>\n                    </div>\n                        {% endif %}\n                    {% endfor %}\n                  </div>\n                </div>\n              </div>\n\n            <!-- /.row -->\n          </div>\n          <!--/.card-body -->\n        </div>\n        <!--/.card -->\n      </div>\n      <!-- /column -->\n    </div>\n    <!-- /.row -->\n  </div>\n  <!-- /.container -->\n</section>\n",
   "type": "Component"
  }
 ]
