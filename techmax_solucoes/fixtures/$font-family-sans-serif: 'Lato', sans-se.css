@@ -1,0 +1,822 @@
+$font-family-sans-serif: 'Lato', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Public+Sans:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Merriweather:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Open+Sans:wght@400;600;700&display=swap');
+
+/*Pagina de login*/
+#page-login .container{
+    margin-top:0px !important;
+    margin-bottom:0px !important;
+}
+
+
+
+.error-page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.error-page a{
+    color: #16434d !important;
+}
+
+.img-sub-404{
+    width: 693px;
+}
+
+.sign-up-message a{
+    font-family: 'Public Sans' !important;
+    font-weight: 400 !important;
+    font-size: 15px !important;
+    line-height: 22px !important;
+    color: #1A515F !important;
+}
+
+.setinha{
+    margin-right: 12px;
+}
+
+#page-login{
+    background-image: url(https://www.techmaxsolucoes.com.br/files/Forgot%20Password.png);
+    background-repeat: no-repeat;
+    background-size: cover
+}
+
+
+.login-content h4{
+    font-family: 'Public Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 30px;
+    color: #3E4856;
+}
+
+.form-signin .page-card-head h4{
+    font-family: 'Public Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px !important;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    color: #626772 !important;
+}
+
+.btn-login, .btn-forgot{
+    width: 100%;
+    height: 38px;
+    background: #1A515F !important;
+    border-radius: 6px;
+}
+
+#login_email, #login_password, .for-forgot .page-card .page-card-body .email-field input, .btn-facebook, .btn-google, .btn-login-option {
+    height: 38px !important;
+    background: #FFFFFF !important;
+    border: 1px solid #DBDADE !important;
+    border-radius: 6px !important;
+    padding: 7px 14px !important;
+}
+
+.for-email-login .page-card .page-card-body .form-label{
+    position: unset;
+    width: auto;
+    height: auto;
+    font-family: 'Public Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px !important;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+    color: #3E4856;
+    margin-bottom: 4px;
+}
+
+.forgot-password-message a{
+    font-family: 'Public Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px !important;
+    line-height: 15px;
+    color: #1A515F !important;
+}
+
+.email-icon, .password-icon{
+    display:none;
+}
+
+/*Cabeçalho novo*/
+
+.icon-lg{
+     width: 32px !important;
+    height: 32px !important;  
+}
+
+.navbar-light .navbar-nav .nav-link{
+    color: #828D9C;
+}
+
+.avatar .standard-image{
+    background-color: #ffffff !important;
+    color: #13556f !important;
+    border: 1px solid #13556f !important;
+}
+
+.whatsapp{
+    /* gap: 10px; */
+    width: 196px ;
+    height: 44px;
+    background: #1A515F;
+    border-radius: 6px;
+    padding: 10px 30px !important;
+    color: #FFFFFF !important;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 600 !important;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: -0.01em;
+    margin-left: 130px;
+}
+
+.whatsapp:hover{
+    color: #1b515e !important;
+    background: #f5f5f500;
+    border: 1px solid #1b515e;
+}
+
+@media (max-width:990px){
+    .whatsapp{
+        margin-left: 0px !important;
+        text-align: center;
+        border-radius: 0px;
+        min-width: 420px;
+        color: #FFFFFF !important;
+    }
+    
+    .color-cinza{
+        color: #828D9C !important;
+        padding-right: 0px !important;
+        padding-left: 0px !important;
+
+    }
+    
+    .navbar-brand img{
+        max-width: 40px !important;
+        max-height: 50px !important;
+        padding-left: 18px;
+    }
+    
+    .nav-item .dropdown-menu{
+        background: #FFFFFF;
+        border-radius: 0px;
+        padding: 0px 0px !important;
+        width: auto;
+    }
+    
+    .dropdown-menu{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        z-index: 1000;
+        display: none;
+        float: left;
+        min-width: 10rem;
+        padding: 0.5rem 0;
+        margin: 0.125rem 0 0;
+        font-size: .875rem;
+        color: #4C5A67 !important;
+        text-align: left;
+        list-style: none;
+        background-color: unset;
+        background-clip: unset;
+        border:none !important;
+        border-radius: none !important;
+        box-shadow: none !important;
+    }
+    
+    .nav-item .dropdown-menu .dropdown-item{
+        border-bottom: 1px solid rgba(128, 144, 165, 0.3) !important;
+        width: 339px !important;
+        padding-left: 0px !important;
+        border-radius: 0px !important;
+        padding-top:0px !important;
+        padding-bottom:20px !important;
+        margin-left: 18px;
+        margin-bottom: 20px;
+    }
+    
+   .dropdown-item.active, .dropdown-item:active{
+        background:#fff !important;
+    }
+    
+    .navbar-light .navbar-toggler{
+        border: none;
+    }
+    
+    .navbar-light .navbar-toggler .icon{
+        stroke: #216778 !important;
+    }
+    
+    .navbar{
+        padding-left:0px !important;
+        padding-right:0px !important;
+    }
+    .nav-item a{
+        padding-bottom: 20px;
+        padding-top:0px;
+        padding-left: 18px !important;
+        font-weight: 600 !important;
+        font-size: 16px !important;
+        line-height: 24px !important;
+        letter-spacing: -0.01em !important;
+        color: #828D9C; 
+    }
+    
+    .dropdown-menu a{
+       padding: 25px 18px;
+    }
+    
+    .button:focus{
+     outline: none !important;
+    }
+    
+    .logged-in .nav-link{
+        display: flex !important;
+        justify-content: center !important;
+            padding-left: 0px !important;
+    }
+    
+    .navbar-collapse{
+        margin-top:30px;
+    }
+    
+    .avatar-medium{
+    margin-top:13px !important;
+    }
+    
+}
+
+.logged-in{
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+.color-cinza{
+    color: #828D9C !important;
+    padding-right: 32px;
+    padding-left: 32px;
+}
+
+
+.navbar-brand img{
+    max-width: 80.07px !important;
+    max-height: 71.12px !important;
+}
+
+.navbar-brand{
+    padding:0px !important;
+}
+
+
+.navbar{
+    padding: 12px;
+}
+
+.nav-item a{
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: -0.01em;
+    
+}
+
+.color-cinza:hover{
+    color: #3E4856 !important;
+}
+
+.nav-item .dropdown-menu{
+    background: #FFFFFF;
+    border-radius: 6px;
+    padding: 8px 16px;
+    width: 250px;
+}
+
+.dropdown-menu .dropdown-menu-right{
+    width: 250px !important;
+}
+
+.nav-item  .dropdown-menu .dropdown-item{
+    padding: 8px 16px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    color: #828D9C;
+}
+
+.dropdown-item.active, .dropdown-item:active{
+    background: rgba(75, 70, 92, 0.04);
+    border-radius: 6px !important;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    color: #3E4856 !important;
+}
+
+/*Rodape novo*/
+
+.icon_linkedin{
+    margin-right:16px;
+}
+
+.footer-logo{
+    width: 80.07px !important;
+    height: 71.12px !important;
+}
+
+.web-footer .container{
+    border-top: 1px solid rgba(62, 72, 86, 0.09);
+}
+
+.footer-info{
+    border:none !important;
+}
+
+.footer-logo-extension .group-links .footer-links .footer-col-left{
+    display:grid !important;
+    grid-template-columns: 1fr 1fr 1fr !important;
+    max-width: 677px;
+}
+
+.footer-logo-extension .address p{
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: -0.015em;
+    color: #3E4856;
+}
+
+.footer-logo-extension{
+    padding: 20px 100px;
+}
+
+.footer-col-left .footer-link{
+    margin-right: 143px !important;
+    font-family: 'Manrope' !important;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px !important;
+    line-height: 24px !important;
+    letter-spacing: -0.015em !important;
+    color: #292D33 !important;
+    margin-bottom: 10px;
+    padding: 0px
+}
+
+.footer-link:nth-child( -n + 3 ) {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.015em;
+}
+
+
+/**/
+
+
+nav{
+    font-weight: 800;
+    font-family: lato sans-serif;
+    text-align: left;
+}
+
+div{
+    font-weight: 800;
+    font-family: lato sans-serif;
+    text-align: left;
+}
+
+h1, h2, h3, h4, h5, h6 {
+   font-family: 'Merriweather', serif;
+}
+
+.hero-title {
+    line-height: 1.3em;
+}
+
+.hero-subtitle {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: #1F272E !important;
+}
+
+.navbar-brand{
+    font-weight: 800;
+}
+
+.hero-ant{
+     background-color: antiquewhite;
+}
+
+.hero-image {
+    border: 1px solid antiquewhite;
+    border-radius: 10px;
+}
+
+.section-small-cta {
+    justify-content: space-evenly;
+    background-color: seashell;
+}
+
+.text-align-center .section-with-features{
+    text-align: center;
+}
+div .section-feature div{
+    text-align: center;
+}
+
+@media (max-width:500px)
+{
+    .hero-title{
+        font-size: 1.65rem;
+    }
+    .hero-subtitle{
+        font-size: 0.8rem;
+    }
+    .pull-right{
+        font-size: 1rem;
+    }
+
+    div.hero-content{
+        width:80%;
+    }
+    
+    .section-title{
+        margin-top: 200px;
+    }
+    
+}
+
+@media (max-width:765px){
+    .col-md-6.col-sm-12.col-xs-12.hero-form{
+        box-shadow: 1px 10px 20px #000000a6;;
+        
+    }
+    .section-cta-container .section-small-cta{
+        display: grid;
+        justify-items: center;
+        
+    }
+
+}
+
+.text-muted.login-divider{
+    text-align: center;
+}
+
+
+//Footer Novo
+
+.footer-novo{
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: -0.015em;
+    color: #3E4856;
+    padding-top: 38px;
+    background:#fff;
+}
+
+.footer-novo .links a{
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: -0.015em;
+    color: #292D33 !important;
+    padding: 0;
+    margin-bottom:10px;
+}
+
+
+.logo-techmax-1{
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    left: -10px;
+}
+
+
+.group{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.links{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.techmax-solutions-team{
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: -0.015em;
+    color: #3E4856;
+    margin-top: 21px;
+    margin-bottom: 21px;
+    position: relative;
+    right: 12px;
+}
+
+.phone, .address{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: -0.015em;
+    color: #292D33;
+    margin-bottom: 10px;
+    width: 128%;
+}
+
+
+
+.email_link, .drive_derections_link{
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: -0.01em;
+    color: #292D33 !important;
+    display: flex;
+    align-items: center;
+    
+}
+
+.flex-contact, .privacidade{
+    display: flex;
+}
+
+.social_links{
+    margin-left: 376px;
+}
+
+.phone---email{
+    margin-right: 39px;
+}
+
+.privacy_policy_link, .terms_of_us_link{
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.01em;
+    color: #9497A1 !important;
+}
+
+.privacy_policy_link{
+    margin-right: 79px;
+}
+
+.all-right-reserved{
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: -0.015em;
+    color: #9497A1;
+    text-align: end;
+}
+
+.privacidade-div{
+   padding: 40px 0px !important;
+   border-top: 1px solid rgba(62, 72, 86, 0.09);
+}
+
+.privacidade-div  .col-sm{
+   padding:0px;
+}
+
+.title2{
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.015em;
+    color: #292D33;
+}
+.icons_social_links{
+    position: relative;
+    left: -165px;
+    width: 192%;
+}
+.icons_social_links svg, .icons_social_links img{
+    margin-right: 16px;
+}
+
+.about div, .information div, .service div{
+    margin-bottom:10px;
+}
+.about{
+    position: relative;
+    left: 95px;
+}
+.information{
+    position: relative;
+    left: 75px;
+}
+.service{
+    position: relative;
+    left: 75px;
+}
+
+.privacidade-div .title2{
+    margin-bottom:15px;
+    position: relative;
+    right: 165px;
+}
+.privacidade-div .contato{
+    margin-bottom:15px;
+    position: relative;
+    right: 0px;
+}
+
+.group2{
+    margin-bottom: 10px;
+}
+
+.ct a, a:hover{
+    color: #9497A1 !important;
+}
+
+
+
+.ct-a .email_link a, .ct-a .drive_derections_link a{
+    color: #292D33 !important;
+}
+
+//404
+.error-page h2, .error-page .error-text {
+    display: none;
+}
+.error-page .back-to-home {
+    margin-top: 0 !important;
+}
+.error-page > div {
+    display: flex;
+    justify-content: center;
+}
+.error-page .back-to-home > a {
+    background: transparent !important;
+    box-shadow: none !important;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 140%;
+    color: #1A515F;
+    display: flex;
+    gap: 12px;
+}
+.error-page .back-to-home > a:focus {
+    color: #1A515F !important; 
+}
+@media (min-width:320px) and (max-width:480px){
+    .footer-novo .privacidade-div{
+        border-top: 1px solid rgba(62,72,86,0.09);
+        width: 103%
+    }
+    
+    .phone, .address{
+        text-align:center;
+    }
+    .phone, .address{
+        width: 100%;
+    }
+    .phone{
+        position: relative;
+        right: 22px;
+    }
+    .email_link{
+        position: relative;
+        right: 12px;
+        margin-bottom: 5px;
+    }
+    .address{
+        position: relative;
+        right: 8px;
+    }
+    .drive_derections_link{
+        position: relative;
+        right: 4px;
+    }
+    
+    .social_links{
+        margin-left:0px;
+    }
+    .flex-contact, .privacidade{
+       display: contents !important;
+    }
+    .privacidade-div{
+        padding-left: 18px !important;
+    }
+    
+    .techmax-solutions-team{
+        margin-bottom: 36px;
+    }
+    
+    .logo-techmax-1{
+        justify-content: center;
+    }
+    .links{
+        grid-template-columns: 1fr 2fr 1fr;
+        justify-items: center;
+    }
+    .phone---email, .address---link, {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 0px;
+    }
+    .privacidade-div .title2{
+        text-align:center;
+    }
+    
+    .icons_social_links{
+        display:flex;
+        justify-content: center;
+    }
+    
+    .footer-novo .row.top{
+        margin-right:0px !important;
+    }
+    
+    .container{
+        padding:0px;
+    }
+   .nav-item .btn-login-area{
+        display: flex;
+        justify-content: center !important;
+        margin-top: 10px !important;
+        padding-bottom: 0 !important;
+        padding-left: 0px !important;
+    }
+    .about{
+    position: relative;
+    left: -12px;
+    }
+    .information{
+    position: relative;
+    left: -5px;
+    }
+    .service{
+    position: relative;
+    left: 12px;
+    }
+    .footer-novo .privacidade-div{
+        position: relative;
+        left: 12px;
+    }
+    .techmax-solutions-team{
+        right: 0px;
+    }
+    .footer-novo .all-right-reserved{
+        margin-right: 50px !important;
+    }
+    .terms_of_us_link{
+        position: relative;
+        left: 250px;
+        bottom: 25px;
+        width: 28%;
+    }
+    .icons_social_links{
+    position: relative;
+    left: -0px;
+    width: 100%;
+    }
+    .privacidade-div .title2{
+        margin-bottom: 15px;
+        position: relative;
+        right: 22px;
+        margin-top: 12px;
+    }
+}

@@ -1,0 +1,58 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:especializacao",
+ "creation": "2023-10-05 13:36:09.300926",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "imagem",
+  "especializacao",
+  "description"
+ ],
+ "fields": [
+  {
+   "fieldname": "imagem",
+   "fieldtype": "Attach Image",
+   "label": "Imagem"
+  },
+  {
+   "fieldname": "especializacao",
+   "fieldtype": "Data",
+   "label": "Especializa\u00e7\u00e3o",
+   "unique": 1
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text",
+   "label": "Descri\u00e7\u00e3o"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-10-05 13:36:09.300926",
+ "modified_by": "Administrator",
+ "module": "Techmax Solucoes",
+ "name": "Especializacoes TechMax",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
