@@ -26,7 +26,7 @@
  {
   "docstatus": 0,
   "doctype": "Testimonials",
-  "image": "/files/te2.jpg.svg",
+  "image": "/assets/techmax_solucoes/img/te2.jpg.svg",
   "modified": "2023-09-26 14:04:01.207848",
   "name": "Rohit Industries",
   "nome": "Rohit Industries",
@@ -38,7 +38,7 @@
  {
   "docstatus": 0,
   "doctype": "Testimonials",
-  "image": "/files/te1.jpg.svg",
+  "image": "/assets/techmax_solucoes/img/te1.jpg.svg",
   "modified": "2023-09-26 16:46:08.561759",
   "name": "GOGOGO Shipping",
   "nome": "GOGOGO Shipping",
@@ -50,7 +50,7 @@
  {
   "docstatus": 0,
   "doctype": "Testimonials",
-  "image": "/files/te1.jpg (1).svg",
+  "image": "/assets/techmax_solucoes/img/te1.jpg (1).svg",
   "modified": "2023-09-26 16:47:45.065557",
   "name": "Telecomunicaciones IBW",
   "nome": "Telecomunicaciones IBW",
@@ -62,7 +62,7 @@
  {
   "docstatus": 0,
   "doctype": "Testimonials",
-  "image": "/files/te1.jpg (2).svg",
+  "image": "/assets/techmax_solucoes/img/te1.jpg (2).svg",
   "modified": "2023-09-26 16:48:20.615972",
   "name": "Galileo Biotech",
   "nome": "Galileo Biotech",

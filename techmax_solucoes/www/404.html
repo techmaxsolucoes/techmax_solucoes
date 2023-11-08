@@ -1,0 +1,24 @@
+{% extends "templates/web.html" %}
+
+{%- block title -%}{{_("Not Found")}}{%- endblock -%}
+
+{% block page_content %}
+
+<script>
+	window.is_404 = true;
+</script>
+
+<div class="error-page">
+	<img class="img-404" src="/files/image%20(1).png" />
+	<div>
+		<h2 class="mb-1 mt-4">
+			Oops! Página não encontrada.
+		</h2>
+		<div class="text-muted error-text">
+			A página que você procura não está disponível ou foi movida. Experimente <br> uma página diferente ou vá para a página inicial com o botão abaixo.
+		</div>
+		<div class="mt-6 back-to-home"><a href='/home' class='btn btn-primary'>Voltar para a página Home</a></div>
+	</div>
+</div>
+
+{% endblock %}
