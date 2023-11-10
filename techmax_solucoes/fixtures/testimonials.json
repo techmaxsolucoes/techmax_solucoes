@@ -70,5 +70,65 @@
   "role": "Inovação em Testes Patológicos",
   "text_editor_yqgn": "<div class=\"ql-editor read-mode\"><p><strong>Desafio</strong>: A Galileo Biotech enfrentava desafios ao equilibrar a automação com as regulamentações de rastreabilidade de produtos.</p><p><strong>Solução</strong>: Ajustamos o plano de produção do ERPNext para atender às normas brasileiras e implementamos um controle automatizado de estoque.</p></div>",
   "user": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Testimonials",
+  "image": null,
+  "modified": "2023-11-09 18:40:38.268894",
+  "name": "Gerenciamento de estoque",
+  "nome": "Gerenciamento de estoque",
+  "rating": null,
+  "role": null,
+  "text_editor_yqgn": "<div class=\"ql-editor read-mode\"><p><strong>Gerenciamento de estoque aprimorado:</strong></p><p><br></p><p>Contêineres de remessa inteligentes e prateleiras cheias de produtos conectados tornarão mais fácil para os gerentes de loja localizar e gerenciar o estoque no armazém. Esses sistemas podem gerar alertas automaticamente se o produto estiver fora de estoque ou se as condições de temperatura estiverem afetando a qualidade dos produtos. Além disso, os dispositivos IoT facilitam o gerenciamento das devoluções pelos gerentes de loja, pois possuem informações relevantes </p><p>como status, localização e ponto final de disposição.</p></div>",
+  "user": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Testimonials",
+  "image": null,
+  "modified": "2023-11-10 16:38:10.368520",
+  "name": "Reduz o risco:",
+  "nome": "Reduz o risco:",
+  "rating": null,
+  "role": null,
+  "text_editor_yqgn": "<div class=\"ql-editor read-mode\"><p>Reduz o risco:</p><p><br></p><p>O uso de dispositivos IoT em armazéns permite que as empresas detectem riscos e evitem acidentes que podem criar interrupções na cadeia de abastecimento. Sensores IoT em armazéns podem monitorar as condições de temperatura. Além disso, os dados coletados de veículos, meios de transporte e produtos podem ser combinados para reduzir a falsificação, o roubo e a deterioração.</p></div>",
+  "user": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Testimonials",
+  "image": null,
+  "modified": "2023-11-10 16:38:50.528170",
+  "name": "Manutenção preditiva:",
+  "nome": "Manutenção preditiva:",
+  "rating": null,
+  "role": null,
+  "text_editor_yqgn": "<div class=\"ql-editor read-mode\"><p>Manutenção preditiva:</p><p><br></p><p>Um sistema de manutenção preditiva detecta sinais precoces de mau funcionamento dos equipamentos, permitindo que os gerentes das lojas evitem paralisações e armazenem máquinas sobressalentes.</p><p>Armazéns habilitados para IoT: casos de uso</p></div>",
+  "user": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Testimonials",
+  "image": null,
+  "modified": "2023-11-10 16:39:54.804779",
+  "name": "AMR",
+  "nome": "AMR",
+  "rating": null,
+  "role": null,
+  "text_editor_yqgn": "<div class=\"ql-editor read-mode\"><p>Robôs Móveis Autônomos (AMR):</p><p><br></p><p>AMR é uma tecnologia IoT popular usada por empresas para movimentar ou manusear produtos dentro do armazém. Robôs autônomos podem se mover de forma independente e usar sensores e câmeras de navegação. Ao contrário dos veículos guiados automaticamente (AGV), os AMR não operam em um caminho fixo. Em vez disso, eles sentem e percebem o ambiente, encontram a sua posição específica, analisam e depois executam o movimento.</p><p><br></p><p>O uso de AMR é fundamental para armazéns inteligentes. As empresas usam robôs para transportar e mover as prateleiras para as estações de trabalho. Eles compartilham a carga de trabalho dos trabalhadores do armazém, reduzindo o deslocamento do selecionador de pedidos. Os robôs autônomos contêm um scanner integrado por meio do qual confirmam o item escolhido. Além disso, o AMR possui sensores que rastreiam os dados para que o feedback possa ser fornecido aos gerentes de armazém.</p></div>",
+  "user": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Testimonials",
+  "image": null,
+  "modified": "2023-11-10 16:41:14.673048",
+  "name": "Óculos inteligentes:",
+  "nome": "Óculos inteligentes:",
+  "rating": null,
+  "role": null,
+  "text_editor_yqgn": "<div class=\"ql-editor read-mode\"><p>Óculos inteligentes:</p><p><br></p><p>Os óculos inteligentes permitem que os gerentes de armazém visualizem exibições visuais de instruções de coleta de pedidos e informações associadas à localização do item. Através de óculos inteligentes, os gestores de armazém também podem decidir onde colocar determinado item/produto no carrinho. Além disso, os óculos inteligentes são fáceis de usar e reduzem o tempo de integração e treinamento.</p><p><br></p><p>Vantagens de usar Óculos Inteligentes para Picking:</p><p><br></p><p>Melhor desempenho de seleção</p><p>Melhor precisão de seleção</p><p>Ergonomia aprimorada</p></div>",
+  "user": null
  }
 ]

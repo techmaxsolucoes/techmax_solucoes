@@ -4909,11 +4909,11 @@
     "reqd": 0
    }
   ],
-  "modified": "2023-10-25 14:02:29.653183",
+  "modified": "2023-11-09 14:40:10.726512",
   "module": "Techmax Solucoes",
   "name": "Features 9 TechMax",
   "standard": 0,
-  "template": "<section class=\"wrapper bg-light wrapper-features9-techmax\">\n  <div class=\"container py-14 py-md-16\">\n    <div class=\"row gx-lg-0 gy-10 align-items-center\">\n      <div class=\"col-lg-6\">\n        <div class=\"row g-6 text-center\">\n        </div>\n      </div>\n        <div class=\"col-md-10 col-lg-5  offset-xxl-6 ps-xxl-12 mt-md-n9 text-center text-lg-start\" data-cues=\"\" data-group=\"page-title\" data-delay=\"600\">\n            <h1 class=\"mb-7\">{{title_title}}</h1>\n            <p class=\"mb-5\">{{subtitle_sub}}</p>\n      </div>\n      \n        <div class=\"gy-01\">\n          <div class=\"col-lg-5\">\n            <h2 class=\"display-4 mb-3\">{{ _(title) }}</h2>\n            <p>{{ _(text) }} </p>\n            <a href=\"{{href2}}\" class=\"btn btn-primary rounded-pill mt-3\">{{ _(button1) }}</a>\n          </div>\n          \n            <div class=\"div-video  offset-lg-1\">\n                <img class=\"position-lg-absolute col-12 img-img\" src=\"{{img5}}\" srcset=\"{{img5}}\">\n            </div>\n        </div>\n    </div>\n  </div>\n</section>\n\n<style>\n    .wrapper-features9-techmax .mb-7{\n        color: #22282F !important;\n        text-align: center;\n        font-family: Work Sans;\n        font-size: 48px;\n        font-style: normal;\n        font-weight: 600;\n        line-height: 46px;\n        letter-spacing: -0.5px;\n        width: 170%;\n        margin-left: -400px;\n    }\n    .wrapper-features9-techmax .mb-5{\n        color: #656D78 !important;\n        text-align: center;\n        font-family: Work Sans;\n        font-size: 18px;\n        font-style: normal;\n        font-weight: 500;\n        line-height: 24px;\n        width: 134%;\n        margin-left: -315px;\n    }\n    .wrapper-features9-techmax .mb-3{\n        color: #22282F !important;\n        font-family: Work Sans;\n        font-size: 22px;\n        font-style: normal;\n        font-weight: 600;\n        line-height: 30px;\n        letter-spacing: -0.5px;\n    }\n    .wrapper-features9-techmax p{\n        color: #38424E !important;\n        font-family: Manrope;\n        font-size: 15px;\n        font-style: normal;\n        font-weight: 500 !important;\n        line-height: 22px;\n        letter-spacing: 0.43px;\n    }\n    .wrapper-features9-techmax .rounded-pill{\n        border-radius: 8px !important;\n    }\n    .wrapper-features9-techmax .gy-01{\n        display: flex;\n    }\n    .wrapper-features9-techmax .img-img{\n        height: 400px;\n        width: 600px;\n    }\n    \n</style>",
+  "template": "<section class=\"wrapper bg-light wrapper-features9-techmax\">\n  <div class=\"container py-14 py-md-16\">\n    <div class=\"row gx-lg-0 gy-10 align-items-center\">\n      <div class=\"col-lg-6\">\n        <div class=\"row g-6 text-center\">\n        </div>\n      </div>\n        <div class=\"col-md-10 col-lg-5  offset-xxl-6 ps-xxl-12 mt-md-n9 text-center text-lg-start\" data-cues=\"\" data-group=\"page-title\" data-delay=\"600\">\n            <h1 class=\"mb-7\">{{title_title}}</h1>\n            <p class=\"mb-5\">{{subtitle_sub}}</p>\n      </div>\n      \n        <div class=\"gy-01\">\n          <div class=\"col-lg-5\">\n            <h2 class=\"display-4 mb-3\">{{ _(title) }}</h2>\n            <p>{{ _(text) }} </p>\n            <a href=\"{{href2}}\" class=\"btn btn-primary rounded-pill mt-3 d-none\">{{ _(button1) }}</a>\n          </div>\n          \n            <div class=\"div-video  offset-lg-1\">\n                <img class=\"position-lg-absolute col-12 img-img\" src=\"{{img5}}\" srcset=\"{{img5}}\">\n            </div>\n        </div>\n    </div>\n  </div>\n</section>\n\n<style>\n    .wrapper-features9-techmax .mb-7{\n        color: #22282F !important;\n        text-align: center;\n        font-family: Work Sans;\n        font-size: 48px;\n        font-style: normal;\n        font-weight: 600;\n        line-height: 46px;\n        letter-spacing: -0.5px;\n        width: 170%;\n        margin-left: -400px;\n    }\n    .wrapper-features9-techmax .mb-5{\n        color: #656D78 !important;\n        text-align: center;\n        font-family: Work Sans;\n        font-size: 18px;\n        font-style: normal;\n        font-weight: 500;\n        line-height: 24px;\n        width: 134%;\n        margin-left: -315px;\n    }\n    .wrapper-features9-techmax .mb-3{\n        color: #22282F !important;\n        font-family: Work Sans;\n        font-size: 22px;\n        font-style: normal;\n        font-weight: 600;\n        line-height: 30px;\n        letter-spacing: -0.5px;\n    }\n    .wrapper-features9-techmax p{\n        color: #38424E !important;\n        font-family: Manrope;\n        font-size: 15px;\n        font-style: normal;\n        font-weight: 500 !important;\n        line-height: 22px;\n        letter-spacing: 0.43px;\n    }\n    .wrapper-features9-techmax .rounded-pill{\n        border-radius: 8px !important;\n    }\n    .wrapper-features9-techmax .gy-01{\n        display: flex;\n    }\n    .wrapper-features9-techmax .img-img{\n        height: 400px;\n        width: 600px;\n    }\n    \n</style>",
   "type": "Component"
  },
  {
@@ -6237,11 +6237,11 @@
     "reqd": 0
    }
   ],
-  "modified": "2023-11-08 14:49:16.428916",
+  "modified": "2023-11-09 18:00:38.480818",
   "module": "Techmax Solucoes",
   "name": "Hero ERP TechMax",
   "standard": 0,
-  "template": "<section class=\"wrapper wrapper-hero-erp-tech\">\n  <div class=\"container pt-5 d-flex\">\n    <div class=\"div-img\">\n        <img class=\"img-erp\" src=\"{{img}}\" srcset=\"{{img}}\" />\n    </div>\n    <div class=\"row gx-0 align-items-center\">\n      <div class=\"col-md-10 offset-md-1 col-lg-5 offset-lg-7 offset-xxl-6 ps-xxl-12 mt-md-n9 text-center text-lg-start\">\n        <h1 class=\"display-2 mb-4 mx-sm-n2 mx-md-0\">{{ _(title) }}</h1>\n        <p class=\" mb-7 px-md-10 px-lg-0\">{{ _(subtitle) }}</p>\n        <div class=\"d-flex justify-content-center justify-content-lg-start tags-div\">\n          <span class=\"span-tag span-tag1\"><p class=\"tag1_text\">{{ _(tag1) }}</p></span>\n          <span class=\"span-tag span-tag2\">{{ _(tag2) }}</span>\n          <span class=\"span-tag span-tag3\">{{ _(tag3) }}</span>\n        </div>\n      </div>\n      <!-- /column -->\n    </div>\n    <!-- /.row -->\n  </div>\n  <!-- /.container -->\n</section>\n<!-- /section -->\n\n<style>\n    .wrapper-hero-erp-tech .mx-sm-n2{\n        color: #22282F;\n        font-family: Work Sans;\n        font-size: 38px;\n        font-style: normal;\n        font-weight: 600;\n        line-height: 46px;\n        min-width: 636px;\n    }\n    .wrapper-hero-erp-tech .px-md-10{\n        color: #38424E;\n        font-family: Manrope;\n        font-size: 15px;\n        font-style: normal;\n        font-weight: 500;\n        line-height: 22px;\n        letter-spacing: 0.43px;\n        min-width: 636px;\n    }\n    .wrapper-hero-erp-tech .span-tag{\n        color: #006CC9;\n        font-family: Manrope;\n        font-size: 13px;\n        font-style: normal;\n        font-weight: 600;\n        line-height: 14px;\n        \n        \n    }\n    .wrapper-hero-erp-tech .span-tag1{\n        padding: 8px 18px;\n        display: flex;\n        align-items: flex-start;\n        gap: var(--Radius, 8px);\n        border-radius: 100px;\n        background: #EAEFF1;\n        width: 167px;\n        height: 38px;\n    }\n    .wrapper-hero-erp-tech .tag1_text{\n        width: 150px !important;\n    }\n    .wrapper-hero-erp-tech .span-tag2{\n        padding: 12px 22px;\n        display: flex;\n        align-items: flex-start;\n        gap: var(--Radius, 8px);\n        border-radius: 100px;\n        background: #EAEFF1;\n        width: 105px;\n        height: 38px;\n    }\n    .wrapper-hero-erp-tech .span-tag3{\n        padding: 12px 22px;\n        display: flex;\n        align-items: flex-start;\n        gap: var(--Radius, 8px);\n        border-radius: 100px;\n        background: #EAEFF1;\n        width: 134px;\n        height: 38px;\n    }\n    .wrapper-hero-erp-tech .tags-div{\n        gap: 20px !important;\n    }\n    .wrapper-hero-erp-tech .offset-lg-7{\n        margin-left: 30%;\n    }\n    .wrapper-hero-erp-tech .img-erp{\n        width: 210%;\n        max-width: 300%;\n    }\n    .wrapper-hero-erp-tech .div-img{\n        margin-left: 40px !important;\n        margin-bottom: 50px !important;\n    }\n</style>",
+  "template": "<section class=\"wrapper wrapper-hero-erp-tech\">\n    \n    <div class=\"retangles1\">\n        <div class=\"tetris-rec1\"></div>\n        <div class=\"tetris-rec2\"></div>\n        <div class=\"tetris-rec1\"></div>\n        <div class=\"tetris-rec2\"></div>\n        <div class=\"tetris-rec1\"></div>\n        <div class=\"tetris-rec2\"></div>\n    </div>\n    \n  <div class=\"container pt-5 d-flex\">\n\n<div class=\"d-flex flex-column align-items-center\">\n    <div class=\"tetris\">\n        <div class=\"d-flex flex-row-reverse\">\n            <div class=\"tetris-rec1\"></div>\n            <div class=\"tetris-rec3\"></div>\n        </div>\n        \n        <div class=\"d-flex flex-row-reverse\">\n            <div class=\"tetris-rec2\"></div>\n            <div class=\"tetris-rec4\"></div>\n        </div>\n    </div>\n    \n    <div class=\"div-img\">\n        <img class=\"img-erp\" src=\"{{img}}\" srcset=\"{{img}}\" />\n    </div>\n</div>\n\n    \n    \n    <div class=\"row gx-0 align-items-center\">\n      <div class=\"col-md-10 offset-md-1 col-lg-5 offset-lg-7 offset-xxl-6 ps-xxl-12 mt-md-n9 text-center text-lg-start\">\n        <h1 class=\"display-2 mb-4 mx-sm-n2 mx-md-0\">{{ _(title) }}</h1>\n        <p class=\" mb-7 px-md-10 px-lg-0\">{{ _(subtitle) }}</p>\n        <div class=\"d-flex justify-content-center justify-content-lg-start tags-div\">\n          <span class=\"span-tag span-tag1\"><p class=\"tag1_text\">{{ _(tag1) }}</p></span>\n          <span class=\"span-tag span-tag2\">{{ _(tag2) }}</span>\n          <span class=\"span-tag span-tag3\">{{ _(tag3) }}</span>\n        </div>\n      </div>\n      <!-- /column -->\n    </div>\n    <!-- /.row -->\n  </div>\n  \n    <div class=\"d-flex\" style=\"justify-content: space-between;\">\n      <div class=\"retangles\">\n        <div class=\"tetris-rec1\"></div>\n        <div class=\"tetris-rec2\"></div>\n        <div class=\"tetris-rec1\"></div>\n        <div class=\"tetris-rec2\"></div>\n        <div class=\"tetris-rec1\"></div>\n        <div class=\"tetris-rec2\"></div>\n      </div>\n      \n      <div class=\"tetris1\">\n        <div class=\"d-flex flex-row-reverse\">\n            <div class=\"tetris1-rec1\"></div>\n            <div class=\"tetris1-rec3\"></div>\n        </div>\n        \n        <div class=\"d-flex flex-row-reverse\">\n            <div class=\"tetris1-rec2\"></div>\n            <div class=\"tetris1-rec4\"></div>\n        </div>\n    </div>\n      \n    </div>\n    \n  <!-- /.container -->\n</section>\n<!-- /section -->\n\n<style>\n    .wrapper-hero-erp-tech .mx-sm-n2{\n        color: #22282F;\n        font-family: Work Sans;\n        font-size: 38px;\n        font-style: normal;\n        font-weight: 600;\n        line-height: 46px;\n        min-width: 636px;\n    }\n    .wrapper-hero-erp-tech .px-md-10{\n        color: #38424E;\n        font-family: Manrope;\n        font-size: 15px;\n        font-style: normal;\n        font-weight: 500;\n        line-height: 22px;\n        letter-spacing: 0.43px;\n        min-width: 636px;\n    }\n    .wrapper-hero-erp-tech .span-tag{\n        color: #006CC9;\n        font-family: Manrope;\n        font-size: 13px;\n        font-style: normal;\n        font-weight: 600;\n        line-height: 14px;\n        \n        \n    }\n    .wrapper-hero-erp-tech .span-tag1{\n        padding: 8px 18px;\n        display: flex;\n        align-items: flex-start;\n        gap: var(--Radius, 8px);\n        border-radius: 100px;\n        background: #EAEFF1;\n        width: 167px;\n        height: 38px;\n    }\n    .wrapper-hero-erp-tech .tag1_text{\n        width: 150px !important;\n    }\n    .wrapper-hero-erp-tech .span-tag2{\n        padding: 12px 22px;\n        display: flex;\n        align-items: flex-start;\n        gap: var(--Radius, 8px);\n        border-radius: 100px;\n        background: #EAEFF1;\n        width: 105px;\n        height: 38px;\n    }\n    .wrapper-hero-erp-tech .span-tag3{\n        padding: 12px 22px;\n        display: flex;\n        align-items: flex-start;\n        gap: var(--Radius, 8px);\n        border-radius: 100px;\n        background: #EAEFF1;\n        width: 134px;\n        height: 38px;\n    }\n    .wrapper-hero-erp-tech .tags-div{\n        gap: 20px !important;\n    }\n    .wrapper-hero-erp-tech .offset-lg-7{\n        margin-left: 30%;\n    }\n    .wrapper-hero-erp-tech .img-erp{\n        width: 210%;\n        max-width: 300%;\n    }\n    .wrapper-hero-erp-tech .div-img{\n        margin-left: 40px !important;\n        margin-bottom: 50px !important;\n    }\n    .wrapper-hero-erp-tech .tetris{\n        width: 54px;\n        height: 54px;\n        transform: rotate(-90deg);\n        margin-bottom: 20px;\n        margin-right: 20px;\n    }\n    .wrapper-hero-erp-tech .tetris .tetris-rec1{\n        width: 27px;\n        height: 27px;\n        flex-shrink: 0;\n        border-radius: 0px;\n        background: #000;\n    }\n    .wrapper-hero-erp-tech .tetris .tetris-rec2{\n        width: 27px;\n        height: 27px;\n        flex-shrink: 0;\n        border-radius: var(--Default-space, 0px);\n        background: #9ED1FD;\n    }\n    .wrapper-hero-erp-tech .tetris .tetris-rec3{\n        width: 27px;\n        height: 27px;\n        flex-shrink: 0;\n        border-radius: 0px;\n        background: #0089FF;\n    }\n    .wrapper-hero-erp-tech .retangles{\n        display: flex;\n        margin-left: 55px;\n        position: relative;\n        top: 80px;\n    }\n    .wrapper-hero-erp-tech .retangles .tetris-rec1{\n        width: 36px;\n        height: 36px;\n        border-radius: var(--Default-space, 0px);\n        background: #0089FF;\n    }\n    .wrapper-hero-erp-tech .retangles .tetris-rec2{\n        width: 36px;\n        height: 36px;\n        border-radius: var(--Default-space, 0px);\n        background: #FFF;\n    }\n    .wrapper-hero-erp-tech .tetris1{\n        width: 54px;\n        height: 54px;\n        transform: rotate(-90deg);\n    }\n    .wrapper-hero-erp-tech .tetris1 .tetris1-rec1{\n        width: 27px;\n        height: 27px;\n        flex-shrink: 0;\n        border-radius: 0px;\n        background: #0089FF;\n    }\n    .wrapper-hero-erp-tech .tetris1 .tetris1-rec2{\n        width: 27px;\n        height: 27px;\n        flex-shrink: 0;\n        border-radius: 0px;\n        background: #000;\n    }\n    .wrapper-hero-erp-tech .tetris1 .tetris1-rec4{\n        width: 27px;\n        height: 27px;\n        flex-shrink: 0;\n        border-radius: var(--Default-space, 0px);\n        background: #9ED1FD;\n    }\n    .wrapper-hero-erp-tech .retangles1{\n        display: flex;\n        justify-content: end !important;\n        position: relative;\n        bottom: 60px !important;\n    }\n    .wrapper-hero-erp-tech .retangles1 .tetris-rec1{\n        width: 36px;\n        height: 36px;\n        border-radius: var(--Default-space, 0px);\n        background: #0089FF;\n    }\n    .wrapper-hero-erp-tech .retangles1 .tetris-rec2{\n        width: 36px;\n        height: 36px;\n        border-radius: var(--Default-space, 0px);\n        background: #FFF;\n    }\n</style>",
   "type": "Section"
  },
  {
@@ -6689,12 +6689,321 @@
     "reqd": 0
    }
   ],
-  "modified": "2023-11-08 16:09:13.068191",
+  "modified": "2023-11-09 15:51:58.324263",
   "module": "Techmax Solucoes",
   "name": "Tech Skills",
   "standard": 0,
-  "template": "<section class=\"tech-skills-tmx wrapper\">\n  <div class=\"container py-14 py-md-16 text-center p-tech\">\n      <div class=\"text-start\" style=\"margin-left: 65px;\">\n        <h1 class=\"title_section\">{{ _(title) }}</h1>\n        <p class=\"subtitle_section\">{{ _(subtitle) }}</p>\n      </div>\n    <!-- /.row -->\n    <div class=\"position-relative\">\n        <!--Design!-->\n        <div class=\"row gx-lg-8 gx-xl-12 gy-8 mt-10 ms-7\" style=\"flex-wrap: nowrap !important;width:50%!important;align-items: baseline!important;\">\n            <div class=\"col-md-6 col-lg-4\">\n                <div class=\"d-flex flex-row\">\n                  <div>\n                    <p class=\"mb--0\">{{text}}</p>\n                  </div>\n                </div>\n            </div>\n            \n            <div class=\"col-md-6 col-lg-4\">\n                <div class=\"d-flex flex-row align-items-center\">\n                  <div>\n                    <img src=\"{{img1}}\" class=\"svg-inject icon-svg icon-svg-sm text-aqua me-4\" alt=\"\" />\n                  </div>\n                  <div>\n                    <p class=\"mb-0\">{{text_skill1}}</p>\n                  </div>\n                </div>\n            </div>\n            \n            <div class=\"col-md-6 col-lg-4\">\n                <div class=\"d-flex flex-row align-items-center\">\n                  <div>\n                    <img src=\"{{img2}}\" class=\"svg-inject icon-svg icon-svg-sm text-aqua me-4\" alt=\"\" />\n                  </div>\n                  <div>\n                    <p class=\"mb-0\">{{text_skill2}}</p>\n                  </div>\n                </div>\n            </div>\n            \n            <div class=\"col-md-6 col-lg-4\">\n                <div class=\"d-flex flex-row align-items-center\">\n                  <div>\n                    <img src=\"{{img3}}\" class=\"svg-inject icon-svg icon-svg-sm text-aqua me-4\" alt=\"\" />\n                  </div>\n                  <div>\n                    <p class=\"mb-0\">{{text_skill3}}</p>\n                  </div>\n                </div>\n            </div>\n        </div>\n        <div class=\"linha-skill\"></div>\n        <!--Front!-->\n        <div class=\"row gx-lg-8 gx-xl-12 gy-8 mt-10 ms-7\" style=\"flex-wrap: nowrap !important;width:50%!important;align-items: baseline!important;\">\n            <div class=\"col-md-6 col-lg-4\">\n                <div class=\"d-flex flex-row\">\n                  <div>\n                    <p class=\"mb--0\">{{text1}}</p>\n                  </div>\n                </div>\n            </div>\n            \n            <div class=\"col-md-6 col-lg-4\">\n                <div class=\"d-flex flex-row align-items-center\">\n                  <div>\n                    <img src=\"{{img4}}\" class=\"svg-inject icon-svg icon-svg-sm text-aqua me-4\" alt=\"\" />\n                  </div>\n                  <div>\n                    <p class=\"mb-0\">{{text_skill4}}</p>\n                  </div>\n                </div>\n            </div>\n            \n            <div class=\"col-md-6 col-lg-4\">\n                <div class=\"d-flex flex-row align-items-center\">\n                  <div>\n                    <img src=\"{{img5}}\" class=\"svg-inject icon-svg icon-svg-sm text-aqua me-4\" alt=\"\" />\n                  </div>\n                  <div>\n                    <p class=\"mb-0\">{{text_skill5}}</p>\n                  </div>\n                </div>\n            </div>\n            \n            <div class=\"col-md-6 col-lg-4\">\n                <div class=\"d-flex flex-row align-items-center\">\n                  <div>\n                    <img src=\"{{img6}}\" class=\"svg-inject icon-svg icon-svg-sm text-aqua me-4\" alt=\"\" />\n                  </div>\n                  <div>\n                    <p class=\"mb-0\">{{text_skill6}}</p>\n                  </div>\n                </div>\n            </div>\n            \n            <div class=\"col-md-6 col-lg-4\">\n                <div class=\"d-flex flex-row align-items-center\">\n                  <div>\n                    <img src=\"{{img7}}\" class=\"svg-inject icon-svg icon-svg-sm text-aqua me-4\" alt=\"\" />\n                  </div>\n                  <div>\n                    <p class=\"mb-0\">{{text_skill7}}</p>\n                  </div>\n                </div>\n            </div>\n            \n            <div class=\"col-md-6 col-lg-4\">\n                <div class=\"d-flex flex-row align-items-center\">\n                  <div>\n                    <img src=\"{{img8}}\" class=\"svg-inject icon-svg icon-svg-sm text-aqua me-4\" alt=\"\" />\n                  </div>\n                  <div>\n                    <p class=\"mb-0\">{{text_skill8}}</p>\n                  </div>\n                </div>\n            </div>\n        </div>\n        <div class=\"linha-skill\"></div>\n        <!--Backend!-->\n        <div class=\"row gx-lg-8 gx-xl-12 gy-8 mt-10 ms-7\" style=\"flex-wrap: nowrap !important;width:50%!important;align-items: baseline!important;\">\n            <div class=\"col-md-6 col-lg-4\">\n                <div class=\"d-flex flex-row align-items-center\">\n                  <div>\n                    <p class=\"mb--0\">{{text2}}</p>\n                  </div>\n                </div>\n            </div>\n            \n            <div class=\"col-md-6 col-lg-4\">\n                <div class=\"d-flex flex-row align-items-center\">\n                  <div>\n                    <img src=\"{{img9}}\" class=\"svg-inject icon-svg icon-svg-sm text-aqua me-4\" alt=\"\" />\n                  </div>\n                  <div>\n                    <p class=\"mb-0\">{{text_skill9}}</p>\n                  </div>\n                </div>\n            </div>\n            \n            <div class=\"col-md-6 col-lg-4\">\n                <div class=\"d-flex flex-row align-items-center\">\n                  <div>\n                    <img src=\"{{img10}}\" class=\"svg-inject icon-svg icon-svg-sm text-aqua me-4\" alt=\"\" />\n                  </div>\n                  <div>\n                    <p class=\"mb-0\">{{text_skill10}}</p>\n                  </div>\n                </div>\n            </div>\n            \n            <div class=\"col-md-6 col-lg-4\">\n                <div class=\"d-flex flex-row align-items-center\">\n                  <div>\n                    <img src=\"{{img11}}\" class=\"svg-inject icon-svg icon-svg-sm text-aqua me-4\" alt=\"\" />\n                  </div>\n                  <div>\n                    <p class=\"mb-0\">{{text_skill11}}</p>\n                  </div>\n                </div>\n            </div>\n            \n            <div class=\"col-md-6 col-lg-4\">\n                <div class=\"d-flex flex-row align-items-center\">\n                  <div>\n                    <img src=\"{{img12}}\" class=\"svg-inject icon-svg icon-svg-sm text-aqua me-4\" alt=\"\" />\n                  </div>\n                  <div>\n                    <p class=\"mb-0\">{{text_skill12}}</p>\n                  </div>\n                </div>\n            </div>\n            \n            <div class=\"col-md-6 col-lg-4\">\n                <div class=\"d-flex flex-row align-items-center\">\n                  <div>\n                    <img src=\"{{img13}}\" class=\"svg-inject icon-svg icon-svg-sm text-aqua me-4\" alt=\"\" />\n                  </div>\n                  <div>\n                    <p class=\"mb-0\">{{text_skill13}}</p>\n                  </div>\n                </div>\n            </div>\n        </div>\n        <div class=\"linha-skill\"></div>\n        <!--Mobile!-->\n        <div class=\"row gx-lg-8 gx-xl-12 gy-8 mt-10 ms-7\" style=\"flex-wrap: nowrap !important;width:50%!important;align-items: baseline!important;\">\n            <div class=\"col-md-6 col-lg-4\">\n                <div class=\"d-flex flex-row\">\n                  <div>\n                    <p class=\"mb--0\">{{text3}}</p>\n                  </div>\n                </div>\n            </div>\n            \n            <div class=\"col-md-6 col-lg-4\">\n                <div class=\"d-flex flex-row align-items-center\">\n                  <div>\n                    <img src=\"{{img14}}\" class=\"svg-inject icon-svg icon-svg-sm text-aqua me-4\" alt=\"\" />\n                  </div>\n                  <div>\n                    <p class=\"mb-0\">{{text_skill14}}</p>\n                  </div>\n                </div>\n            </div>\n            \n            <div class=\"col-md-6 col-lg-4\">\n                <div class=\"d-flex flex-row align-items-center\">\n                  <div>\n                    <img src=\"{{img15}}\" class=\"svg-inject icon-svg icon-svg-sm text-aqua me-4\" alt=\"\" />\n                  </div>\n                  <div>\n                    <p class=\"mb-0\" style=\"width:150px!important;\">{{text_skill15}}</p>\n                  </div>\n                </div>\n            </div>\n            \n        </div>\n        <div class=\"linha-skill\"></div>\n      <!--/.row -->\n    </div>\n    <!-- /.position-relative -->\n  </div>\n  <!-- /.container -->\n</section>\n<!-- /section -->\n<style>\n    .tech-skills-tmx .p-tech{\n        padding-left: 0px !important;\n        padding-right: 100px !important;\n    }\n    .tech-skills-tmx .p-tech .title_section{\n        color: #22282F;\n        font-size: 38px;\n        font-style: normal;\n        font-weight: 600;\n        line-height: 46px;\n    }\n    .tech-skills-tmx .p-tech .subtitle_section{\n        color: #38424E;\n        font-family: Manrope;\n        font-size: 15px;\n        font-style: normal;\n        font-weight: 500;\n        line-height: 22px;\n        letter-spacing: 0.43px;\n        width: 96%;\n    }\n    .tech-skills-tmx .p-tech .mb--0{\n        color: #22282F;\n        font-family: Manrope;\n        font-size: 15px;\n        font-style: normal;\n        font-weight: 600;\n        line-height: 22px;\n    }\n    .tech-skills-tmx .p-tech .mb-0{\n        color: var(--light-typography-color-heading-text, #22282F);\n        font-family: Manrope;\n        font-size: 15px;\n        font-style: normal;\n        font-weight: 500;\n        line-height: 22px;\n        letter-spacing: 0.43px;\n    }\n    .tech-skills-tmx .linha-skill{\n        border-radius: 0px;\n        background: #DBDADE;\n        width: 1050px;\n        height: 1px;\n        margin-top: 30px;\n        margin-left: 64px;\n    }\n</style>",
+  "template": "<section class=\"tech-skills-tmx wrapper\">\n  <div class=\"container py-14 py-md-16 text-center p-tech\">\n      <div class=\"text-start\" style=\"margin-left: 65px;\">\n        <h1 class=\"title_section\">{{ _(title) }}</h1>\n        <p class=\"subtitle_section\">{{ _(subtitle) }}</p>\n      </div>\n    <!-- /.row -->\n    <div class=\"position-relative\">\n        <!--Design!-->\n        <div class=\"row gx-lg-8 gx-xl-12 gy-8 mt-10 ms-7\" style=\"flex-wrap: nowrap !important;width:50%!important;align-items: baseline!important;\">\n            <div class=\"col-md-6 col-lg-4\">\n                <div class=\"d-flex flex-row\">\n                  <div>\n                    <p class=\"mb--0\">{{text}}</p>\n                  </div>\n                </div>\n            </div>\n            \n            <div class=\"col-md-6 col-lg-4\">\n                <div class=\"d-flex flex-row align-items-center\">\n                  <div>\n                    <img src=\"{{img1}}\" class=\"svg-inject icon-svg icon-svg-sm text-aqua me-4\" alt=\"\" />\n                  </div>\n                  <div>\n                    <p class=\"mb-0\">{{text_skill1}}</p>\n                  </div>\n                </div>\n            </div>\n            \n            <div class=\"col-md-6 col-lg-4\">\n                <div class=\"d-flex flex-row align-items-center\">\n                  <div>\n                    <img src=\"{{img2}}\" class=\"svg-inject icon-svg icon-svg-sm text-aqua me-4\" alt=\"\" />\n                  </div>\n                  <div>\n                    <p class=\"mb-0\">{{text_skill2}}</p>\n                  </div>\n                </div>\n            </div>\n            \n            <div class=\"col-md-6 col-lg-4\">\n                <div class=\"d-flex flex-row align-items-center\">\n                  <div>\n                    <img src=\"{{img3}}\" class=\"svg-inject icon-svg icon-svg-sm text-aqua me-4\" alt=\"\" />\n                  </div>\n                  <div>\n                    <p class=\"mb-0\">{{text_skill3}}</p>\n                  </div>\n                </div>\n            </div>\n        </div>\n        <div class=\"linha-skill\"></div>\n        <!--Front!-->\n        <div class=\"row gx-lg-8 gx-xl-12 gy-8 mt-10 ms-7\" style=\"flex-wrap: nowrap !important;width:50%!important;align-items: baseline!important;\">\n            <div class=\"col-md-6 col-lg-4\">\n                <div class=\"d-flex flex-row\">\n                  <div>\n                    <p class=\"mb--0\">{{text1}}</p>\n                  </div>\n                </div>\n            </div>\n            \n            <div class=\"col-md-6 col-lg-4\">\n                <div class=\"d-flex flex-row align-items-center\">\n                  <div>\n                    <img src=\"{{img4}}\" class=\"svg-inject icon-svg icon-svg-sm text-aqua me-4\" alt=\"\" />\n                  </div>\n                  <div>\n                    <p class=\"mb-0\">{{text_skill4}}</p>\n                  </div>\n                </div>\n            </div>\n            \n            <div class=\"col-md-6 col-lg-4\">\n                <div class=\"d-flex flex-row align-items-center\">\n                  <div>\n                    <img src=\"{{img5}}\" class=\"svg-inject icon-svg icon-svg-sm text-aqua me-4\" alt=\"\" />\n                  </div>\n                  <div>\n                    <p class=\"mb-0\">{{text_skill5}}</p>\n                  </div>\n                </div>\n            </div>\n            \n            <div class=\"col-md-6 col-lg-4\">\n                <div class=\"d-flex flex-row align-items-center\">\n                  <div>\n                    <img src=\"{{img6}}\" class=\"svg-inject icon-svg icon-svg-sm text-aqua me-4\" alt=\"\" />\n                  </div>\n                  <div>\n                    <p class=\"mb-0\">{{text_skill6}}</p>\n                  </div>\n                </div>\n            </div>\n            \n            <div class=\"col-md-6 col-lg-4\">\n                <div class=\"d-flex flex-row align-items-center\">\n                  <div>\n                    <img src=\"{{img7}}\" class=\"svg-inject icon-svg icon-svg-sm text-aqua me-4\" alt=\"\" />\n                  </div>\n                  <div>\n                    <p class=\"mb-0\">{{text_skill7}}</p>\n                  </div>\n                </div>\n            </div>\n            \n            <div class=\"col-md-6 col-lg-4\">\n                <div class=\"d-flex flex-row align-items-center\">\n                  <div>\n                    <img src=\"{{img8}}\" class=\"svg-inject icon-svg icon-svg-sm text-aqua me-4\" alt=\"\" />\n                  </div>\n                  <div>\n                    <p class=\"mb-0\">{{text_skill8}}</p>\n                  </div>\n                </div>\n            </div>\n        </div>\n        <div class=\"linha-skill\"></div>\n        <!--Backend!-->\n        <div class=\"row gx-lg-8 gx-xl-12 gy-8 mt-10 ms-7\" style=\"flex-wrap: nowrap !important;width:50%!important;align-items: baseline!important;\">\n            <div class=\"col-md-6 col-lg-4\">\n                <div class=\"d-flex flex-row align-items-center\">\n                  <div>\n                    <p class=\"mb--0\">{{text2}}</p>\n                  </div>\n                </div>\n            </div>\n            \n            <div class=\"col-md-6 col-lg-4\">\n                <div class=\"d-flex flex-row align-items-center\">\n                  <div>\n                    <img src=\"{{img9}}\" class=\"svg-inject icon-svg icon-svg-sm text-aqua me-4\" alt=\"\" />\n                  </div>\n                  <div>\n                    <p class=\"mb-0\">{{text_skill9}}</p>\n                  </div>\n                </div>\n            </div>\n            \n            <div class=\"col-md-6 col-lg-4\">\n                <div class=\"d-flex flex-row align-items-center\">\n                  <div>\n                    <img src=\"{{img10}}\" class=\"svg-inject icon-svg icon-svg-sm text-aqua me-4\" alt=\"\" />\n                  </div>\n                  <div>\n                    <p class=\"mb-0\">{{text_skill10}}</p>\n                  </div>\n                </div>\n            </div>\n            \n            <div class=\"col-md-6 col-lg-4\">\n                <div class=\"d-flex flex-row align-items-center\">\n                  <div>\n                    <img src=\"{{img11}}\" class=\"svg-inject icon-svg icon-svg-sm text-aqua me-4\" alt=\"\" />\n                  </div>\n                  <div>\n                    <p class=\"mb-0\">{{text_skill11}}</p>\n                  </div>\n                </div>\n            </div>\n            \n            <div class=\"col-md-6 col-lg-4\">\n                <div class=\"d-flex flex-row align-items-center\">\n                  <div>\n                    <img src=\"{{img12}}\" class=\"svg-inject icon-svg icon-svg-sm text-aqua me-4\" alt=\"\" />\n                  </div>\n                  <div>\n                    <p class=\"mb-0\">{{text_skill12}}</p>\n                  </div>\n                </div>\n            </div>\n            \n            <div class=\"col-md-6 col-lg-4\">\n                <div class=\"d-flex flex-row align-items-center\">\n                  <div>\n                    <img src=\"{{img13}}\" class=\"svg-inject icon-svg icon-svg-sm text-aqua me-4\" alt=\"\" />\n                  </div>\n                  <div>\n                    <p class=\"mb-0\">{{text_skill13}}</p>\n                  </div>\n                </div>\n            </div>\n        </div>\n        <div class=\"linha-skill\"></div>\n        <!--Mobile!-->\n        <div class=\"row gx-lg-8 gx-xl-12 gy-8 mt-10 ms-7\" style=\"flex-wrap: nowrap !important;width:50%!important;align-items: baseline!important;\">\n            <div class=\"col-md-6 col-lg-4\">\n                <div class=\"d-flex flex-row\">\n                  <div>\n                    <p class=\"mb--0\">{{text3}}</p>\n                  </div>\n                </div>\n            </div>\n            \n            <div class=\"col-md-6 col-lg-4\">\n                <div class=\"d-flex flex-row align-items-center\">\n                  <div>\n                    <img src=\"{{img14}}\" class=\"svg-inject icon-svg icon-svg-sm text-aqua me-4\" alt=\"\" />\n                  </div>\n                  <div>\n                    <p class=\"mb-0\">{{text_skill14}}</p>\n                  </div>\n                </div>\n            </div>\n            \n            <div class=\"col-md-6 col-lg-4\">\n                <div class=\"d-flex flex-row align-items-center\">\n                  <div>\n                    <img src=\"{{img15}}\" class=\"svg-inject icon-svg icon-svg-sm text-aqua me-4\" alt=\"\" />\n                  </div>\n                  <div>\n                    <p class=\"mb-0\" style=\"width:150px!important;\">{{text_skill15}}</p>\n                  </div>\n                </div>\n            </div>\n            \n        </div>\n      <!--/.row -->\n    </div>\n    <!-- /.position-relative -->\n  </div>\n  <!-- /.container -->\n</section>\n<!-- /section -->\n<style>\n    .tech-skills-tmx .p-tech{\n        padding-left: 0px !important;\n        padding-right: 100px !important;\n    }\n    .tech-skills-tmx .p-tech .title_section{\n        color: #22282F;\n        font-size: 38px;\n        font-style: normal;\n        font-weight: 600;\n        line-height: 46px;\n    }\n    .tech-skills-tmx .p-tech .subtitle_section{\n        color: #38424E;\n        font-family: Manrope;\n        font-size: 15px;\n        font-style: normal;\n        font-weight: 500;\n        line-height: 22px;\n        letter-spacing: 0.43px;\n        width: 96%;\n    }\n    .tech-skills-tmx .p-tech .mb--0{\n        color: #22282F;\n        font-family: Manrope;\n        font-size: 15px;\n        font-style: normal;\n        font-weight: 600;\n        line-height: 22px;\n    }\n    .tech-skills-tmx .p-tech .mb-0{\n        color: var(--light-typography-color-heading-text, #22282F);\n        font-family: Manrope;\n        font-size: 15px;\n        font-style: normal;\n        font-weight: 500;\n        line-height: 22px;\n        letter-spacing: 0.43px;\n    }\n    .tech-skills-tmx .linha-skill{\n        border-radius: 0px;\n        background: #DBDADE;\n        width: 1050px;\n        height: 1px;\n        margin-top: 30px;\n        margin-left: 64px;\n    }\n</style>",
   "type": "Section"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Web Template",
+  "fields": [
+   {
+    "default": null,
+    "fieldname": "title",
+    "fieldtype": "Small Text",
+    "label": "Title",
+    "options": null,
+    "parent": "Features 9 TechmaxDS",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 1
+   },
+   {
+    "default": null,
+    "fieldname": "subtitle",
+    "fieldtype": "Small Text",
+    "label": "Subtitle",
+    "options": null,
+    "parent": "Features 9 TechmaxDS",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "section",
+    "fieldtype": "Section Break",
+    "label": "Section",
+    "options": null,
+    "parent": "Features 9 TechmaxDS",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "img1",
+    "fieldtype": "Attach Image",
+    "label": "Img Card 1",
+    "options": null,
+    "parent": "Features 9 TechmaxDS",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "title_card1",
+    "fieldtype": "Data",
+    "label": "Title Card",
+    "options": null,
+    "parent": "Features 9 TechmaxDS",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "text_card1",
+    "fieldtype": "Small Text",
+    "label": "Text Card",
+    "options": null,
+    "parent": "Features 9 TechmaxDS",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "img2",
+    "fieldtype": "Attach Image",
+    "label": "Img Card 2",
+    "options": null,
+    "parent": "Features 9 TechmaxDS",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "title_card2",
+    "fieldtype": "Data",
+    "label": "Title Card",
+    "options": null,
+    "parent": "Features 9 TechmaxDS",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "text_card2",
+    "fieldtype": "Small Text",
+    "label": "Text Card",
+    "options": null,
+    "parent": "Features 9 TechmaxDS",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "img3",
+    "fieldtype": "Attach Image",
+    "label": "Img Card 3",
+    "options": null,
+    "parent": "Features 9 TechmaxDS",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "title_card3",
+    "fieldtype": "Data",
+    "label": "Title Card",
+    "options": null,
+    "parent": "Features 9 TechmaxDS",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "text_card3",
+    "fieldtype": "Small Text",
+    "label": "Text Card",
+    "options": null,
+    "parent": "Features 9 TechmaxDS",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "img4",
+    "fieldtype": "Attach Image",
+    "label": "Img Card 4",
+    "options": null,
+    "parent": "Features 9 TechmaxDS",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "title_card4",
+    "fieldtype": "Data",
+    "label": "Title Card",
+    "options": null,
+    "parent": "Features 9 TechmaxDS",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "text_card4",
+    "fieldtype": "Small Text",
+    "label": "Text Card",
+    "options": null,
+    "parent": "Features 9 TechmaxDS",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "img5",
+    "fieldtype": "Attach Image",
+    "label": "Img Card 5",
+    "options": null,
+    "parent": "Features 9 TechmaxDS",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "title_card5",
+    "fieldtype": "Data",
+    "label": "Title Card",
+    "options": null,
+    "parent": "Features 9 TechmaxDS",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "text_card5",
+    "fieldtype": "Small Text",
+    "label": "Text Card",
+    "options": null,
+    "parent": "Features 9 TechmaxDS",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "img6",
+    "fieldtype": "Attach Image",
+    "label": "Img Card 6",
+    "options": null,
+    "parent": "Features 9 TechmaxDS",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "title_card6",
+    "fieldtype": "Data",
+    "label": "Title Card",
+    "options": null,
+    "parent": "Features 9 TechmaxDS",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "text_card6",
+    "fieldtype": "Small Text",
+    "label": "Text Card",
+    "options": null,
+    "parent": "Features 9 TechmaxDS",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "img7",
+    "fieldtype": "Attach Image",
+    "label": "Img Card 7",
+    "options": null,
+    "parent": "Features 9 TechmaxDS",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "title_card7",
+    "fieldtype": "Data",
+    "label": "Title Card",
+    "options": null,
+    "parent": "Features 9 TechmaxDS",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "text_card7",
+    "fieldtype": "Small Text",
+    "label": "Text Card",
+    "options": null,
+    "parent": "Features 9 TechmaxDS",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "img8",
+    "fieldtype": "Attach Image",
+    "label": "Img Card 8",
+    "options": null,
+    "parent": "Features 9 TechmaxDS",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "title_card8",
+    "fieldtype": "Data",
+    "label": "Title Card",
+    "options": null,
+    "parent": "Features 9 TechmaxDS",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "text_card8",
+    "fieldtype": "Small Text",
+    "label": "Text Card",
+    "options": null,
+    "parent": "Features 9 TechmaxDS",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   }
+  ],
+  "modified": "2023-11-09 18:24:00.788795",
+  "module": "Techmax Solucoes",
+  "name": "Features 9 TechmaxDS",
+  "standard": 0,
+  "template": "<section class=\"wrapper wrapper-features9-dsapp\">\n<div class=\"container py-14 py-md-16\" style=\"padding-left:0px;padding-right:0px;\">\n    <div class=\"row text-center\">\n      <div class=\"text-start\" style=\"margin-left: 65px;\">\n        <h1 class=\"title_section\">{{ _(title) }}</h1>\n        <p class=\"subtitle_section\">{{ _(subtitle) }}</p>\n      </div>\n      <!-- /column -->\n    </div>\n    <!-- /.row -->\n        <div class=\"row gx-lg-8 gx-xl-12 gy-8 mt-10\" style=\"display: flex;justify-content: space-around;\">\n            <div class=\"col-md-6 col-lg-4\" style=\"padding-left:0px;padding-right:0px;\">\n                <div class=\"d-flex flex-row\">\n                  <div>\n                    <img src=\"{{img1}}\" class=\"svg-inject icon-svg icon-svg-sm text-aqua me-4\" style=\"width:50px;height:59px;\" alt=\"\" />\n                  </div>\n                  <div>\n                    <h4 class=\"mb-1 mb-yel\">{{title_card1}}</h4>\n                    <p class=\"mb-0\">{{text_card1}}</p>\n                  </div>\n                </div>\n            </div>\n            \n            <div class=\"col-md-6 col-lg-4\" style=\"padding-left:0px;padding-right:0px;\">\n                <div class=\"d-flex flex-row\">\n                  <div>\n                    <img src=\"{{img2}}\" class=\"svg-inject icon-svg icon-svg-sm text-aqua me-4\" style=\"width:50px;height:59px;\" alt=\"\" />\n                  </div>\n                  <div>\n                    <h4 class=\"mb-1 mb-blu\">{{title_card2}}</h4>\n                    <p class=\"mb-0\">{{text_card2}}</p>\n                  </div>\n                </div>\n            </div>\n        </div>\n        <!---->\n        <div class=\"row gx-lg-8 gx-xl-12 gy-8 mt-7\" style=\"display: flex;justify-content: space-around;\">\n            <div class=\"col-md-6 col-lg-4\" style=\"padding-left:0px;padding-right:0px;\">\n                <div class=\"d-flex flex-row\">\n                  <div>\n                    <img src=\"{{img3}}\" class=\"svg-inject icon-svg icon-svg-sm text-aqua me-4\" style=\"width:50px;height:59px;\" alt=\"\" />\n                  </div>\n                  <div>\n                    <h4 class=\"mb-1 mb-rd\">{{title_card3}}</h4>\n                    <p class=\"mb-0\">{{text_card3}}</p>\n                  </div>\n                </div>\n            </div>\n            \n            <div class=\"col-md-6 col-lg-4\" style=\"padding-left:0px;padding-right:0px;\">\n                <div class=\"d-flex flex-row\">\n                  <div>\n                    <img src=\"{{img4}}\" class=\"svg-inject icon-svg icon-svg-sm text-aqua me-4\" style=\"width:50px;height:59px;\" alt=\"\" />\n                  </div>\n                  <div>\n                    <h4 class=\"mb-1 mb-pur\">{{title_card4}}</h4>\n                    <p class=\"mb-0\">{{text_card4}}</p>\n                  </div>\n                </div>\n            </div>\n        </div>\n        <!---->\n        <div class=\"row gx-lg-8 gx-xl-12 gy-8 mt-7\" style=\"display: flex;justify-content: space-around;\">\n            <div class=\"col-md-6 col-lg-4\" style=\"padding-left:0px;padding-right:0px;\">\n                <div class=\"d-flex flex-row\">\n                  <div>\n                    <img src=\"{{img5}}\" class=\"svg-inject icon-svg icon-svg-sm text-aqua me-4\" style=\"width:50px;height:59px;\" alt=\"\" />\n                  </div>\n                  <div>\n                    <h4 class=\"mb-1 mb-gren\">{{title_card5}}</h4>\n                    <p class=\"mb-0\">{{text_card5}}</p>\n                  </div>\n                </div>\n            </div>\n            \n            <div class=\"col-md-6 col-lg-4\" style=\"padding-left:0px;padding-right:0px;\">\n                <div class=\"d-flex flex-row\">\n                  <div>\n                    <img src=\"{{img6}}\" class=\"svg-inject icon-svg icon-svg-sm text-aqua me-4\" style=\"width:50px;height:59px;\" alt=\"\" />\n                  </div>\n                  <div>\n                    <h4 class=\"mb-1 mb-pin\">{{title_card6}}</h4>\n                    <p class=\"mb-0\">{{text_card6}}</p>\n                  </div>\n                </div>\n            </div>\n        </div>\n        <!---->\n        <div class=\"row gx-lg-8 gx-xl-12 gy-8 mt-7\" style=\"display: flex;justify-content: space-around;\">\n            <div class=\"col-md-6 col-lg-4\" style=\"padding-left:0px;padding-right:0px;\">\n                <div class=\"d-flex flex-row\">\n                  <div>\n                    <img src=\"{{img7}}\" class=\"svg-inject icon-svg icon-svg-sm text-aqua me-4\" style=\"width:50px;height:59px;\" alt=\"\" />\n                  </div>\n                  <div>\n                    <h4 class=\"mb-1 mb-blu-ligh\">{{title_card7}}</h4>\n                    <p class=\"mb-0\">{{text_card7}}</p>\n                  </div>\n                </div>\n            </div>\n            \n            <div class=\"col-md-6 col-lg-4\" style=\"padding-left:0px;padding-right:0px;\">\n                <div class=\"d-flex flex-row\">\n                  <div>\n                    <img src=\"{{img8}}\" class=\"svg-inject icon-svg icon-svg-sm text-aqua me-4\" style=\"width:50px;height:59px;\" alt=\"\" />\n                  </div>\n                  <div>\n                    <h4 class=\"mb-1 mb-pur-dark\">{{title_card8}}</h4>\n                    <p class=\"mb-0\">{{text_card8}}</p>\n                  </div>\n                </div>\n            </div>\n        </div>\n    <!--/.row -->\n  </div>\n</section>\n\n<style>\n    .wrapper-features9-dsapp .title_section{\n        color: #22282F;\n        font-family: Work Sans;\n        font-size: 38px;\n        font-style: normal;\n        font-weight: 600;\n        line-height: 46px;\n        width: 77%;\n    }\n    .wrapper-features9-dsapp .subtitle_section{\n        color: #38424E;\n        font-family: Manrope;\n        font-size: 15px;\n        font-style: normal;\n        font-weight: 500;\n        line-height: 22px;\n        letter-spacing: 0.43px;\n        width: 77%;\n    }\n    .wrapper-features9-dsapp .mb-1{\n        font-family: Work Sans;\n        font-size: 26px;\n        font-style: normal;\n        font-weight: 600;\n        line-height: 36px;\n    }\n    .wrapper-features9-dsapp .mb-yel{\n        color: #FEA525;\n    }\n    .wrapper-features9-dsapp .mb-blu{\n        color: #1668FF;\n    }\n    .wrapper-features9-dsapp .mb-rd{\n        color: #FE626B;\n    }\n    .wrapper-features9-dsapp .mb-pur{\n        color: #853AFF;\n    }\n    .wrapper-features9-dsapp .mb-gren{\n        color: #45C4A0;\n    }\n    .wrapper-features9-dsapp .mb-pin{\n        color: #E668B3;\n    }\n    .wrapper-features9-dsapp .mb-blu-ligh{\n        color: #5EB9F0;\n    }\n    .wrapper-features9-dsapp .mb-pur-dark{\n        color: #605DBA;\n    }\n    .wrapper-features9-dsapp .mb-0{\n        color: #38424E;\n        font-family: Manrope;\n        font-size: 15px;\n        font-style: normal;\n        font-weight: 500;\n        line-height: 22px;\n        letter-spacing: 0.43px;\n        text-align: justify !important;\n    }\n</style>",
+  "type": "Component"
  },
  {
   "docstatus": 0,
@@ -7273,11 +7582,389 @@
     "reqd": 0
    }
   ],
-  "modified": "2023-11-08 18:13:34.048612",
+  "modified": "2023-11-10 16:29:32.198743",
   "module": "Techmax Solucoes",
   "name": "Phases TechMax",
   "standard": 0,
-  "template": "<section class=\"Phases-tmx wrapper\">\n  <div class=\"container py-14 py-md-16 text-center p-tech\">\n      <div class=\"text-start\" style=\"margin-left: 65px;\">\n        <h1 class=\"title_section\">{{ _(title) }}</h1>\n        <p class=\"subtitle_section\">{{ _(subtitle) }}</p>\n      </div>\n    <!-- /.row -->\n    <div class=\"position-relative\">\n        <!--Design!-->\n        <div class=\"row gx-lg-8 gx-xl-12 gy-8 mt-10 ms-7\" style=\"flex-wrap: nowrap !important;width:50%!important;align-items: baseline!important;\">\n            <div class=\"col-md-6 col-lg-4\">\n                <div>\n                    <img src=\"{{img01}}\">\n                </div>\n                <div class=\"d-flex flex-row\">\n                  <div>\n                    <p class=\"mb--0\">{{text}}</p>\n                  </div>\n                </div>\n            </div>\n            \n            <div>\n            <p class=\"phrase\">{{phrase1}}</p>\n            \n            <div class=\"d-flex\">\n            <div class=\"col-md-6 col-lg-4\">\n                <div class=\"d-flex flex-row align-items-center\">\n                  <div>\n                    <img src=\"{{img1}}\" class=\"svg-inject icon-svg icon-svg-sm text-aqua me-4\" alt=\"\" />\n                  </div>\n                  <div>\n                    <p class=\"mb-0\">{{text_skill1}}</p>\n                  </div>\n                </div>\n            </div>\n            \n            <div class=\"col-md-6 col-lg-4\">\n                <div class=\"d-flex flex-row align-items-center\">\n                  <div>\n                    <img src=\"{{img2}}\" class=\"svg-inject icon-svg icon-svg-sm text-aqua me-4\" alt=\"\" />\n                  </div>\n                  <div>\n                    <p class=\"mb-0\">{{text_skill2}}</p>\n                  </div>\n                </div>\n            </div>\n            \n            <div class=\"col-md-6 col-lg-4\">\n                <div class=\"d-flex flex-row align-items-center\">\n                  <div>\n                    <img src=\"{{img3}}\" class=\"svg-inject icon-svg icon-svg-sm text-aqua me-4\" alt=\"\" />\n                  </div>\n                  <div>\n                    <p class=\"mb-0\">{{text_skill3}}</p>\n                  </div>\n                </div>\n            </div>\n            </div>\n            </div>\n        </div>\n        <div class=\"linha-skill\"></div>\n        <!--Front!-->\n        <div class=\"row gx-lg-8 gx-xl-12 gy-8 mt-10 ms-7\" style=\"flex-wrap: nowrap !important;width:50%!important;align-items: baseline!important;\">\n            <div class=\"col-md-6 col-lg-4\">\n                <div class=\"d-flex flex-row\">\n                  <div>\n                    <p class=\"mb--0\">{{text1}}</p>\n                  </div>\n                </div>\n            </div>\n            \n            <div>\n            <p class=\"phrase\">{{phrase2}}</p>\n            \n            <div class=\"d-flex\">\n            \n            <div class=\"col-md-6 col-lg-4\">\n                <div class=\"d-flex flex-row align-items-center\">\n                  <div>\n                    <img src=\"{{img4}}\" class=\"svg-inject icon-svg icon-svg-sm text-aqua me-4\" alt=\"\" />\n                  </div>\n                  <div>\n                    <p class=\"mb-0\">{{text_skill4}}</p>\n                  </div>\n                </div>\n            </div>\n            \n            <div class=\"col-md-6 col-lg-4\">\n                <div class=\"d-flex flex-row align-items-center\">\n                  <div>\n                    <img src=\"{{img5}}\" class=\"svg-inject icon-svg icon-svg-sm text-aqua me-4\" alt=\"\" />\n                  </div>\n                  <div>\n                    <p class=\"mb-0\">{{text_skill5}}</p>\n                  </div>\n                </div>\n            </div>\n            \n            <div class=\"col-md-6 col-lg-4\">\n                <div class=\"d-flex flex-row align-items-center\">\n                  <div>\n                    <img src=\"{{img6}}\" class=\"svg-inject icon-svg icon-svg-sm text-aqua me-4\" alt=\"\" />\n                  </div>\n                  <div>\n                    <p class=\"mb-0\">{{text_skill6}}</p>\n                  </div>\n                </div>\n            </div>\n            \n            <div class=\"col-md-6 col-lg-4\">\n                <div class=\"d-flex flex-row align-items-center\">\n                  <div>\n                    <img src=\"{{img7}}\" class=\"svg-inject icon-svg icon-svg-sm text-aqua me-4\" alt=\"\" />\n                  </div>\n                  <div>\n                    <p class=\"mb-0\">{{text_skill7}}</p>\n                  </div>\n                </div>\n            </div>\n            </div>\n            </div>\n        </div>\n        <div class=\"linha-skill\"></div>\n        <!--Backend!-->\n        <div class=\"row gx-lg-8 gx-xl-12 gy-8 mt-10 ms-7\" style=\"flex-wrap: nowrap !important;width:50%!important;align-items: baseline!important;\">\n            <div class=\"col-md-6 col-lg-4\">\n                <div class=\"d-flex flex-row align-items-center\">\n                  <div>\n                    <p class=\"mb--0\">{{text2}}</p>\n                  </div>\n                </div>\n            </div>\n            \n        <div>\n            <p class=\"phrase\">{{phrase3}}</p>\n            \n            <div class=\"d-flex\">\n            \n            <div class=\"col-md-6 col-lg-4\">\n                <div class=\"d-flex flex-row align-items-center\">\n                  <div>\n                    <img src=\"{{img9}}\" class=\"svg-inject icon-svg icon-svg-sm text-aqua me-4\" alt=\"\" />\n                  </div>\n                  <div>\n                    <p class=\"mb-0\">{{text_skill9}}</p>\n                  </div>\n                </div>\n            </div>\n            \n            <div class=\"col-md-6 col-lg-4\">\n                <div class=\"d-flex flex-row align-items-center\">\n                  <div>\n                    <img src=\"{{img10}}\" class=\"svg-inject icon-svg icon-svg-sm text-aqua me-4\" alt=\"\" />\n                  </div>\n                  <div>\n                    <p class=\"mb-0\">{{text_skill10}}</p>\n                  </div>\n                </div>\n            </div>\n            \n            <div class=\"col-md-6 col-lg-4\">\n                <div class=\"d-flex flex-row align-items-center\">\n                  <div>\n                    <img src=\"{{img11}}\" class=\"svg-inject icon-svg icon-svg-sm text-aqua me-4\" alt=\"\" />\n                  </div>\n                  <div>\n                    <p class=\"mb-0\">{{text_skill11}}</p>\n                  </div>\n                </div>\n            </div>\n            \n            <div class=\"col-md-6 col-lg-4\">\n                <div class=\"d-flex flex-row align-items-center\">\n                  <div>\n                    <img src=\"{{img12}}\" class=\"svg-inject icon-svg icon-svg-sm text-aqua me-4\" alt=\"\" />\n                  </div>\n                  <div>\n                    <p class=\"mb-0\">{{text_skill12}}</p>\n                  </div>\n                </div>\n            </div>\n            </div>\n        </div>\n        </div>\n        <div class=\"linha-skill\"></div>\n        <!--Mobile!-->\n        <div class=\"row gx-lg-8 gx-xl-12 gy-8 mt-10 ms-7\" style=\"flex-wrap: nowrap !important;width:50%!important;align-items: baseline!important;\">\n            <div class=\"col-md-6 col-lg-4\">\n                <div class=\"d-flex flex-row\">\n                  <div>\n                    <p class=\"mb--0\">{{text3}}</p>\n                  </div>\n                </div>\n            </div>\n            \n            <div>\n            <p class=\"phrase text-start\">{{phrase4}}</p>\n            \n            <div class=\"d-flex\">\n            \n            <div class=\"col-md-6 col-lg-4\">\n                <div class=\"d-flex flex-row align-items-center\">\n                  <div>\n                    <img src=\"{{img14}}\" class=\"svg-inject icon-svg icon-svg-sm text-aqua me-4\" alt=\"\" />\n                  </div>\n                  <div>\n                    <p class=\"mb-0\">{{text_skill14}}</p>\n                  </div>\n                </div>\n            </div>\n            \n            <div class=\"col-md-6 col-lg-4\">\n                <div class=\"d-flex flex-row align-items-center\">\n                  <div>\n                    <img src=\"{{img15}}\" class=\"svg-inject icon-svg icon-svg-sm text-aqua me-4\" alt=\"\" />\n                  </div>\n                  <div>\n                    <p class=\"mb-0\" style=\"width:150px!important;\">{{text_skill15}}</p>\n                  </div>\n                </div>\n            </div>\n            \n            <div class=\"col-md-6 col-lg-4\">\n                <div class=\"d-flex flex-row align-items-center\">\n                  <div>\n                    <img src=\"{{img16}}\" class=\"svg-inject icon-svg icon-svg-sm text-aqua me-4\" alt=\"\" />\n                  </div>\n                  <div>\n                    <p class=\"mb-0\" style=\"width:103px!important;\">{{text_skill16}}</p>\n                  </div>\n                </div>\n            </div>\n            \n            <div class=\"col-md-6 col-lg-4\">\n                <div class=\"d-flex flex-row align-items-center\">\n                  <div>\n                    <img src=\"{{img17}}\" class=\"svg-inject icon-svg icon-svg-sm text-aqua me-4\" alt=\"\" />\n                  </div>\n                  <div>\n                    <p class=\"mb-0\">{{text_skill17}}</p>\n                  </div>\n                </div>\n            </div>\n            </div>\n            </div>\n        </div>\n        <div class=\"linha-skill\"></div>\n      <!--/.row -->\n    </div>\n    <!-- /.position-relative -->\n  </div>\n  <!-- /.container -->\n</section>\n<!-- /section -->\n<style>\n    .Phases-tmx .mb-0{\n        color: #FE626B;\n        font-family: Manrope;\n        font-size: 12px;\n        font-style: normal;\n        font-weight: 500;\n        line-height: 14px;\n    }\n    .Phases-tmx .phrase{\n        color: #38424E;\n        font-family: Manrope;\n        font-size: 15px;\n        font-style: normal;\n        font-weight: 500;\n        line-height: 22px;\n        letter-spacing: 0.43px;\n        width: 650px;\n    }\n</style>",
+  "template": "<section class=\"Phases-tmx wrapper\">\n  <div class=\"container py-14 py-md-16 text-center p-tech\">\n      <div class=\"text-start\" style=\"margin-left: 65px;\">\n        <h1 class=\"title_section\">{{ _(title) }}</h1>\n        <p class=\"subtitle_section\">{{ _(subtitle) }}</p>\n      </div>\n    <!-- /.row -->\n    <div class=\"position-relative\">\n        <!--Design!-->\n        <div class=\"row gx-lg-8 gx-xl-12 gy-8 mt-10 ms-7\" style=\"flex-wrap: nowrap !important;width:60%!important;align-items: baseline!important;margin-bottom: 80px;\">\n            <div class=\"col-md-6 col-lg-4\">\n                <div class=\"d-flex\">\n                    <img src=\"{{img01}}\">\n                </div>\n                <div class=\"d-flex flex-row\">\n                  <div>\n                    <p class=\"mb--0\">{{text}}</p>\n                  </div>\n                </div>\n            </div>\n            \n            <div>\n            <p class=\"phrase\" style=\"width: 624px;\">{{phrase1}}</p>\n            \n            <div class=\"d-flex column-tags\">\n            <div class=\"col-md-6 col-lg-4\">\n                <div class=\"d-flex flex-row align-items-center ux_design\" style=\"width:129px !important;height:26px !important;justify-content: center;\">\n                 <div style=\"width: 20px !important;\">\n                    <img src=\"{{img1}}\" class=\"svg-inject icon-svg icon-svg-sm text-aqua me-4\" alt=\"\" />\n                  </div>\n                  <div>\n                    <p class=\"mb-0\" style=\"color: #FE626B;\">{{text_skill1}}</p>\n                  </div>\n                </div>\n            </div>\n            \n            <div class=\"col-md-6 col-lg-4\">\n                <div class=\"d-flex flex-row align-items-center sitemap\" style=\"width:129px !important;height:26px !important;justify-content: center;\">\n                 <div style=\"width: 20px !important;\">\n                    <img src=\"{{img2}}\" class=\"svg-inject icon-svg icon-svg-sm text-aqua me-4\" alt=\"\" />\n                  </div>\n                  <div>\n                    <p class=\"mb-0\" style=\"color: #6562FE;\">{{text_skill2}}</p>\n                  </div>\n                </div>\n            </div>\n            \n            <div class=\"col-md-6 col-lg-4\">\n                <div class=\"d-flex flex-row align-items-center analise_ref\" style=\"width:163px !important;height:26px !important;justify-content: center;\">\n                 <div style=\"width: 20px !important;\">\n                    <img src=\"{{img3}}\" class=\"svg-inject icon-svg icon-svg-sm text-aqua me-4\" alt=\"\" />\n                  </div>\n                  <div>\n                    <p class=\"mb-0\" style=\"color: #4A976D;\">{{text_skill3}}</p>\n                  </div>\n                </div>\n            </div>\n            </div>\n            </div>\n        </div>\n        <div class=\"linha-skill\"></div>\n        <!--Front!-->\n        <div class=\"row gx-lg-8 gx-xl-12 gy-8 mt-10 ms-7\" style=\"flex-wrap: nowrap !important;width:60%!important;align-items: baseline!important;margin-bottom: 80px;\">\n            <div class=\"col-md-6 col-lg-4\">\n                <div class=\"d-flex\">\n                    <img src=\"{{img02}}\">\n                </div>\n                <div class=\"d-flex flex-row\">\n                  <div>\n                    <p class=\"mb--0\">{{text1}}</p>\n                  </div>\n                </div>\n            </div>\n            \n            <div>\n            <p class=\"phrase\">{{phrase2}}</p>\n            \n            <div class=\"d-flex column-tags\">\n            \n            <div class=\"col-md-6 col-lg-4\">\n                <div class=\"d-flex flex-row align-items-center ux_design\" style=\"width:129px !important;height:26px !important;justify-content: center;\">\n                 <div style=\"width: 20px !important;\">\n                    <img src=\"{{img4}}\" class=\"svg-inject icon-svg icon-svg-sm text-aqua me-4\" alt=\"\" />\n                  </div>\n                  <div>\n                    <p class=\"mb-0\" style=\"color: #FE626B;\">{{text_skill4}}</p>\n                  </div>\n                </div>\n            </div>\n            \n            <div class=\"col-md-6 col-lg-4\">\n                <div class=\"d-flex flex-row align-items-center wireframe\" style=\"width:129px !important;height:26px !important;justify-content: center;\">\n                 <div style=\"width: 20px !important;\">\n                    <img src=\"{{img5}}\" class=\"svg-inject icon-svg icon-svg-sm text-aqua me-4\" alt=\"\" />\n                  </div>\n                  <div>\n                    <p class=\"mb-0\" style=\"color: #1AC0B6;\">{{text_skill5}}</p>\n                  </div>\n                </div>\n            </div>\n            \n            <div class=\"col-md-6 col-lg-4\">\n                <div class=\"d-flex flex-row align-items-center ux_design\" style=\"width:129px !important;height:26px !important;justify-content: center;\">\n                 <div style=\"width: 20px !important;\">\n                    <img src=\"{{img6}}\" class=\"svg-inject icon-svg icon-svg-sm text-aqua me-4\" alt=\"\" />\n                  </div>\n                  <div>\n                    <p class=\"mb-0\" style=\"color: #FE626B;\">{{text_skill6}}</p>\n                  </div>\n                </div>\n            </div>\n            \n            <div class=\"col-md-6 col-lg-4\">\n                <div class=\"d-flex flex-row align-items-center prototipo\" style=\"width:129px !important;height:26px !important;justify-content: center;\">\n                 <div style=\"width: 20px !important;\">\n                    <img src=\"{{img7}}\" class=\"svg-inject icon-svg icon-svg-sm text-aqua me-4\" alt=\"\" />\n                  </div>\n                  <div>\n                    <p class=\"mb-0\" style=\"color: #AE36B9;\">{{text_skill7}}</p>\n                  </div>\n                </div>\n            </div>\n            </div>\n            </div>\n        </div>\n        <div class=\"linha-skill\"></div>\n        <!--Backend!-->\n        <div class=\"row gx-lg-8 gx-xl-12 gy-8 mt-10 ms-7\" style=\"flex-wrap: nowrap !important;width:60%!important;align-items: baseline!important;margin-bottom: 80px;\">\n            <div class=\"col-md-6 col-lg-4\">\n                <div class=\"d-flex\">\n                    <img src=\"{{img03}}\">\n                </div>\n                <div class=\"d-flex flex-row\">\n                  <div>\n                    <p class=\"mb--0\">{{text2}}</p>\n                  </div>\n                </div>\n            </div>\n            \n        <div>\n            <p class=\"phrase\">{{phrase3}}</p>\n            \n            <div class=\"d-flex column-tags\">\n            \n            <div class=\"col-md-6 col-lg-4\">\n                <div class=\"d-flex flex-row align-items-center front\" style=\"width:129px !important;height:26px !important;justify-content: center;\">\n                 <div style=\"width: 20px !important;\">\n                    <img src=\"{{img9}}\" class=\"svg-inject icon-svg icon-svg-sm text-aqua me-4\" alt=\"\" />\n                  </div>\n                  <div>\n                    <p class=\"mb-0\" style=\"color: #2B5F9B;\">{{text_skill9}}</p>\n                  </div>\n                </div>\n            </div>\n            \n            <div class=\"col-md-6 col-lg-4\">\n                <div class=\"d-flex flex-row align-items-center back\" style=\"width:129px !important;height:26px !important;justify-content: center;\">\n                 <div style=\"width: 20px !important;\">\n                    <img src=\"{{img10}}\" class=\"svg-inject icon-svg icon-svg-sm text-aqua me-4\" alt=\"\" />\n                  </div>\n                  <div>\n                    <p class=\"mb-0\" style=\"color: #CA4273;\">{{text_skill10}}</p>\n                  </div>\n                </div>\n            </div>\n            \n            <div class=\"col-md-6 col-lg-4\">\n                <div class=\"d-flex flex-row align-items-center seo\" style=\"width:79px !important;height:26px !important;justify-content: center;\">\n                 <div style=\"width: 20px !important;\">\n                    <img src=\"{{img11}}\" class=\"svg-inject icon-svg icon-svg-sm text-aqua me-4\" alt=\"\" />\n                  </div>\n                  <div>\n                    <p class=\"mb-0\" style=\"color: #D3AA15;\">{{text_skill11}}</p>\n                  </div>\n                </div>\n            </div>\n            \n            <div class=\"col-md-6 col-lg-4\">\n                <div class=\"d-flex flex-row align-items-center integ\" style=\"width:129px !important;height:26px !important;justify-content: center;margin-left:-50px;\">\n                 <div style=\"width: 20px !important;\">\n                    <img src=\"{{img12}}\" class=\"svg-inject icon-svg icon-svg-sm text-aqua me-4\" alt=\"\" />\n                  </div>\n                  <div>\n                    <p class=\"mb-0\" style=\"color: #D73636;\">{{text_skill12}}</p>\n                  </div>\n                </div>\n            </div>\n            </div>\n        </div>\n        </div>\n        <div class=\"linha-skill\"></div>\n        <!--Mobile!-->\n        <div class=\"row gx-lg-8 gx-xl-12 gy-8 mt-10 ms-7\" style=\"flex-wrap: nowrap !important;width:60%!important;align-items: baseline!important;margin-bottom: 80px;\">\n            <div class=\"col-md-6 col-lg-4\">\n                <div class=\"d-flex\">\n                    <img src=\"{{img04}}\">\n                </div>\n                <div class=\"d-flex flex-row\">\n                  <div>\n                    <p class=\"mb--0\">{{text3}}</p>\n                  </div>\n                </div>\n            </div>\n            \n            <div>\n            <p class=\"phrase text-start\" style=\"margin-left:15px\">{{phrase4}}</p>\n            \n            <div class=\"d-flex column-tags\">\n            \n            <div class=\"col-md-6 col-lg-4\">\n                <div class=\"d-flex flex-row align-items-center infra\" style=\"width:129px !important;height:26px !important;justify-content: center;\">\n                 <div style=\"width: 20px !important;\">\n                    <img src=\"{{img14}}\" class=\"svg-inject icon-svg icon-svg-sm text-aqua me-4\" alt=\"\" />\n                  </div>\n                  <div>\n                    <p class=\"mb-0\" style=\"color: #222F24;\">{{text_skill14}}</p>\n                  </div>\n                </div>\n            </div>\n            \n            <div class=\"col-md-6 col-lg-4\">\n                <div class=\"d-flex flex-row align-items-center tst\" style=\"width:129px !important;height:26px !important;justify-content: center;\">\n                 <div style=\"width: 20px !important;\">\n                    <img src=\"{{img15}}\" class=\"svg-inject icon-svg icon-svg-sm text-aqua me-4\" alt=\"\" />\n                  </div>\n                  <div>\n                    <p class=\"mb-0\" style=\"color: #31A7AE;\">{{text_skill15}}</p>\n                  </div>\n                </div>\n            </div>\n            \n            <div class=\"col-md-6 col-lg-4\">\n                <div class=\"d-flex flex-row align-items-center qualy\" style=\"width:129px !important;height:26px !important;justify-content: center;\">\n                 <div style=\"width: 20px !important;\">\n                    <img src=\"{{img16}}\" class=\"svg-inject icon-svg icon-svg-sm text-aqua me-4\" alt=\"\" />\n                  </div>\n                  <div>\n                    <p class=\"mb-0\" style=\"color: #E76F2B;\">{{text_skill16}}</p>\n                  </div>\n                </div>\n            </div>\n            \n            <div class=\"col-md-6 col-lg-4\">\n                <div class=\"d-flex flex-row align-items-center moni\" style=\"width:129px !important;height:26px !important;justify-content: center;\">\n                  <div style=\"width: 20px !important;\">\n                    <img src=\"{{img17}}\" class=\"svg-inject icon-svg icon-svg-sm text-aqua me-4\" alt=\"\" />\n                  </div>\n                  <div>\n                    <p class=\"mb-0\" style=\"color: #7686DB;\">{{text_skill17}}</p>\n                  </div>\n                </div>\n            </div>\n            </div>\n            </div>\n        </div>\n      <!--/.row -->\n    </div>\n    <!-- /.position-relative -->\n  </div>\n  <!-- /.container -->\n</section>\n<!-- /section -->\n<style> \n    .Phases-tmx .title_section{\n        color: #22282F;\n        font-family: Work Sans;\n        font-size: 38px;\n        font-style: normal;\n        font-weight: 600;\n        line-height: 46px;\n    }\n    .Phases-tmx .subtitle_section{\n        color: #38424E;\n        font-family: Manrope;\n        font-size: 15px;\n        font-style: normal;\n        font-weight: 500;\n        line-height: 22px;\n        letter-spacing: 0.43px;\n    }\n    .Phases-tmx .mb-0{\n        font-family: Manrope;\n        font-size: 12px;\n        font-style: normal;\n        font-weight: 500;\n        line-height: 14px;\n    }\n    .Phases-tmx .phrase{\n        color: #38424E;\n        font-family: Manrope;\n        font-size: 15px;\n        font-style: normal;\n        font-weight: 500;\n        line-height: 22px;\n        letter-spacing: 0.43px;\n        width: 650px;\n    }\n    .Phases-tmx .mb--0{\n        color: #22282F;\n        font-family: Work Sans;\n        font-size: 22px;\n        font-style: normal;\n        font-weight: 500;\n        line-height: 30px;\n        letter-spacing: -0.5px;\n    }\n    .Phases-tmx .icon-svg-sm{\n        width: 12px !important;\n        height: 12px !important;\n    }\n    .Phases-tmx .ux_design{\n        border-radius: 50px;\n        border: 1px solid #FE626B;\n        background: #FFEFF0;\n    }\n    .Phases-tmx .sitemap{\n        border-radius: 50px;\n        border: 1px solid #6562FE;\n        background: #EFF5FF;\n    }\n    .Phases-tmx .analise_ref{\n        border-radius: 50px;\n        border: 1px solid #4A976D;\n        background: #EFFFFB;\n    }\n    .Phases-tmx .wireframe{\n        border-radius: 50px;\n        border: 1px solid #1AC0B6;\n        background: #EFFFFF;\n    }\n    .Phases-tmx .prototipo{\n        border-radius: 50px;\n        border: 1px solid #AE36B9;\n        background: #F8EFFF;\n    }\n    .Phases-tmx .front{\n        border-radius: 50px;\n        border: 1px solid #2B5F9B;\n        background: #F0EFFF;\n    }\n    .Phases-tmx .back{\n        border-radius: 50px;\n        border: 1px solid #CA4273;\n        background: #FFEFFD;\n    }\n    .Phases-tmx .seo{\n        border-radius: 50px;\n        border: 1px solid #D3AA15;\n        background: #FFFDEF;\n    }\n    .Phases-tmx .integ{\n        border-radius: 50px;\n        border: 1px solid #D73636;\n        background: #FFF5EF;\n    }\n    .Phases-tmx .infra{\n        border-radius: 50px;\n        border: 1px solid #222F24;\n        background: #F8FFEF;\n    }\n    .Phases-tmx .tst{\n        border-radius: 50px;\n        border: 1px solid #31A7AE;\n        background: #EFFEFF;\n    }\n    .Phases-tmx .qualy{\n        border-radius: 50px;\n        border: 1px solid #E76F2B;\n        background: #FFF5EF;\n    }\n    .Phases-tmx .moni{\n        border-radius: 50px;\n        border: 1px solid #7E76DB;\n        background: #F3EFFF;\n    }\n    .Phases-tmx .linha-skill{\n        border-radius: 0px;\n        background: #DBDADE;\n        width: 1050px;\n        height: 1px;\n        margin-top: 30px;\n        margin-left: 64px;\n    }\n    .Phases-tmx .column-tags{\n        margin-right: 200px;\n    }\n</style>",
   "type": "Section"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Web Template",
+  "fields": [
+   {
+    "default": null,
+    "fieldname": "title",
+    "fieldtype": "Data",
+    "label": "Title",
+    "options": null,
+    "parent": "Text IOT",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "subtitle",
+    "fieldtype": "Text",
+    "label": "Subtitle",
+    "options": null,
+    "parent": "Text IOT",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "img",
+    "fieldtype": "Attach Image",
+    "label": "Img",
+    "options": null,
+    "parent": "Text IOT",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   }
+  ],
+  "modified": "2023-11-09 18:20:33.604060",
+  "module": "Techmax Solucoes",
+  "name": "Text IOT",
+  "standard": 0,
+  "template": "<section class=\"text-iot-tmx wrapper\">\n  <div class=\"container py-14 py-md-16 text-center\">\n      <div class=\"text-start\" style=\"margin-left: 90px;\">\n        <h1 class=\"title_section\">{{ _(title) }}</h1>\n        <p class=\"subtitle_section\">{{ _(subtitle) }}</p>\n      </div>\n      <img src=\"{{img}}\">\n    <!-- /.position-relative -->\n  </div>\n  <!-- /.container -->\n</section>\n<!-- /section -->\n\n<style>\n    .text-iot-tmx .title_section{\n        color: #22282F;\n        font-family: Work Sans;\n        font-size: 38px;\n        font-style: normal;\n        font-weight: 600;\n        line-height: 46px;\n        width: 87%;\n    }\n    .text-iot-tmx .subtitle_section{\n        color: #38424E;\n        font-family: Manrope;\n        font-size: 15px;\n        font-style: normal;\n        font-weight: 500;\n        line-height: 22px;\n        letter-spacing: 0.43px;\n        width: 87%;\n    }\n</style>",
+  "type": "Section"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Web Template",
+  "fields": [
+   {
+    "default": null,
+    "fieldname": "title",
+    "fieldtype": "Data",
+    "label": "Title",
+    "options": null,
+    "parent": "Testimonials 5 TechMax",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 1
+   },
+   {
+    "default": null,
+    "fieldname": "subtitle",
+    "fieldtype": "Small Text",
+    "label": "Subtitle",
+    "options": null,
+    "parent": "Testimonials 5 TechMax",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "testemunhos",
+    "fieldtype": "Section Break",
+    "label": "Testemunhos",
+    "options": null,
+    "parent": "Testimonials 5 TechMax",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "testimonial_1",
+    "fieldtype": "Link",
+    "label": "Testimonial",
+    "options": "Testimonials",
+    "parent": "Testimonials 5 TechMax",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "testimonial_2",
+    "fieldtype": "Link",
+    "label": "Testimonial",
+    "options": "Testimonials",
+    "parent": "Testimonials 5 TechMax",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "testimonial_3",
+    "fieldtype": "Link",
+    "label": "Testimonial",
+    "options": "Testimonials",
+    "parent": "Testimonials 5 TechMax",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "testimonial_4",
+    "fieldtype": "Link",
+    "label": "Testimonial",
+    "options": "Testimonials",
+    "parent": "Testimonials 5 TechMax",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "testimonial_5",
+    "fieldtype": "Link",
+    "label": "Testimonial",
+    "options": "Testimonials",
+    "parent": "Testimonials 5 TechMax",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "testimonial_6",
+    "fieldtype": "Link",
+    "label": "Testimonial",
+    "options": "Testimonials",
+    "parent": "Testimonials 5 TechMax",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   }
+  ],
+  "modified": "2023-11-09 18:35:02.845219",
+  "module": "Techmax Solucoes",
+  "name": "Testimonials 5 TechMax",
+  "standard": 0,
+  "template": "{% set testimonials = [testimonial_1, testimonial_2, testimonial_3] %}\n<section class=\"wrapper-testimonials5-tmx bg-light\">\n  <div class=\"container py-14 py-md-16 ms-22\">\n    <h2 class=\"title_section\">{{_(title)}}</h2>\n    <p class=\"subtitle_section\">{{_(subtitle)}}</p>\n    <div class=\"position-relative\">\n      <div class=\"swiper-container dots-closer mb-6\" data-margin=\"0\" data-dots=\"true\" data-items-xl=\"3\" data-items-md=\"2\" data-items-xs=\"1\">\n        <div class=\"swiper\">\n          <div class=\"swiper-wrapper\">\n            {% for testimonial in testimonials %}\n                {% if testimonial %}\n                {% set doc = frappe.get_doc(\"Testimonials\", testimonial) %}\n            <div class=\"swiper-slide\">\n              <div class=\"item-inner\">\n                <div class=\"card\">\n                  <div class=\"card-body\">\n                    <blockquote class=\"icon mb-0\">\n                      <p>“{{ doc.testimonial}}”</p>\n                      <div class=\"blockquote-details\">\n                        <img class=\"rounded-circle w-12\" src=\"{{doc.image}}\" srcset=\"/assets/img/avatars/te1@2x.jpg 2x\" alt=\"\" />\n                        <div class=\"info\">\n                          <h5 class=\"mb-1\">{{ doc.nome }}</h5>\n                          <p class=\"mb-0\">{{ doc.role }}</p>\n                        </div>\n                      </div>\n                    </blockquote>\n                  </div>\n                  <!-- /.card-body -->\n                </div>\n                <!-- /.card -->\n              </div>\n              <!-- /.item-inner -->\n            </div>\n            <!--/.swiper-slide -->\n                {% endif %}\n            {% endfor %}\n          </div>\n          <!--/.swiper-wrapper -->\n        </div>\n        <!-- /.swiper -->\n      </div>\n      <!-- /.swiper-container -->\n    </div>\n    <!-- /.position-relative -->\n  </div>\n  <!-- /.container -->\n</section>\n<!-- /section -->\n\n<style>\n    .wrapper-testimonials5-tmx .title_section{\n        color: #22282F;\n        font-family: Work Sans;\n        font-size: 38px;\n        font-style: normal;\n        font-weight: 600;\n        line-height: 46px;\n        width: 87%;\n    }\n    .wrapper-testimonials5-tmx .subtitle_section{\n        color: #38424E;\n        font-family: Manrope;\n        font-size: 15px;\n        font-style: normal;\n        font-weight: 500;\n        line-height: 22px;\n        letter-spacing: 0.43px;\n        width: 45%;\n    }\n</style>",
+  "type": "Component"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Web Template",
+  "fields": [
+   {
+    "default": null,
+    "fieldname": "title",
+    "fieldtype": "Small Text",
+    "label": "Title",
+    "options": null,
+    "parent": "Testimonials 12 TMX",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 1
+   },
+   {
+    "default": null,
+    "fieldname": "subtitle",
+    "fieldtype": "Small Text",
+    "label": "Subtitle",
+    "options": null,
+    "parent": "Testimonials 12 TMX",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "testemunhos",
+    "fieldtype": "Section Break",
+    "label": "Testemunhos",
+    "options": null,
+    "parent": "Testimonials 12 TMX",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "testimonial_1",
+    "fieldtype": "Link",
+    "label": "Testimonial",
+    "options": "Testimonials",
+    "parent": "Testimonials 12 TMX",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "testimonial_2",
+    "fieldtype": "Link",
+    "label": "Testimonial",
+    "options": "Testimonials",
+    "parent": "Testimonials 12 TMX",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "testimonial_3",
+    "fieldtype": "Link",
+    "label": "Testimonial",
+    "options": "Testimonials",
+    "parent": "Testimonials 12 TMX",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "testimonial_4",
+    "fieldtype": "Link",
+    "label": "Testimonial",
+    "options": "Testimonials",
+    "parent": "Testimonials 12 TMX",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "testimonial_5",
+    "fieldtype": "Link",
+    "label": "Testimonial",
+    "options": "Testimonials",
+    "parent": "Testimonials 12 TMX",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "testimonial_6",
+    "fieldtype": "Link",
+    "label": "Testimonial",
+    "options": "Testimonials",
+    "parent": "Testimonials 12 TMX",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   }
+  ],
+  "modified": "2023-11-10 16:42:05.186138",
+  "module": "Techmax Solucoes",
+  "name": "Testimonials 12 TMX",
+  "standard": 0,
+  "template": "\n{% set testimonials = [testimonial_1, testimonial_2, testimonial_3, testimonial_4] %}\n\n<section class=\"wrapper wrapper-testimonials12-tmx bg-light\">\n  <div class=\"container py-14 py-md-16\">\n    <div class=\"row\">\n      <div class=\"col-md-10 col-lg-12 ms-22\">\n        <span class=\"title_section\">{{subtitle}}</span>\n        <h1 class=\"subtitle_section\" style=\"margin-top:36px;\">{{title}}</h1>\n        \n        \n        <div class=\"swiper-container dots-closer text-center mb-6\">\n            \n            <div class=\"buttons-prev-and-next\">\n                 <div class=\"swiper-button swiper-button-next swiper-button-disabled\" aria-label=\"Next slide\" role=\"button\" aria-controls=\"swiper-wrapper-f9107275fe7f652d\" aria-disabled=\"true\"></div>\n                <div class=\"swiper-button swiper-button-prev swiper-button-disabled\" aria-label=\"Previous slide\" role=\"button\" aria-controls=\"swiper-wrapper-f9107275fe7f652d\" aria-disabled=\"true\"></div>\n            </div>  \n            \n          <div class=\"swiper\">\n            <div class=\"swiper-wrapper\">\n              {% for testimonial in testimonials %}\n                {% if testimonial %}\n                  {% set doc = frappe.get_doc(\"Testimonials\", testimonial) %}\n                  <div class=\"swiper-slide\">\n                    <blockquote class=\"border-0 fs-lg\">\n                      <p>{{doc.text_editor_yqgn}}</p>\n                      <div class=\"blockquote-details justify-content-center\">\n                        <img class=\"rounded-circle w-12\" src=\"{{ doc.image or '/assets/techmax_solucoes/img/Select=default.png'}}\" srcset=\"\" alt=\"\" />\n                        <div class=\"info\">\n                          <h5 class=\"mb-1\">{{ doc.nome }}</h5>\n                          <p class=\"mb-0\">{{ doc.role or 'Cliente' }}</p>\n                        </div>\n                      </div>\n                    </blockquote>\n                  </div>\n                {% endif %}\n              {% endfor %}\n            </div>\n            </div>\n            <div class=\"swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal\" style=\"margin-left:-95px;\">\n              <span class=\"swiper-pagination-bullet swiper-pagination-bullet-active\" role=\"button\" aria-label=\"Go to slide 1\" aria-current=\"true\"></span>\n            </div>\n        </div>\n      </div>\n    </div>\n    <a class=\"btn-top\" href=\"#\"></a>\n  </div>\n</section>\n\n\n\n<style>\n    .wrapper-testimonials12-tmx .title_section{\n        color: #22282F;\n        font-family: Work Sans;\n        font-size: 38px;\n        font-style: normal;\n        font-weight: 600;\n        line-height: 46px;\n        width: 87%;\n        display: flex;\n    }\n    .wrapper-testimonials12-tmx .subtitle_section{\n        color: #38424E;\n        font-family: Manrope;\n        font-size: 15px;\n        font-style: normal;\n        font-weight: 500;\n        line-height: 22px;\n        letter-spacing: 0.43px;\n        width: 45%;\n    }\n    .wrapper-testimonials12-tmx .ql-editor p:nth-child(1){\n        color: #38424E;\n        font-family: Work Sans;\n        font-size: 18px;\n        font-style: normal;\n        font-weight: 500;\n        line-height: 24px;\n    }\n    .wrapper-testimonials12-tmx .ql-editor p:nth-child(3){\n        color: #38424E;\n        font-family: Manrope;\n        font-size: 15px;\n        font-style: normal;\n        font-weight: 500;\n        line-height: 22px;\n        letter-spacing: 0.43px;\n        width: 93%;\n    }\n    .wrapper-testimonials12-tmx .ql-editor p:nth-child(4){\n        color: #38424E;\n        font-family: Manrope;\n        font-size: 15px;\n        font-style: normal;\n        font-weight: 500;\n        line-height: 22px;\n        letter-spacing: 0.43px;\n    }\n    .wrapper-testimonials12-tmx .ql-editor p:nth-child(5){\n        color: #38424E;\n        font-family: Manrope;\n        font-size: 15px;\n        font-style: normal;\n        font-weight: 500;\n        line-height: 22px;\n        letter-spacing: 0.43px;\n    }\n    .wrapper-testimonials12-tmx .info{\n        display: none;\n    }\n    .swiper-slide-duplicate{\n        width: 100%;\n    }\n    .wrapper-testimonials12-tmx .swiper-initialized{\n        margin-top: 50px;\n        margin-right: 0px;\n        margin-left: 10px;\n        border-radius: 20px;\n        background: #FFF;\n        display: flex;\n        padding: 45px;\n        align-items: flex-start !important;\n        gap: var(--Radius, 5px);\n        align-self: stretch;\n        width: 965px;\n    } \n    .wrapper-testimonials12-tmx .swiper-slide{\n        width: 911px !important;\n    }\n    .wrapper-testimonials12-tmx .swiper-slide-duplicate{\n        width: 899px !important;\n        margin-right: 38px !important;\n    }\n    .wrapper-testimonials12-tmx .swiper-pagination-bullet{\n        padding: 0px;\n        gap: 10px;\n        border-radius: 8px;\n        color: #ECEDEE !important;\n    }\n    .wrapper-testimonials12-tmx .swiper-pagination-bullet-active{\n        fill: #A6ABB1 !important;\n    }\n    .wrapper-testimonials12-tmx .swiper-button-prev:after, .swiper-button-next:after{\n        display:none;\n    }\n    .wrapper-testimonials12-tmx .buttons-prev-and-next{\n        position: relative;\n        z-index: 5;\n    }\n    :root {\n        --swiper-theme-color: #A6ABB1 !important;\n    }\n    .wrapper-testimonials12-tmx .swiper-button-prev, .swiper-button-next{\n        display: flex;\n        padding: 8px;\n        align-items: center;\n        gap: 8px;\n        border-radius: 100px;\n        background: rgba(75, 70, 92, 0.08);\n        width: 36px;\n        height: 36px;\n    }\n    .wrapper-testimonials12-tmx .swiper-button-next{\n        margin-right: 130px;\n        margin-top: -45px !important;\n    }\n    .wrapper-testimonials12-tmx .swiper-button-prev{\n        margin-left: 885px !important;\n        margin-top: -45px !important;\n    }\n    .wrapper-testimonials12-tmx .col-lg-12{\n        width: 91% !important;\n    }\n</style>",
+  "type": "Component"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Web Template",
+  "fields": [
+   {
+    "default": null,
+    "fieldname": "title",
+    "fieldtype": "Data",
+    "label": "Title",
+    "options": null,
+    "parent": "Facts 1 TMX",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 1
+   },
+   {
+    "default": null,
+    "fieldname": "subtitle",
+    "fieldtype": "Small Text",
+    "label": "Subtitle",
+    "options": null,
+    "parent": "Facts 1 TMX",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "text",
+    "fieldtype": "Text",
+    "label": "Text",
+    "options": null,
+    "parent": "Facts 1 TMX",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "img",
+    "fieldtype": "Attach Image",
+    "label": "Img",
+    "options": null,
+    "parent": "Facts 1 TMX",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "section",
+    "fieldtype": "Section Break",
+    "label": "Section",
+    "options": null,
+    "parent": "Facts 1 TMX",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "subtitle2",
+    "fieldtype": "Data",
+    "label": "Subtitle",
+    "options": null,
+    "parent": "Facts 1 TMX",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "text2",
+    "fieldtype": "Text",
+    "label": "Text",
+    "options": null,
+    "parent": "Facts 1 TMX",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "img2",
+    "fieldtype": "Attach Image",
+    "label": "Img",
+    "options": null,
+    "parent": "Facts 1 TMX",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "text3",
+    "fieldtype": "Text",
+    "label": "Text",
+    "options": null,
+    "parent": "Facts 1 TMX",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   }
+  ],
+  "modified": "2023-11-10 16:32:50.587871",
+  "module": "Techmax Solucoes",
+  "name": "Facts 1 TMX",
+  "standard": 0,
+  "template": "<section class=\"wrapper bg-light wrapper-facts1-tmx\">\n  <div class=\"container py-14 py-md-16\" style=\"margin-left:130px;\">\n    <div class=\"row gx-lg-0 gy-10 align-items-center\">\n      <!--/column -->\n      <div class=\"col-lg-5\">\n        <h2 class=\"title_section\">{{title}}</h2>\n        \n        <div style=\"margin-top:36px\">\n            <p class=\"subtitle_section\">{{subtitle}}</p>\n            \n            <div class=\"d-flex\">\n                <p class=\"text_section\">{{text}}</p>\n                \n                <div style=\"margin-left: 25px;margin-top: -25px;\">\n                    <img class=\"img-facts\" src=\"{{img}}\">\n                </div>\n            </div>\n        </div>\n        \n        <div class=\"d-flex\" style=\"margin-top:50px\">\n            \n            <div>\n                <img class=\"img-facts\" src=\"{{img2}}\">\n            </div>\n            \n            <div style=\"margin-left: 25px;\">\n                <p class=\"subtitle_section\">{{subtitle2}}</p>\n            \n                <div class=\"d-flex\">\n                    <p class=\"text_section text2_section\">{{text2}}</p>\n                </div>\n            \n            </div>\n            \n        </div>\n        \n         <div class=\"d-flex\" style=\"margin-top:50px\">\n                    <p class=\"text_section text3_section\">{{text3}}</p>\n        </div>\n        \n      </div>\n      <!--/column -->\n    </div>\n    <!--/.row -->\n  </div>\n  <!-- /.container -->\n</section>\n<!-- /section -->\n\n<style>\n    .wrapper-facts1-tmx .title_section{\n        color: #22282F;\n        font-family: Work Sans;\n        font-size: 38px;\n        font-style: normal;\n        font-weight: 600;\n        line-height: 46px;\n    }\n    .wrapper-facts1-tmx .subtitle_section{\n        color: #38424E;\n        font-family: Work Sans;\n        font-size: 18px;\n        font-style: normal;\n        font-weight: 500;\n        line-height: 24px;\n    }\n    .wrapper-facts1-tmx .text_section{\n        color: #38424E;\n        font-family: Manrope;\n        font-size: 15px;\n        font-style: normal;\n        font-weight: 500;\n        line-height: 22px;\n        letter-spacing: 0.43px;\n        width: 48%;\n    }\n    .wrapper-facts1-tmx .text2_section{\n        width: 95%;\n    }\n    .wrapper-facts1-tmx .text3_section{\n        width: 100%;\n    }\n    .wrapper-facts1-tmx .col-lg-5 {\n        flex: 0 0 auto;\n        width: 77%;\n    }\n    .wrapper-facts1-tmx .img-facts{\n        height: 398px;\n        max-width: 445px;\n    }\n</style>",
+  "type": "Component"
  }
 ]
