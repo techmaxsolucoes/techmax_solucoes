@@ -130,5 +130,101 @@
   "role": null,
   "text_editor_yqgn": "<div class=\"ql-editor read-mode\"><p>Óculos inteligentes:</p><p><br></p><p>Os óculos inteligentes permitem que os gerentes de armazém visualizem exibições visuais de instruções de coleta de pedidos e informações associadas à localização do item. Através de óculos inteligentes, os gestores de armazém também podem decidir onde colocar determinado item/produto no carrinho. Além disso, os óculos inteligentes são fáceis de usar e reduzem o tempo de integração e treinamento.</p><p><br></p><p>Vantagens de usar Óculos Inteligentes para Picking:</p><p><br></p><p>Melhor desempenho de seleção</p><p>Melhor precisão de seleção</p><p>Ergonomia aprimorada</p></div>",
   "user": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Testimonials",
+  "image": null,
+  "modified": "2023-11-14 17:52:05.782778",
+  "name": "Documentos",
+  "nome": "Documentos",
+  "rating": null,
+  "role": null,
+  "text_editor_yqgn": "<div class=\"ql-editor read-mode\"><p>Assine documentos em qualquer lugar e de qualquer dispositivo</p><p><br></p><p>Elimine papéis com a assinatura eletrônica de documentos e contratos, tudo de forma rápida, segura e com validade jurídica.</p></div>",
+  "user": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Testimonials",
+  "image": null,
+  "modified": "2023-11-14 17:52:36.867577",
+  "name": "Movimentação de Documentos",
+  "nome": "Movimentação de Documentos",
+  "rating": null,
+  "role": null,
+  "text_editor_yqgn": "<div class=\"ql-editor read-mode\"><p>Acompanhe a movimentação de documentos</p><p><br></p><p>Visualize em uma linha do tempo todo o histórico de um documento, como: versões, revisões, aprovações, emissão de cópias e outros.</p></div>",
+  "user": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Testimonials",
+  "image": null,
+  "modified": "2023-11-14 17:52:53.448166",
+  "name": "Personalize Documentos",
+  "nome": "Personalize Documentos",
+  "rating": null,
+  "role": null,
+  "text_editor_yqgn": "<div class=\"ql-editor read-mode\"><p>Personalize a consulta de documentos e informações</p><p><br></p><p>Encontre exatamente aquilo que procura, seja por: data, versão, publicador, tipo de documento, assunto, tags, entre outros.</p></div>",
+  "user": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Testimonials",
+  "image": null,
+  "modified": "2023-11-14 17:53:08.382898",
+  "name": "Documentos Seguros",
+  "nome": "Documentos Seguros",
+  "rating": null,
+  "role": null,
+  "text_editor_yqgn": "<div class=\"ql-editor read-mode\"><p>Disponibilize documentos com segurança e controle</p><p><br></p><p>Garanta conformidade na utilização da informação e compliance para aderência de normas como a ISO 9001, e outras.</p></div>",
+  "user": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Testimonials",
+  "image": null,
+  "modified": "2023-11-14 17:53:24.856883",
+  "name": "Publicação Documental",
+  "nome": "Publicação Documental",
+  "rating": null,
+  "role": null,
+  "text_editor_yqgn": "<div class=\"ql-editor read-mode\"><p>Publicação documental simplificada</p><p><br></p><p>Publique documentos, configure permissões, atribua tags e assuntos para que os interessados sejam notificados.</p></div>",
+  "user": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Testimonials",
+  "image": null,
+  "modified": "2023-11-14 17:53:39.124614",
+  "name": "Gestão de Documentos",
+  "nome": "Gestão de Documentos",
+  "rating": null,
+  "role": null,
+  "text_editor_yqgn": "<div class=\"ql-editor read-mode\"><p>Gestão de documentos centralizada</p><p><br></p><p>Conte com um ambiente único para facilitar a orquestração dos documentos do negócio.</p></div>",
+  "user": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Testimonials",
+  "image": null,
+  "modified": "2023-11-14 17:54:11.911314",
+  "name": "Visualizador de arquivos",
+  "nome": "Visualizador de arquivos",
+  "rating": null,
+  "role": null,
+  "text_editor_yqgn": "<div class=\"ql-editor read-mode\"><p>Um visualizador de arquivos prático como deve ser</p><p><br></p><p>Poupe tempo visualizando de maneira rápida diferentes formatos de arquivo dentro da plataforma.</p></div>",
+  "user": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Testimonials",
+  "image": null,
+  "modified": "2023-11-14 17:54:24.871473",
+  "name": "Gerencie Documentos",
+  "nome": "Gerencie Documentos",
+  "rating": null,
+  "role": null,
+  "text_editor_yqgn": "<div class=\"ql-editor read-mode\"><p>Gerencie documentos de forma segura e controlada</p><p><br></p><p>Crie uma gestão independente para cada tipo de documento e defina fluxos de aprovação e permissões.</p></div>",
+  "user": null
  }
 ]
