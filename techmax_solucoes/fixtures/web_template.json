@@ -224,7 +224,7 @@
     "reqd": 0
    }
   ],
-  "modified": "2023-11-16 18:17:05.038639",
+  "modified": "2023-11-17 19:02:34.610357",
   "module": "Techmax Solucoes",
   "name": "Hero (content left) with slider",
   "standard": 0,
@@ -3148,11 +3148,11 @@
     "reqd": 0
    }
   ],
-  "modified": "2023-11-03 12:32:47.291815",
+  "modified": "2023-11-17 18:38:28.634894",
   "module": "Techmax Solucoes",
   "name": "Features 11 Techmax",
   "standard": 0,
-  "template": "<section class=\"wrapper features-11\" style=\"background-color:#FBFBFB;\">\n  <div class=\"container d-flex\">\n    <div class=\"row\">\n        <div class=\"col-12 col-lg-6\" style=\"padding-top:3rem\">\n        <h2 class=\"fs-15 text-muted mb-3\">{{ _(titletd) }}</h2>\n        <h3 class=\"display-4 mb-10 px-xxl-15 title\">{{ _(subtitletd) }}</h3>\n        <p class=\"first-p\">{{ _(text) }}</p>\n        <ul class=\"nav row\">\n          <li class=\"nav-item col\"> <a class=\"nav-link first d-flex  flex-column active\" data-bs-toggle=\"tab\" href=\"#tab2-1\">\n              <div><img src=\"{{img1}}\" class=\"svg-inject icon-svg icon-svg-md text-yellow me-4\" alt=\"\" /></div>\n              <div>\n                <h4 class=\"more more-red\">{{ _(title_card1) }}</h4>\n                <p>{{ _(sub_card1) }}</p>\n              </div>\n            </a> </li>\n          <li class=\"nav-item col\"> <a class=\"nav-link second d-flex  flex-column\" data-bs-toggle=\"tab\" href=\"#tab2-2\">\n              <div><img src=\"{{img2}}\" class=\"svg-inject icon-svg icon-svg-md text-green me-4\" alt=\"\" /></div>\n              <div>\n                <h4 class=\"more more-green\">{{ _(title_card2) }}</h4>\n                <p class=\"green-g\">{{ _(sub_card2) }}</p>\n              </div>\n            </a> </li>\n          <li class=\"nav-item col\"> <a class=\"nav-link third d-flex  flex-column\" data-bs-toggle=\"tab\" href=\"#tab2-3\">\n              <div><img src=\"{{img3}}\" class=\"svg-inject icon-svg icon-svg-md text-red me-4\" alt=\"\" /></div>\n              <div>\n                <h4 class=\"more more-purple\">{{ _(title_card3) }}</h4>\n                <p>{{ _(sub_card3) }}</p>\n              </div>\n            </a> </li>\n        </ul>\n      </div>\n        \n        <div class=\"tab-content mt-6 mt-lg-8 col-12 col-lg-6\">\n            <div class=\"tab-pane fade show active\" id=\"tab2-1\">\n        <div class=\"row gx-lg-8 gx-xl-12 gy-10 align-items-center\">\n\n          <!--/column -->\n          <div class=\"col-lg-12 col-lg-12-card\" style=\"background-color:#FFF;\">\n            <h2 class=\"fs-15 color1\">{{ _(title_tab1) }}</h2>\n            <p class=\"display-4 mb-10 px-xxl-15\">{{ _(subtitle_tab1) }}</p>\n            <ul class=\"icon-list bullet-bg bullet-soft-red\">\n              <li><img src=\"/assets/techmax_solucoes/img/Frame%204.svg\" class=\"uil uil-check\">{{ _(line1_1) }}</li>\n              <li><img src=\"/assets/techmax_solucoes/img/Frame%204.svg\" class=\"uil uil-check\">{{ _(line1_2) }}</li>\n              <li><img src=\"/assets/techmax_solucoes/img/Frame%204.svg\" class=\"uil uil-check\">{{ _(line1_3) }}</li>\n              <li><img src=\"/assets/techmax_solucoes/img/Frame%204.svg\" class=\"uil uil-check\">{{ _(line1_4) }}</li>\n              <li><img src=\"/assets/techmax_solucoes/img/Frame%204.svg\" class=\"uil uil-check\">{{ _(line1_5) }}</li>\n            </ul>\n            <a href=\"{{href1}}\" class=\"btn btn-yellow mt-2\">{{ _(btn1) }}</a>\n          </div>\n          <!--/column -->\n        </div>\n        <!--/.row -->\n      </div>\n      <!--/.tab-pane -->\n                <div class=\"tab-pane fade\" id=\"tab2-2\">\n                    <div class=\"row gx-lg-8 gx-xl-12 gy-10 align-items-center\">\n\n                    <div class=\"col-lg-12 col-lg-12-card\" style=\"background-color:#FFF;\">\n                        <h2 class=\"fs-15 color2\">{{ _( title_tab2) }}</h2>\n                        <p class=\"display-4 mb-10 px-xxl-15\">{{ _(subtitle_tab2) }}</p>\n                        <ul class=\"icon-list bullet-bg bullet-soft-green\">\n                            <li><img src=\"/assets/techmax_solucoes/img/Frame%204%20(1).svg\" class=\"uil uil-check\">{{ _(line2_1) }}</li>\n                            <li><img src=\"/assets/techmax_solucoes/img/Frame%204%20(1).svg\" class=\"uil uil-check\">{{ _(line2_2) }}</li>\n                            <li><img src=\"/assets/techmax_solucoes/img/Frame%204%20(1).svg\" class=\"uil uil-check\">{{ _(line2_3) }}</li>\n                            <li><img src=\"/assets/techmax_solucoes/img/Frame%204%20(1).svg\" class=\"uil uil-check\">{{ _(line2_4) }}</li>\n                            <li><img src=\"/assets/techmax_solucoes/img/Frame%204%20(1).svg\" class=\"uil uil-check\">{{ _(line2_5) }}</li>\n                        </ul>\n                        <a href=\"{{href2}}\" class=\"btn btn-green mt-2\">{{ _(btn2) }}</a>\n                    </div>\n          <!--/column -->\n                    </div>\n                </div>\n      <!--/.tab-pane -->\n              <div class=\"tab-pane fade\" id=\"tab2-3\">\n                <div class=\"row gx-lg-8 gx-xl-12 gy-10 align-items-center\">\n                  <div class=\"col-lg-12 col-lg-12-card\" style=\"background-color:#FFF;\">\n                    <h2 class=\"fs-15 color3\">{{ _(title_tab3) }}</h2>\n                    <p class=\"display-4 mb-10 px-xxl-15\">{{ _(subtitle_tab3) }}</p>\n                    <ul class=\"icon-list bullet-bg bullet-soft-purple\">\n                      <li><img src=\"/assets/techmax_solucoes/img/Frame%204%20(2).svg\" class=\"uil uil-check\">{{ _(line3_1) }}</li>\n                      <li><img src=\"/assets/techmax_solucoes/img/Frame%204%20(2).svg\" class=\"uil uil-check\">{{ _(line3_2) }}</li>\n                      <li><img src=\"/assets/techmax_solucoes/img/Frame%204%20(2).svg\" class=\"uil uil-check\">{{ _(line3_3) }}</li>\n                      <li><img src=\"/assets/techmax_solucoes/img/Frame%204%20(2).svg\" class=\"uil uil-check\">{{ _(line3_4) }}</li>\n                    </ul>\n                    <a href=\"{{href3}}\" class=\"btn btn-red mt-2\">{{ _(btn3) }}</a>\n                  </div>\n                </div>\n              </div>\n            </div>\n    </div>\n    \n        \n\n   \n    <!-- /.nav-tabs -->\n   \n  </div>\n</section>\n",
+  "template": "<section class=\"wrapper features-11\" style=\"background-color:#FBFBFB;\">\n  <div class=\"container d-flex\">\n    <div class=\"row\">\n        <div class=\"col-12 col-lg-6\" style=\"padding-top:3rem\">\n        <h2 class=\"fs-15 text-muted mb-3\">{{ _(titletd) }}</h2>\n        <h3 class=\"display-4 mb-10 px-xxl-15 title\">{{ _(subtitletd) }}</h3>\n        <p class=\"first-p\">{{ _(text) }}</p>\n        <ul class=\"nav row\">\n          <li class=\"nav-item col\"> <a class=\"nav-link first d-flex  flex-column active\" data-bs-toggle=\"tab\" href=\"#tab2-1\">\n              <div><img src=\"{{img1}}\" class=\"svg-inject icon-svg icon-svg-md text-yellow me-4\" alt=\"\" /></div>\n              <div>\n                <h4 class=\"more more-red\">{{ _(title_card1) }}</h4>\n                <p>{{ _(sub_card1) }}</p>\n              </div>\n            </a> </li>\n          <li class=\"nav-item col\"> <a class=\"nav-link second d-flex  flex-column\" data-bs-toggle=\"tab\" href=\"#tab2-2\">\n              <div><img src=\"{{img2}}\" class=\"svg-inject icon-svg icon-svg-md text-green me-4\" alt=\"\" /></div>\n              <div>\n                <h4 class=\"more more-green\">{{ _(title_card2) }}</h4>\n                <p class=\"green-g\">{{ _(sub_card2) }}</p>\n              </div>\n            </a> </li>\n          <li class=\"nav-item col\"> <a class=\"nav-link third d-flex  flex-column\" data-bs-toggle=\"tab\" href=\"#tab2-3\">\n              <div><img src=\"{{img3}}\" class=\"svg-inject icon-svg icon-svg-md text-red me-4\" alt=\"\" /></div>\n              <div>\n                <h4 class=\"more more-purple\">{{ _(title_card3) }}</h4>\n                <p>{{ _(sub_card3) }}</p>\n              </div>\n            </a> </li>\n        </ul>\n      </div>\n        \n        <div class=\"tab-content mt-6 mt-lg-8 col-12 col-lg-6\">\n            <div class=\"tab-pane fade show active\" id=\"tab2-1\">\n        <div class=\"row gx-lg-8 gx-xl-12 gy-10 align-items-center\">\n\n          <!--/column -->\n          <div class=\"col-lg-12 col-lg-12-card\" style=\"background-color:#FFF;\">\n            <h2 class=\"fs-15 color1\">{{ _(title_tab1) }}</h2>\n            <p class=\"display-4 mb-10 px-xxl-15\">{{ _(subtitle_tab1) }}</p>\n            <ul class=\"icon-list bullet-bg bullet-soft-red\">\n              <li><img src=\"/assets/techmax_solucoes/img/Frame%204.svg\" class=\"uil uil-check\">{{ _(line1_1) }}</li>\n              <li><img src=\"/assets/techmax_solucoes/img/Frame%204.svg\" class=\"uil uil-check\">{{ _(line1_2) }}</li>\n              <li><img src=\"/assets/techmax_solucoes/img/Frame%204.svg\" class=\"uil uil-check\">{{ _(line1_3) }}</li>\n              <li><img src=\"/assets/techmax_solucoes/img/Frame%204.svg\" class=\"uil uil-check\">{{ _(line1_4) }}</li>\n              <li><img src=\"/assets/techmax_solucoes/img/Frame%204.svg\" class=\"uil uil-check\">{{ _(line1_5) }}</li>\n            </ul>\n            <a href=\"{{href1}}\" class=\"btn btn-yellow mt-2\">{{ _(btn1) }}</a>\n          </div>\n          <!--/column -->\n        </div>\n        <!--/.row -->\n      </div>\n      <!--/.tab-pane -->\n                <div class=\"tab-pane fade\" id=\"tab2-2\">\n                    <div class=\"row gx-lg-8 gx-xl-12 gy-10 align-items-center\">\n\n                    <div class=\"col-lg-12 col-lg-12-card\" style=\"background-color:#FFF;\">\n                        <h2 class=\"fs-15 color2\">{{ _( title_tab2) }}</h2>\n                        <p class=\"display-4 mb-10 px-xxl-15\">{{ _(subtitle_tab2) }}</p>\n                        <ul class=\"icon-list bullet-bg bullet-soft-green\">\n                            <li><img src=\"/assets/techmax_solucoes/img/Frame%204%20(1).svg\" class=\"uil uil-check\">{{ _(line2_1) }}</li>\n                            <li><img src=\"/assets/techmax_solucoes/img/Frame%204%20(1).svg\" class=\"uil uil-check\">{{ _(line2_2) }}</li>\n                            <li><img src=\"/assets/techmax_solucoes/img/Frame%204%20(1).svg\" class=\"uil uil-check\">{{ _(line2_3) }}</li>\n                            <li><img src=\"/assets/techmax_solucoes/img/Frame%204%20(1).svg\" class=\"uil uil-check\">{{ _(line2_4) }}</li>\n                            <li><img src=\"/assets/techmax_solucoes/img/Frame%204%20(1).svg\" class=\"uil uil-check\">{{ _(line2_5) }}</li>\n                        </ul>\n                        <a href=\"{{href2}}\" class=\"btn btn-green mt-2\">{{ _(btn2) }}</a>\n                    </div>\n          <!--/column -->\n                    </div>\n                </div>\n      <!--/.tab-pane -->\n              <div class=\"tab-pane fade\" id=\"tab2-3\">\n                <div class=\"row gx-lg-8 gx-xl-12 gy-10 align-items-center\">\n                  <div class=\"col-lg-12 col-lg-12-card\" style=\"background-color:#FFF;\">\n                    <h2 class=\"fs-15 color3\">{{ _(title_tab3) }}</h2>\n                    <p class=\"display-4 mb-10 px-xxl-15\">{{ _(subtitle_tab3) }}</p>\n                    <ul class=\"icon-list bullet-bg bullet-soft-purple\">\n                      <li><img src=\"/assets/techmax_solucoes/img/Frame%204%20(2).svg\" class=\"uil uil-check\">{{ _(line3_1) }}</li>\n                      <li><img src=\"/assets/techmax_solucoes/img/Frame%204%20(2).svg\" class=\"uil uil-check\">{{ _(line3_2) }}</li>\n                      <li><img src=\"/assets/techmax_solucoes/img/Frame%204%20(2).svg\" class=\"uil uil-check\">{{ _(line3_3) }}</li>\n                      <li><img src=\"/assets/techmax_solucoes/img/Frame%204%20(2).svg\" class=\"uil uil-check\">{{ _(line3_4) }}</li>\n                    </ul>\n                    <a href=\"{{href3}}\" class=\"btn btn-red mt-2\">{{ _(btn3) }}</a>\n                  </div>\n                </div>\n              </div>\n            </div>\n    </div>\n    <!-- /.nav-tabs -->\n  \n  \n  </div>\n  \n  \n</section>\n",
   "type": "Component"
  },
  {
@@ -3657,11 +3657,11 @@
     "reqd": 0
    }
   ],
-  "modified": "2023-11-16 18:45:33.683949",
+  "modified": "2023-11-17 18:57:04.429340",
   "module": "Techmax Solucoes",
   "name": "Testimonials 2 Techmax",
   "standard": 0,
-  "template": "{% set testimonials = [testimonial_1, testimonial_2, testimonial_3] %}\n<section class=\"wrapper testimonials-2\">\n  <div class=\"container py-14 py-md-16\">\n        <h2 class=\"display-4 mb-3 text-center title\">{{ _(title) }}</h2>\n        <p class=\"lead text-center mb-6 px-md-16 px-lg-0 mt-2 subtitle\">{{_(subtitle)}}</p>\n    <div class=\"row position-relative\">\n      <figure class=\"rounded position-absolute d-none d-lg-block\" style=\"top: 50%; right:0; width: 45%; height: auto; transform: translateY(-50%); z-index:2\"><img src=\"{{img}}\" srcset=\"/assets/img/photos/tei1@2x.jpg 2x\" alt=\"\"></figure>\n      <div class=\"col-lg-9 text-center\">\n        <div class=\"card \">\n          <div class=\"card-body p-md-10 py-xxl-16\">\n              <div class=\"row gx-0\">\n                  \n              </div>\n               <div class=\"swiper-container swiper-auto swiper-auto-xs mb-10 mb-md-12\">\n                <div class=\"swiper\">\n                  <div class=\"swiper-wrapper\">\n                    {% for testimonial in testimonials %}\n                        {% if testimonial %}\n                        {% set doc = frappe.get_doc(\"Testimonials\", testimonial) %}\n                    <div class=\"swiper-slide card-body\">\n                    <span class=\"ratings five fs-20 mb-3\"></span>\n                      <blockquote class=\"border-0 fs-lg mb-0\">\n                        <p>“{{doc.testimonial}}”</p>\n                        <div class=\"blockquote-details justify-content-center text-center\">\n                          <div class=\"info ps-0\">\n                            <h5 class=\"mb-1\">{{ doc.nome }}</h5>\n                            <p class=\"mb-0\">{{ doc.role }}</p>\n                          </div>\n                        </div>\n                      </blockquote>\n                    </div>\n                        {% endif %}\n                    {% endfor %}\n                  </div>\n                </div>\n              </div>\n\n            <!-- /.row -->\n          </div>\n          <!--/.card-body -->\n        </div>\n        <!--/.card -->\n      </div>\n      <!-- /column -->\n    </div>\n    <!-- /.row -->\n  </div>\n  <!-- /.container -->\n</section>\n\n\n\n<style>\n    .testimonials-2 p{\n        color: #38424E;\n        text-align: center;\n        font-family: Work Sans;\n        font-size: 21px;\n        font-style: normal;\n        font-weight: 400;\n        line-height: 30px;\n        width: 94%;\n        letter-spacing: -0.5px;\n    }\n    .testimonials-2 .blockquote-details .mb-1{\n        color: #22282F;\n        text-align: center;\n        font-family: Work Sans;\n        font-size: 18px;\n        font-style: normal;\n        font-weight: 600;\n        line-height: 24px;\n    }\n    .testimonials-2 .blockquote-details .mb-0{\n        color: #38424E;\n        text-align: center;\n        font-family: Manrope;\n        font-size: 15px;\n        font-style: normal;\n        font-weight: 500;\n        line-height: 22px;\n        letter-spacing: 0.43px;\n        width: 100%;\n    }\n    \n    \n    \n    /* BREAKPOINT - CELULAR  */\n    @media (max-width: 768px) and (min-width:320px) {\n        .testimonials-2 p{\n        color: #38424E;\n        text-align: center;\n        font-family: Work Sans;\n        font-size: 13px !important;\n        font-style: normal;\n        font-weight: 400;\n        line-height: 30px;\n        width: 100% !important;\n        letter-spacing: -0.5px;\n    }\n    .testimonials-2 .blockquote-details .mb-1{\n        color: #22282F;\n        text-align: center;\n        font-family: Work Sans;\n        font-size: 13px !important;\n        font-style: normal;\n        font-weight: 600;\n        line-height: 24px;\n    }\n    .testimonials-2 .blockquote-details .mb-0{\n        color: #38424E;\n        text-align: center;\n        font-family: Manrope;\n        font-size: 10px !important;\n        font-style: normal;\n        font-weight: 500;\n        line-height: 22px;\n        letter-spacing: 0.43px;\n        width: 100% !important;\n    }\n    .testimonials-2 .swiper-wrapper .swiper-slide {\n        max-width: 660px !important;\n        margin-right: 0 !important;\n    }\n    }\n    \n</style>\n",
+  "template": "{% set testimonials = [testimonial_1, testimonial_2, testimonial_3] %}\n<section class=\"wrapper testimonials-2\">\n  <div class=\"container py-14 py-md-16\">\n        <h2 class=\"display-4 mb-3 text-center title\">{{ _(title) }}</h2>\n        <p class=\"lead text-center mb-6 px-md-16 px-lg-0 mt-2 subtitle\">{{_(subtitle)}}</p>\n    <div class=\"row position-relative\">\n      <figure class=\"rounded position-absolute d-none d-lg-block\" style=\"top: 50%; right:0; width: 45%; height: auto; transform: translateY(-50%); z-index:2\"><img src=\"{{img}}\" srcset=\"/assets/img/photos/tei1@2x.jpg 2x\" alt=\"\"></figure>\n      <div class=\"col-lg-9 text-center\">\n        <div class=\"card \">\n          <div class=\"card-body p-md-10 py-xxl-16\">\n              <div class=\"row gx-0\">\n                  \n              </div>\n               <div class=\"swiper-container swiper-auto swiper-auto-xs cards mb-10 mb-md-12\">\n                <div class=\"swiper\">\n                  <div class=\"swiper-wrapper\">\n                    {% for testimonial in testimonials %}\n                        {% if testimonial %}\n                        {% set doc = frappe.get_doc(\"Testimonials\", testimonial) %}\n                    <div class=\"swiper-slide card-body\">\n                    <span class=\"ratings five fs-20 mb-3\"></span>\n                      <blockquote class=\"border-0 fs-lg mb-0\">\n                        <p>“{{doc.testimonial}}”</p>\n                        <div class=\"blockquote-details justify-content-center text-center\">\n                          <div class=\"info ps-0\">\n                            <h5 class=\"mb-1\">{{ doc.nome }}</h5>\n                            <p class=\"mb-0\">{{ doc.role }}</p>\n                          </div>\n                        </div>\n                      </blockquote>\n                    </div>\n                        {% endif %}\n                    {% endfor %}\n                  </div>\n                </div>\n              </div>\n\n            <!-- /.row -->\n          </div>\n          <!--/.card-body -->\n        </div>\n        <!--/.card -->\n      </div>\n      <!-- /column -->\n    </div>\n    <!-- /.row -->\n  </div>\n  <!-- /.container -->\n</section>\n\n\n\n<style>\n    .testimonials-2 p{\n        color: #38424E;\n        text-align: center;\n        font-family: Work Sans;\n        font-size: 21px;\n        font-style: normal;\n        font-weight: 400;\n        line-height: 30px;\n        width: 94%;\n        letter-spacing: -0.5px;\n    }\n    .testimonials-2 .blockquote-details .mb-1{\n        color: #22282F;\n        text-align: center;\n        font-family: Work Sans;\n        font-size: 18px;\n        font-style: normal;\n        font-weight: 600;\n        line-height: 24px;\n    }\n    .testimonials-2 .blockquote-details .mb-0{\n        color: #38424E;\n        text-align: center;\n        font-family: Manrope;\n        font-size: 15px;\n        font-style: normal;\n        font-weight: 500;\n        line-height: 22px;\n        letter-spacing: 0.43px;\n        width: 100%;\n    }\n    \n    \n    \n    /* BREAKPOINT - CELULAR  */\n    @media (max-width: 768px) and (min-width:320px) {\n        .testimonials-2 p{\n        color: #38424E;\n        text-align: center;\n        font-family: Work Sans;\n        font-size: 13px !important;\n        font-style: normal;\n        font-weight: 400;\n        line-height: 30px;\n        width: 100% !important;\n        letter-spacing: -0.5px;\n    }\n    .testimonials-2 .blockquote-details .mb-1{\n        color: #22282F;\n        text-align: center;\n        font-family: Work Sans;\n        font-size: 13px !important;\n        font-style: normal;\n        font-weight: 600;\n        line-height: 24px;\n    }\n    .testimonials-2 .blockquote-details .mb-0{\n        color: #38424E;\n        text-align: center;\n        font-family: Manrope;\n        font-size: 10px !important;\n        font-style: normal;\n        font-weight: 500;\n        line-height: 22px;\n        letter-spacing: 0.43px;\n        width: 100% !important;\n    }\n    .testimonials-2 .swiper-wrapper .swiper-slide {\n        max-width: 660px !important;\n        margin-right: 0 !important;\n    }\n    }\n    \n</style>\n",
   "type": "Component"
  },
  {
@@ -3834,7 +3834,7 @@
     "reqd": 0
    }
   ],
-  "modified": "2023-11-03 12:34:18.510331",
+  "modified": "2023-11-17 18:51:14.258384",
   "module": "Techmax Solucoes",
   "name": "Facts 1 Techmax",
   "standard": 0,
@@ -9405,6 +9405,139 @@
   "name": "Text Contato",
   "standard": 0,
   "template": "<section class=\"text-contato-tmx wrapper\">\n  <div class=\"container py-14 py-md-16 text-center\">\n      <div class=\"text-start\" style=\"margin-left: 105px;\">\n        <h1 class=\"title_section\">{{ _(title) }}</h1>\n      </div>\n      <br>\n      <div class=\"text-start\" style=\"margin-left: 105px;\">\n          <h1 class=\"title_text_section\">{{ _(title_text1) }}</h1>\n          <p class=\"text_section\">{{ _(text1) }}</p>\n      </div>\n      <br>\n      <div class=\"text-start\" style=\"margin-left: 105px;\">\n          <h1 class=\"title_text_section\">{{ _(title_text2) }}</h1>\n          <p class=\"text_section\">{{ _(text2) }}</p>\n      </div>\n      \n      \n    <!-- /.position-relative -->\n  </div>\n  <!-- /.container -->\n</section>\n<!-- /section -->\n\n<style>\n    .text-contato-tmx .title_section{\n       color: #22282F;\n        font-family: Work Sans;\n        font-size: 38px;\n        font-style: normal;\n        font-weight: 600;\n        line-height: 46px;\n    }\n    .text-contato-tmx .subtitle_section{\n        color: #38424E;\n        font-family: Manrope;\n        font-size: 15px;\n        font-style: normal;\n        font-weight: 500;\n        line-height: 22px;\n        letter-spacing: 0.43px;\n        width: 77%;\n        margin-top: 42px;\n    }\n    .text-contato-tmx .title_text_section{\n        color: #22282F;\n        font-family: Work Sans;\n        font-size: 22px;\n        font-style: normal;\n        font-weight: 500;\n        line-height: 30px;\n        letter-spacing: -0.5px;\n    }\n    .text-contato-tmx .text_section{\n        color: #38424E;\n        font-family: Manrope;\n        font-size: 15px;\n        font-style: normal;\n        font-weight: 600;\n        line-height: 22px;\n        margin-top: 16px;\n        width: 86%;\n    }\n</style>",
+  "type": "Section"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Web Template",
+  "fields": [
+   {
+    "default": null,
+    "fieldname": "title",
+    "fieldtype": "Small Text",
+    "label": "Title",
+    "options": null,
+    "parent": "Pop Up",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "subtitle",
+    "fieldtype": "Data",
+    "label": "Subtitle",
+    "options": null,
+    "parent": "Pop Up",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "text",
+    "fieldtype": "Data",
+    "label": "Text",
+    "options": null,
+    "parent": "Pop Up",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "hora1",
+    "fieldtype": "Data",
+    "label": "Hora Manha",
+    "options": null,
+    "parent": "Pop Up",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "hora2",
+    "fieldtype": "Data",
+    "label": "Hora Tarde",
+    "options": null,
+    "parent": "Pop Up",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "option1",
+    "fieldtype": "Data",
+    "label": "Option",
+    "options": null,
+    "parent": "Pop Up",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "option2",
+    "fieldtype": "Data",
+    "label": "Option",
+    "options": null,
+    "parent": "Pop Up",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "option3",
+    "fieldtype": "Data",
+    "label": "Option",
+    "options": null,
+    "parent": "Pop Up",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "option4",
+    "fieldtype": "Data",
+    "label": "Option",
+    "options": null,
+    "parent": "Pop Up",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "option5",
+    "fieldtype": "Data",
+    "label": "Option",
+    "options": null,
+    "parent": "Pop Up",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   },
+   {
+    "default": null,
+    "fieldname": "option6",
+    "fieldtype": "Data",
+    "label": "Option",
+    "options": null,
+    "parent": "Pop Up",
+    "parentfield": "fields",
+    "parenttype": "Web Template",
+    "reqd": 0
+   }
+  ],
+  "modified": "2023-11-17 18:44:13.029739",
+  "module": "Techmax Solucoes",
+  "name": "Pop Up",
+  "standard": 0,
+  "template": "<section class=\"wrapper pop_up\">\n  <div class=\"container\">\n    <div class=\"card\">\n        <h1 class=\"title_section\">{{_(title)}}</h1>\n    \n    <form class=\"contact-form needs-validation\" method=\"post\" action=\"/assets/php/contact.php\" novalidate>\n        <h1 class=\"title_form\">{{_(subtitle)}}</h1>\n        <div class=\"messages\"></div>\n            <div class=\"row gx-4\">\n                <!-- /column -->\n                <div class=\"col-md-6\">\n                  <div class=\"form-floating mb-4\">\n                    <input id=\"form_lastname\" type=\"text\" name=\"nome\" class=\"form-control\" placeholder=\"Doe\" required>\n                    <label class=\"text-form-control\" for=\"form_lastname\">Nome</label>\n                    <div class=\"valid-feedback\">\n                      Looks good!\n                    </div>\n                    <div class=\"invalid-feedback\">\n                      Please enter your last name.\n                    </div>\n                  </div>\n                </div>\n                <!-- /column -->\n                <div class=\"col-md-6\">\n                  <div class=\"form-floating mb-4\">\n                    <input id=\"form_email\" type=\"email\" name=\"email\" class=\"form-control\" placeholder=\"jane.doe@example.com\" required>\n                    <label class=\"text-form-control\" for=\"form_email\">E-mail</label>\n                    <div class=\"valid-feedback\">\n                      Looks good!\n                    </div>\n                    <div class=\"invalid-feedback\">\n                      Please provide a valid email address.\n                    </div>\n                  </div>\n                </div>\n                <!-- /column -->\n                <div class=\"col-md-6\">\n                  <div class=\"form-floating mb-4\">\n                    <input id=\"form_lastname\" type=\"text\" name=\"telefone\" class=\"form-control\" placeholder=\"Doe\" required>\n                    <label class=\"text-form-control\" for=\"form_lastname\">Telefone</label>\n                    <div class=\"valid-feedback\">\n                      Looks good!\n                    </div>\n                    <div class=\"invalid-feedback\">\n                      Please enter your last name.\n                    </div>\n                  </div>\n                </div>\n                <!-- /column -->\n                <div class=\"col-md-6\">\n                  <div class=\"form-select-wrapper mb-4\">\n                    <select class=\"form-select text-form-control\" id=\"form-select\" name=\"select\" required>\n                      <option selected disabled value=\"\" class=\"text-form-control\">{{_(option1)}}</option>\n                      <option value=\"{{_(option2)}}\" class=\"text-form-control\">{{_(option2)}}</option>\n                      <option value=\"{{_(option3)}}\" class=\"text-form-control\">{{_(option3)}}</option>\n                      <option value=\"{{_(option4)}}\" class=\"text-form-control\">{{_(option4)}}</option>\n                      <option value=\"{{_(option5)}}\" class=\"text-form-control\">{{_(option5)}}</option>\n                      <option value=\"{{_(option6)}}\" class=\"text-form-control\">{{_(option6)}}</option>\n                    </select>\n                    <div class=\"valid-feedback\">\n                      Looks good!\n                    </div>\n                    <div class=\"invalid-feedback\">\n                      Please select a department.\n                    </div>\n                  </div>\n                </div>\n                <!-- /column -->\n                <div class=\"d-flex\" style=\"margin-left:-10px;\">\n                    <div class=\"col-12\">\n                        <p class=\"text_hour\">{{_(text)}}</p>\n                      <div class=\"mb-4 d-flex align-items-center\">\n                        <div class=\"d-flex\">\n                        <input type=\"radio\" class=\"d-flex\" id=\"manha\" name=\"hora\" value=\"manha\">\n                            <label for=\"manha\" class=\"manha\">{{_(hora1)}}</label><br>\n                        </div>\n                        <div class=\"d-flex\" style=\"margin-left:26px;\">\n                            <input type=\"radio\" id=\"tarde\" name=\"hora\" value=\"tarde\">\n                            <label for=\"tarde\" class=\"tarde\">{{_(hora2)}}</label>\n                        </div>\n                      </div>\n                    </div>\n                </div>\n                <!-- /column -->\n                <div class=\"col-12\">\n                  <div class=\"form-floating mb-4\">\n                    <textarea id=\"form_message\" name=\"mensagem\" class=\"form-control\" placeholder=\"Your message\" style=\"height: 150px\" required></textarea>\n                    <label class=\"text-form-control\" for=\"form_message\">Mensagem</label>\n                    <div class=\"valid-feedback\">\n                      Looks good!\n                    </div>\n                    <div class=\"invalid-feedback\">\n                      Please enter your messsage.\n                    </div>\n                  </div>\n                </div>\n                <!-- /column -->\n                <div class=\"col-12\">\n                  <input type=\"submit\" class=\"btn btn-primary btn-send mb-3\" value=\"Envie solicitação\">\n                </div>\n                <!-- /column -->\n              </div>\n              <!-- /.row -->\n            </form>\n            <!-- /form -->\n          </div>\n    </div>\n    <!-- /.nav-tabs -->\n</section>\n\n\n<style>\n    .pop_up .title_section{\n        color: #22282F;\n        text-align: center;\n        font-family: Public Sans;\n        font-size: 26px;\n        font-style: normal;\n        font-weight: 600;\n        line-height: 36px;\n        width: 65%;\n    }\n    .pop_up .title_form{\n        color: #22282F;\n        font-family: Public Sans;\n        font-size: 22px;\n        font-style: normal;\n        font-weight: 600;\n        line-height: 30px;\n    }\n    .pop_up .card{\n        height: 743px;\n        border-radius: 8px;\n        display: flex;\n        padding: 65px;\n        flex-direction: column;\n        justify-content: center;\n        align-items: center;\n        gap: 16px;\n    }\n    .pop_up #form_lastname, .pop_up #form_email{\n        display: flex;\n        padding: 5px 9px;\n        flex-direction: column;\n        align-items: flex-start;\n        gap: 10px;\n        flex: 1 0 0;\n        border-radius: 8px;\n        border: 1px solid rgba(219, 218, 222, 0.50);\n        background: #FFF;\n    }\n    .pop_up #form-select{\n        display: flex;\n        padding: 5px 9px;\n        flex-direction: column;\n        align-items: flex-start;\n        gap: 10px;\n        flex: 1 0 0;\n        border-radius: 8px;\n        border: 1px solid rgba(219, 218, 222, 0.50);\n        background: #FFF;\n        height: 50px;\n        width: 542px;\n    }\n    .pop_up #form_message{\n        display: flex;\n        height: 165px;\n        padding: 5px 9px;\n        flex-direction: column;\n        align-items: flex-start;\n        gap: 10px;\n        flex: 1 0 0;\n        border-radius: 8px;\n        border: 1px solid rgba(219, 218, 222, 0.50);\n        background: #FFF;\n    }\n    .pop_up .text-form-control{\n        color: #7E848E;\n        font-family: Manrope;\n        font-size: 15px;\n        font-style: normal;\n        font-weight: 500;\n        line-height: normal;\n        display: flex;\n        width: 311px;\n        padding: 14px !important;\n        align-items: flex-start;\n        gap: 10px;\n    }\n    .pop_up .text_hour{\n        color: #38424E;\n        font-family: Manrope;\n        font-size: 15px;\n        font-style: normal;\n        font-weight: 500;\n        line-height: 22px;\n        letter-spacing: 0.43px;\n    }\n    .pop_up .manha, .pop_up .tarde{\n        color: #7E848E;\n        font-family: Manrope;\n        font-size: 15px;\n        font-style: normal;\n        font-weight: 500;\n        line-height: 22px;\n        letter-spacing: 0.43px;\n    }\n    .pop_up #manha, .pop_up #tarde{\n        display: flex;\n        width: 18px !important;\n        height: 18px;\n        padding: 2px;\n        justify-content: center;\n        align-items: center;\n        gap: 10px;\n        border-radius: 100px;\n        border: 1px solid #4B465C;\n        background: #FFF;\n        margin-bottom: 8px !important;\n    }\n</style>",
   "type": "Section"
  }
 ]
