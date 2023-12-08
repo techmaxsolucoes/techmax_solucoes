@@ -1,0 +1,9 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="calendar-event">
+<rect id="Rectangle" x="4" y="5" width="16" height="16" rx="2" stroke="#38424E" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Path" d="M16 3V7" stroke="#38424E" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Path_2" d="M8 3V7" stroke="#38424E" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Path_3" d="M4 11H20" stroke="#38424E" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+<rect id="Rectangle_2" x="8" y="15" width="2" height="2" stroke="#38424E" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</svg>
