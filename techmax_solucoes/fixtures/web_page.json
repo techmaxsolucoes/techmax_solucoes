@@ -21,7 +21,7 @@
   "meta_description": null,
   "meta_image": null,
   "meta_title": null,
-  "modified": "2023-12-14 14:36:22.802454",
+  "modified": "2023-12-15 08:11:55.750841",
   "module": "Techmax Solucoes",
   "name": "home",
   "page_blocks": [
@@ -113,7 +113,7 @@
     "parenttype": "Web Page",
     "section_id": null,
     "web_template": "Testimonials 2 Techmax",
-    "web_template_values": "{\"title\":\"O que nossos clientes estão falando sobre a TechMax.\",\"subtitle\":\"Veja as experiências reais e os resultados transformadores que nossos parceiros alcançaram com a TechMax.\",\"img\":\"/assets/techmax_solucoes/img/image (2).png\",\"testimonial_1\":\"Rohit Industries\",\"testimonial_2\":\"Sr. João da Silva\"}"
+    "web_template_values": "{\"title\":\"O que nossos clientes estão falando sobre a TechMax.\",\"subtitle\":\"Veja as experiências reais e os resultados transformadores que nossos parceiros alcançaram com a TechMax.\",\"img\":\"/assets/techmax_solucoes/img/image (2)687daa.png\",\"testimonial_1\":\"Rohit Industries\",\"testimonial_2\":\"Sr. João da Silva\"}"
    },
    {
     "add_background_image": 0,
