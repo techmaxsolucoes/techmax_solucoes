@@ -1,7 +1,7 @@
 [
  {
   "address": null,
-  "app_logo": "/assets/techmax_solucoes/img/Logo.svg",
+  "app_logo": "/files/Logo.svg",
   "app_name": "TechMax Soluções",
   "auto_account_deletion": 72,
   "banner_html": null,
@@ -17,7 +17,7 @@
   "enable_view_tracking": 0,
   "favicon": null,
   "footer_items": [],
-  "footer_logo": "/assets/techmax_solucoes/img/Logo.svg",
+  "footer_logo": "/files/Logo.svg",
   "footer_powered": null,
   "footer_template": "Footer 1 TechMax",
   "footer_template_values": null,
