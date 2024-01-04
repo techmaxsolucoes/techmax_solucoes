@@ -1,0 +1,56 @@
+[
+ {
+  "description": "A Amazon AWS oferece soluções de nuvem de alta performance e escalabilidade, que permitem ao seus clientes crescer de forma segura e eficiente.",
+  "docstatus": 0,
+  "doctype": "Especializacoes TechMax",
+  "especializacao": "Amazon AWS",
+  "imagem": "/files/aws.svg",
+  "modified": "2023-10-05 13:39:57.638432",
+  "name": "Amazon AWS"
+ },
+ {
+  "description": "O 3CX é uma solução de telefonia IP inovadora e fácil de usar, que permite aos seus clientes melhorar a sua comunicação de forma eficiente e econômica.",
+  "docstatus": 0,
+  "doctype": "Especializacoes TechMax",
+  "especializacao": "3CX",
+  "imagem": "/files/3CX.svg",
+  "modified": "2023-10-05 13:40:17.921483",
+  "name": "3CX"
+ },
+ {
+  "description": "O Google disponibiliza um conjunto completo de ferramentas que tornam a colaboração mais eficiente e podem aumentar significativamente a produtividade.",
+  "docstatus": 0,
+  "doctype": "Especializacoes TechMax",
+  "especializacao": "Google",
+  "imagem": "/files/google.svg",
+  "modified": "2023-10-05 13:40:31.576953",
+  "name": "Google"
+ },
+ {
+  "description": "O WhatsApp Business oferece melhores experiência aos nossos cliente, aumenta a eficiência dos negócios e proporciona uma comunicação mais segura e confiável.",
+  "docstatus": 0,
+  "doctype": "Especializacoes TechMax",
+  "especializacao": "Whatsapp",
+  "imagem": "/files/whatsapp.svg",
+  "modified": "2023-10-05 13:40:43.691438",
+  "name": "Whatsapp"
+ },
+ {
+  "description": "A Microsoft oferece soluções tecnológicas de ponta que ajudam empresas a alcançarem seus objetivos de negócio de maneira mais produtiva e eficiente.",
+  "docstatus": 0,
+  "doctype": "Especializacoes TechMax",
+  "especializacao": "Microsoft",
+  "imagem": "/files/microsoft.svg",
+  "modified": "2023-10-05 13:40:59.161485",
+  "name": "Microsoft"
+ },
+ {
+  "description": "A Lenovo oferece computadores potentes e confiáveis para atender às necessidades do dia a dia da sua empresa. Além de ser reconhecida por seu design inovador.",
+  "docstatus": 0,
+  "doctype": "Especializacoes TechMax",
+  "especializacao": "Lenovo",
+  "imagem": "/files/lenovo.svg",
+  "modified": "2023-10-05 13:41:09.871911",
+  "name": "Lenovo"
+ }
+]
