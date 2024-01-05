@@ -211,5 +211,9 @@ fixtures = [
     {"dt": "Testimonials"},
     {"dt": "Pop Up TechMax"},
     {"dt": "Contato TechMax"},
-    {"dt": "Especializacoes TechMax"}
+    {"dt": "Especializacoes TechMax"},
+    {"dt": "Web Form", "filters": {
+      "module": "Techmax Solucoes"
+    }},
+    {"dt": "Website Script"}
 ]
