@@ -3,13 +3,45 @@
 {% macro email_login_body() -%}
 {% if not disable_user_pass_login or (ldap_settings and ldap_settings.enabled) %}
 
+
+<div class="page-card-body">
+	<div class="form-group">
+		<label class="form-label sr-only" for="login_email">{{ login_label or _("Email")}}</label>
+		<div class="email-field">
+
+			<div>
+				<p>Email ou nome do usuário</p>
+			</div>
+
+			<input type="text" id="login_email" class="form-control" placeholder="{% if login_name_placeholder %}{{ login_name_placeholder  }}{% else %}{{ _('Seu e-mail ou nome de usuário') }}{% endif %}" required autofocus autocomplete="username">
+
+		</div>
+	</div>
+
+	<div class="form-group">
+		<label class="form-label sr-only" for="login_password">{{ _("Password") }}</label>
+		<div class="password-field">
+
+			<div>
+				<p>Senha</p>
+			</div>
+
+			<input type="password" id="login_password" class="form-control" placeholder="Sua senha" autocomplete="current-password" required>
+
+
+
+		</div>
+	</div>
+
+	<p class="forgot-password-message text-left">
+		<a href="#forgot">{{ _("Forgot Password?") }}</a>
+	</p>
+</div>
 {% endif %}
 <div class="page-card-actions">
 	{% if not disable_user_pass_login %}
-	<div class="page-card-actions">
-		<button class="btn btn-primary btn-login w-100" type="submit">
-			Entrar</button>
-	</div>
+	<button class="btn btn-sm btn-primary btn-block btn-login w-100" type="submit">
+		{{ _("Login") }}</button>
 	{% endif %}
 	{% if ldap_settings and ldap_settings.enabled %}
 	<button class="btn btn-sm btn-default btn-block btn-login btn-ldap-login">
@@ -23,10 +55,7 @@
 {% endblock %}
 
 {% macro logo_section() %}
-<div class="page-card-head">
-	<img class="app-logo" src="{{ logo }}">
-	<h4>{{ _('Login to {0}').format(app_name or _("Frappe")) }}</h4>
-</div>
+
 {% endmacro %}
 
 {% block page_content %}
@@ -39,6 +68,7 @@
 				{{ _("You need to enable JavaScript for your app to work.") }}<br>{{ _("To enable it follow the instructions in the following link: {0}").format("<a href='https://enable-javascript.com/'>enable-javascript.com</a></p>") }}
 		</div>
 	</noscript>
+
 	<div class="page-content-wrapper">
 
 		<div class="page-breadcrumbs">
@@ -50,14 +80,14 @@
 					</div>
 				</div>
 
-				<div class="page_content row">
+				<div class="page_content row d-flex">
 					<div class="col-lg-6 left-login">
 						<div class="left-top d-flex flex-column justify-content-end">
 							<div class="content-left">
 								<img src="/files/logo-tmx.svg">
 								<div class="content-texts">
 									<h1>Conecte-se ao futuro com tecnologia.</h1>
-									<h2>Nunca foi tão fácil levar a sua empresa ao próximo passo.</h2>
+									<h2>Nunca foi tão fácil levar a sua empresa ao próximo nível.</h2>
 								</div>
 
 							</div>
@@ -73,38 +103,46 @@
 
 						<section class='for-login'>
 							<div class="login-content page-card">
-								<img src="/files/logo-tmx.svg" class="d-none logo-tmx">
-
+								{{ logo_section() }}
 								<form class="form-signin form-login" role="form">
-
-									<div class="page-card-body page-card-body-login">
-										<div class="form-group form-group-email">
-											<label class="label-login" for="login_email">E-mail ou nome de usuário</label>
-											<div class="email-field">
-												<input type="text" id="login_email" class="form-control input-login" placeholder="Seu e-mail ou nome de usuário" required autofocus autocomplete="username">
+									{%- if social_login or login_with_email_link -%}
+									<div class="page-card-body">
+										<form class="form-signin form-login" role="form">
+											{{ email_login_body() }}
+										</form>
+										<div class="social-logins text-center">
+											{% if not disable_user_pass_login or (ldap_settings and ldap_settings.enabled) %}
+											<p class="text-muted login-divider">{{ _("or") }}</p>
+											{% endif %}
+											<div class="social-login-buttons">
+												{% for provider in provider_logins %}
+												<div class="login-button-wrapper">
+													<a href="{{ provider.auth_url }}" class="btn btn-block btn-default btn-sm btn-login-option btn-{{ provider.name }}">
+														{% if provider.icon %}
+														{{ provider.icon }}
+														{% endif %}
+														{{ _("Login With {0}").format(provider.provider_name) }}</a>
+												</div>
+												{% endfor %}
 											</div>
-										</div>
-
-										<div class="form-group">
-											<label class="label-login" for="login_password">Senha</label>
-											<div class="password-field">
-												<input type="password" id="login_password" class="form-control input-login" placeholder="Sua senha" autocomplete="current-password" required>
-												<span toggle="#login_password" class="toggle-password text-muted" style="cursor: pointer;"><img src="/files/icon-pass(open).svg"></span>
+											{% if login_with_email_link %}
+											<div class="login-with-email-link">
+												<div class="login-button-wrapper">
+													<a href="#login-with-email-link" class="btn btn-block btn-default btn-sm btn-login-option btn-login-with-email-link">
+														{{ _("Login with Email Link") }}</a>
+												</div>
 											</div>
+											{% endif %}
 										</div>
-
-										<p class="forgot-password-message">
-											<a class="esqueceu hover" href="#forgot">Esqueceu sua Senha?</a>
-										</p>
 									</div>
-
-									<div class="page-card-actions">
-
-										<button class="btn btn-primary btn-login w-100" type="submit">
-											Entrar</button>
-									</div>
+									{% else %}
+									{{ email_login_body() }}
+									{%- endif -%}
 								</form>
 							</div>
+							{%- if not disable_signup and not disable_user_pass_login -%}
+
+							{%- endif -%}
 						</section>
 
 						{%- if social_login -%}
@@ -123,64 +161,43 @@
 							{%- endif -%}
 						</section>
 						{%- endif -%}
-						<section class='for-signup '>
-
+						<section class='for-signup {{ "signup-disabled" if disable_signup else "" }}'>
 							<div class="login-content page-card">
-
-								<img src="/files/logo-tmx.svg" class="d-none logo-tmx">
-								<form class="form-signin form-signup hide" role="form">
-									<div class="page-card-body">
-										<div class="form-group">
-											<label class="label-login" for="signup_fullname">Nome Completo</label>
-											<input type="text" id="signup_fullname" class="form-control input-login" placeholder="Jane Doe" required autofocus autocomplete="name">
-										</div>
-										<div class="form-group">
-											<label class="label-login" for="signup_email">E-mail</label>
-											<input type="email" id="signup_email" class="form-control input-login" placeholder="jane@example.com" required autocomplete="username">
-										</div>
-									</div>
-									<div class="page-card-actions">
-										<button class="btn btn-primary btn-signup w-100" type="submit">Inscrever-se</button>
-
-										<div class="mt-4 sign-up-message">
-											Já tem uma conta?
-											<a href="#login" class="hover text-left criar">Entrar</a>
-										</div>
-									</div>
-								</form>
+								{{ logo_section() }}
+								{%- if not disable_signup -%}
+								{{ signup_form_template }}
+								{%- else -%}
+								<div class='page-card-head mb-2'>
+									<span class='indicator gray'>{{_("Signup Disabled")}}</span>
+									<p class="text-muted text-normal sign-up-message mt-1 mb-8">{{_("Signups have been disabled for this website.")}}</p>
+									<div><a href='/' class='btn btn-primary btn-md'>{{ _("Home") }}</a></div>
+								</div>
+								{%- endif -%}
 							</div>
 
 						</section>
 
 						<section class='for-forgot'>
 							<div class="login-content page-card">
-								<img src="/files/logo-tmx.svg" class="d-none logo-tmx">
 								<form class="form-signin form-forgot hide" role="form">
-
-									<div class="header-forgot">
-										<p class="forgot-message">
-											<a href="#login" class="voltar hover">Voltar</a>
-										</p>
-
-										<div class="linha"></div>
-										<h4 class="title-forgot">Esqueceu sua Senha?</h4>
-										<h5 class="text-forgot">Preencha abaixo seu endereço de email para receber as instruções necessárias e criar uma nova senha na TechMax Soluções.</h5>
+									<div class="page-card-head">
+										<h4>{{ _('Forgot Password') }}</h4>
 									</div>
-
 									<div class="page-card-body">
 										<div class="email-field">
-											<input type="email" id="forgot_email" class="input-login form-control" placeholder="Digite seu e-mail" required autofocus autocomplete="username">
-
+											<input type="email" id="forgot_email" class="form-control" placeholder="{{ _('Email Address') }}" required autofocus autocomplete="username">
+											<svg class="field-icon email-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M2.5 7.65149V15.0757C2.5 15.4374 2.64367 15.7842 2.8994 16.04C3.15513 16.2957 3.50198 16.4394 3.86364 16.4394H16.1364C16.498 16.4394 16.8449 16.2957 17.1006 16.04C17.3563 15.7842 17.5 15.4374 17.5 15.0757V7.65149" stroke="#74808B" stroke-miterlimit="10" stroke-linecap="square" />
+												<path d="M17.5 7.57572V5.53026C17.5 5.1686 17.3563 4.82176 17.1006 4.56603C16.8449 4.31029 16.498 4.16663 16.1364 4.16663H3.86364C3.50198 4.16663 3.15513 4.31029 2.8994 4.56603C2.64367 4.82176 2.5 5.1686 2.5 5.53026V7.57572L10 10.8333L17.5 7.57572Z" stroke="#74808B" stroke-miterlimit="10" stroke-linecap="square" />
+											</svg>
 
 										</div>
 									</div>
-									<div>
-										<div class="page-card-actions">
-											<button class="mt-2 btn btn-primary btn-forgot w-100" type="submit">Recuperar minha senha</button>
-											<p class="text-center sign-up-message">
-												<a class="mt-4 hover d-none" href="#login">Voltar a Iniciar Sessão</a>
-											</p>
-										</div>
+									<div class="page-card-actions">
+										<button class="btn btn-sm btn-primary btn-block btn-forgot" type="submit">{{ _("Reset Password") }}</button>
+										<p class="text-center sign-up-message">
+											<a href="#login">{{ _("Back to Login") }}</a>
+										</p>
 									</div>
 
 								</form>
@@ -203,7 +220,7 @@
 										</div>
 									</div>
 									<div class="page-card-actions">
-										<button class="btn btn-sm btn-primary btn-block btn-login-with-email-link" type="submit">{{ _("Send login link") }}</button>
+										<button class="btn btn-sm btn-primary btn-block btn-login-with-email-link w-100" type="submit">{{ _("Send login link") }}</button>
 										<p class="text-center sign-up-message">
 											<a href="#login">{{ _("Back to Login") }}</a>
 										</p>
@@ -212,11 +229,10 @@
 							</div>
 						</section>
 					</div>
-				</div>
-				{% endblock %}
+					{% endblock %}
 
-				{% block script %}
-				<script>{% include "templates/includes/login/login.js" %}</script>
-				{% endblock %}
+					{% block script %}
+					<script>{% include "templates/includes/login/login.js" %}</script>
+					{% endblock %}
 
-				{% block sidebar %}{% endblock %}
+					{% block sidebar %}{% endblock %}
